@@ -1,0 +1,15 @@
+{
+  "build": "2026-09-28-compass-contacts-v6",
+  "colors": [
+    "objective",
+    "supply",
+    "enemy"
+  ],
+  "deadEnemyRemoved": true,
+  "embeddedAssets": 79,
+  "markerCount": 20,
+  "noExternalAssets": true,
+  "pickupRemoved": true,
+  "ready": true,
+  "turnMovesMain": true
+}

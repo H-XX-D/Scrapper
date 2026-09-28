@@ -18,3 +18,11 @@ artifacts/*
 !artifacts/wipe-v5-sweep.png
 !artifacts/wipe-v5-return.png
 !artifacts/chapter-layouts-v3.svg
+!artifacts/final-verification-v6.json
+!artifacts/final-tests-v6.txt
+!artifacts/check-v6.txt
+!artifacts/compass-browser-v6.json
+!artifacts/compass-file-v6.json
+!artifacts/compass-room-v6.json
+!artifacts/compass-v6-opening.png
+!artifacts/compass-v6-narrow.png
