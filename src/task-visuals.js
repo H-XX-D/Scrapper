@@ -1,6 +1,7 @@
 import * as THREE from '../vendor/three.module.js';
 import{traceMirrors}from'./mission-tasks.js';
 import{effectBeam,orientBeam}from'./pixel-effects.js';
+export function devicePresentation(tasks,node){const available=tasks.visible(node);return{visible:!!node.body||available,readout:available};}
 const rows=['coupler','socket','pressure','mirror','sync','pump','return'];
 export class TaskVisuals{
  constructor(scene,tasks,atlas,levels){
@@ -22,9 +23,9 @@ export class TaskVisuals{
  state(n){return this.tasks.stateFor?.(n)||this.tasks;}
  readout(n){const t=this.state(n);if(t.readout)return t.readout(n);if(t.solved)return'SYSTEM\nRESTORED';return n.kind==='pressure'?'VALVE +'+(1<<n.index)+'\n'+t.pressure+' / '+t.target:n.kind==='socket'?'AUX POWER\n'+t.taken.length+' / 2 COUPLERS':n.kind==='mirror'?'REFLECTOR '+(n.index+1)+'\n'+(t.mirrors[n.index]?'\\':'/'):n.kind==='sync'?'PHASE '+(n.index+1)+'\n'+(n.index<t.sync?'LOCKED':n.index===t.sync&&t.windowOpen?'ACTIVATE':'WAIT'):n.kind==='pump'?'COOLANT PUMP\n'+(t.remaining>0?Math.ceil(t.remaining)+'s':'HOLD E '+Math.round(t.charge/3*100)+'%'):'RETURN VALVE\n'+(t.remaining>0?Math.ceil(t.remaining)+'s':'NO PRESSURE');}
  update(camera){
-  for(const{n,sprite,label,row}of this.nodes){const t=this.state(n);sprite.visible=this.tasks.visible(n);if(label){label.visible=sprite.visible;label.userData.setText(this.readout(n));if(!n.plate&&!n.body)label.quaternion.copy(camera.quaternion);}
+  for(const{n,sprite,label,row}of this.nodes){const t=this.state(n),presentation=devicePresentation(this.tasks,n);sprite.visible=presentation.visible;if(label){label.visible=presentation.readout;label.userData.setText(this.readout(n));if(!n.plate&&!n.body)label.quaternion.copy(camera.quaternion);}
    const active=t.active?t.active(n):n.kind==='pressure'?t.valves[n.index]:n.kind==='sync'?n.index<t.sync||n.index===t.sync&&t.windowOpen:false;
-   sprite.material.color.set(t.solved?'#87b993':active?'#caff83':n.tint||'#ffffff');sprite.material.map=this.atlas.texture(this.atlas.frame('puzzleDevices',active?Math.floor(t.clock*9)%8:Math.floor(t.clock*3)%8,row));
+   sprite.material.color.set(!presentation.readout?'#68747b':t.solved?'#87b993':active?'#caff83':n.tint||'#ffffff');sprite.material.map=this.atlas.texture(this.atlas.frame('puzzleDevices',active?Math.floor(t.clock*9)%8:Math.floor(t.clock*3)%8,row));
   }
   if(this.optics){const t=this.optics,visible=this.tasks.systems?this.tasks.systems.indexOf(t)<=(this.tasks.stage<0?99:this.tasks.stage):t.powered;this.receiver.visible=this.receiverText.visible=visible;this.receiver.material.color.set(t.solved?'#c4ff69':'#ff8edd');this.receiverText.userData.setText(t.solved?'OPTICAL LINK\nRESTORED':'OPTICAL RECEIVER\nALIGN BEAM');this.receiverText.quaternion.copy(camera.quaternion);
    const hash=visible+':'+t.mirrors.join(',');if(hash!==this.hash){this.hash=hash;for(const ray of this.rays){this.scene.remove(ray);ray.geometry.dispose();ray.material.dispose();}this.rays=[];if(visible)for(const s of traceMirrors(t.mirrors).segments){const pos=p=>({x:t.beamOrigin.x+p.x*2,y:t.beamOrigin.y,z:t.beamOrigin.z+p.z*2}),mesh=effectBeam(this.atlas,pos(s.from),pos(s.to),'#83dce8',.13,camera);this.scene.add(mesh);this.rays.push(mesh);}}
