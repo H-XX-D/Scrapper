@@ -1,0 +1,43 @@
+{
+  "version": 7,
+  "build": "2026-09-28-controller-support-v7",
+  "file": "exports/Scrapper-Playable-v7.html",
+  "bytes": 243442182,
+  "sha256": "902480dc2ba9dc0f6ef29a51d108871b0e4719efe18e635e4c0d296b0e970107",
+  "aliasIdentical": true,
+  "automatedTests": {
+    "total": 77,
+    "passed": 77,
+    "source": "artifacts/final-tests-v7.txt",
+    "finalTargetedTests": 8
+  },
+  "exactExportBrowser": {
+    "passed": true,
+    "checks": 26,
+    "source": "artifacts/controller-file-v7.json",
+    "input": "simulated standard Gamepad API",
+    "physicalControllerConnected": false
+  },
+  "room": {
+    "passed": true,
+    "source": "artifacts/controller-room-v7.json",
+    "guestFrames": 35,
+    "closed": true,
+    "scope": "Two local browser clients over the live room service; exported v7 guest with simulated standard gamepad. Not a cross-network or physical-pad test."
+  },
+  "keyboardRegression": {
+    "escapePausesAndReleasesMouseLock": true,
+    "repeatedEscapeStaysPaused": true,
+    "note": "Final source and exact export verified with native keyboard events; Escape never resumes on the pointer-lock release event."
+  },
+  "limits": [
+    "No physical controller test",
+    "No full human campaign playthrough",
+    "No new four-player soak or cross-network test"
+  ],
+  "distribution": {
+    "v6PublicRelease": "https://github.com/H-XX-D/Scrapper/releases/tag/v6",
+    "v7Release": "https://github.com/H-XX-D/Scrapper/releases/tag/v7",
+    "note": "Release uploaded/published separately; verify current public release API status."
+  }
+}

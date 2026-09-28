@@ -1,0 +1,88 @@
+{
+  "active": true,
+  "after": {
+    "mag": 21,
+    "position": {
+      "grounded": true,
+      "hp": 100,
+      "hurtCooldown": 1.1799999999999995,
+      "pitch": 0,
+      "safe": {
+        "x": 163.12276039670977,
+        "y": 0,
+        "z": 275.48386469294576
+      },
+      "vy": 0,
+      "x": 163.12276039670977,
+      "y": 0,
+      "yaw": -0.1621028086349887,
+      "z": 275.48386469294576
+    }
+  },
+  "before": {
+    "mag": 24,
+    "position": {
+      "grounded": true,
+      "hp": 100,
+      "hurtCooldown": 1.7817000000000045,
+      "pitch": 0,
+      "safe": {
+        "x": 163,
+        "y": 0,
+        "z": 277
+      },
+      "vy": 0,
+      "x": 163,
+      "y": 0,
+      "yaw": 0,
+      "z": 277
+    }
+  },
+  "guestFrames": 35,
+  "paused": true,
+  "pausedInput": {
+    "fire": false,
+    "forward": 0,
+    "jump": false,
+    "paused": true,
+    "pitch": 0,
+    "revive": false,
+    "sprint": false,
+    "strafe": 0,
+    "weapon": "bolt",
+    "yaw": -0.1621028086349887
+  },
+  "reload": true,
+  "role": "guest",
+  "useHeld": true,
+  "wipe": {
+    "active": true,
+    "asset": "assets/legacy/visor-wipe.png"
+  },
+  "hostObservedGuest": {
+    "frags": 0,
+    "id": "aea8c592-0f0a-45a4-9c24-63802bf939e7",
+    "pilot": "eos",
+    "player": {
+      "grounded": true,
+      "hp": 100,
+      "hurtCooldown": 0,
+      "pitch": 0,
+      "safe": {
+        "x": 163.12276039670977,
+        "y": 0,
+        "z": 275.48386469294576
+      },
+      "vy": 0,
+      "x": 163.12276039670977,
+      "y": 0,
+      "yaw": -0.1621028086349887,
+      "z": 275.48386469294576
+    },
+    "score": 0,
+    "weapon": "bolt"
+  },
+  "pass": true,
+  "scope": "Two local browser clients over the live room service; exported v7 guest with simulated standard gamepad. Not a cross-network or physical-pad test.",
+  "testRoomClosed": true
+}

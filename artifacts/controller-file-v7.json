@@ -1,0 +1,260 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "armed": true,
+        "connected": true,
+        "device": "mouse",
+        "input": {
+          "fire": false,
+          "forward": 0,
+          "jump": false,
+          "paused": false,
+          "pitch": 0,
+          "revive": false,
+          "sprint": false,
+          "strafe": 0,
+          "weapon": "bolt",
+          "yaw": 0
+        },
+        "settings": {
+          "deadzone": 0.18,
+          "invertY": false,
+          "sensitivity": 1
+        }
+      },
+      "name": "connected and armed",
+      "pass": true
+    },
+    {
+      "name": "A deploys without mouse lock",
+      "pass": true
+    },
+    {
+      "name": "left stick moves player",
+      "pass": true
+    },
+    {
+      "detail": {
+        "grounded": true,
+        "hp": 100,
+        "hurtCooldown": 0,
+        "pitch": 0.1387905252065858,
+        "safe": {
+          "x": 161,
+          "y": 0,
+          "z": 276.17865414634133
+        },
+        "vy": 0,
+        "x": 161,
+        "y": 0,
+        "yaw": -0.20818578780987868,
+        "z": 276.17865414634133
+      },
+      "name": "right stick turns and pitches",
+      "pass": true
+    },
+    {
+      "detail": {
+        "after": 22,
+        "before": 24
+      },
+      "name": "RT fires live gun",
+      "pass": true
+    },
+    {
+      "detail": {
+        "age": 0.1,
+        "duration": 1.6,
+        "id": "bolt"
+      },
+      "name": "X begins reload",
+      "pass": true
+    },
+    {
+      "detail": {
+        "grounded": false,
+        "hp": 100,
+        "hurtCooldown": 0,
+        "pitch": 0.1387905252065858,
+        "safe": {
+          "x": 161,
+          "y": 0,
+          "z": 276.17865414634133
+        },
+        "vy": 5.498800000000007,
+        "x": 161,
+        "y": 0.5036598599999983,
+        "yaw": -0.20818578780987868,
+        "z": 276.17865414634133
+      },
+      "name": "A jumps",
+      "pass": true
+    },
+    {
+      "detail": {
+        "active": true,
+        "asset": "assets/legacy/visor-wipe.png",
+        "colors": [
+          [
+            "cyan"
+          ],
+          [
+            "amber"
+          ],
+          [
+            "violet"
+          ],
+          [
+            "cyan"
+          ],
+          [
+            "amber"
+          ],
+          [
+            "violet"
+          ],
+          [
+            "cyan"
+          ],
+          [
+            "amber"
+          ]
+        ],
+        "palette": [
+          "cyan",
+          "amber",
+          "violet"
+        ],
+        "pose": {
+          "clearEdge": 1,
+          "frame": 0,
+          "gunDrop": 0.9200925059876572,
+          "palette": [
+            "cyan",
+            "amber",
+            "violet"
+          ],
+          "t": 0.09090909090909093,
+          "variant": "normal",
+          "visible": false,
+          "x": 1.08,
+          "y": 1.1800000000000002
+        },
+        "stains": 8,
+        "variant": "normal"
+      },
+      "name": "B begins original single wipe",
+      "pass": true
+    },
+    {
+      "detail": {
+        "active": false,
+        "asset": "assets/legacy/visor-wipe.png",
+        "colors": [],
+        "palette": [
+          "cyan",
+          "amber",
+          "violet"
+        ],
+        "pose": null,
+        "stains": 0,
+        "variant": "normal"
+      },
+      "name": "wipe clears mixed goo",
+      "pass": true
+    },
+    {
+      "name": "View opens map",
+      "pass": true
+    },
+    {
+      "name": "B closes map",
+      "pass": true
+    },
+    {
+      "name": "R3 toggles communications",
+      "pass": true
+    },
+    {
+      "name": "Y opens a weapon case",
+      "pass": true
+    },
+    {
+      "detail": [
+        "bolt",
+        "arc"
+      ],
+      "name": "gun acquired through case",
+      "pass": true
+    },
+    {
+      "detail": {
+        "after": "bolt",
+        "before": "arc"
+      },
+      "name": "RB cycles owned weapons",
+      "pass": true
+    },
+    {
+      "name": "LB cycles back",
+      "pass": true
+    },
+    {
+      "detail": "purge",
+      "name": "Y opens archive choice",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "id": "purge",
+          "value": "purge"
+        }
+      ],
+      "name": "D-pad selects story choice",
+      "pass": true
+    },
+    {
+      "name": "Menu pauses",
+      "pass": true
+    },
+    {
+      "name": "pause suppresses motion and fire",
+      "pass": true
+    },
+    {
+      "name": "Menu resumes",
+      "pass": true
+    },
+    {
+      "name": "disconnect pauses and releases fire",
+      "pass": true
+    },
+    {
+      "name": "reconnect held trigger stays disarmed",
+      "pass": true
+    },
+    {
+      "detail": "B9AAAA",
+      "name": "controller edits room code",
+      "pass": true
+    },
+    {
+      "name": "D-pad changes saved sensitivity",
+      "pass": true
+    },
+    {
+      "name": "invert setting changes",
+      "pass": true
+    }
+  ],
+  "kind": "virtual standard Gamepad API in live browser",
+  "location": "exports/Scrapper-Playable-v7.html",
+  "pass": true,
+  "settingsStored": {
+    "deadzone": 0.18,
+    "invertY": false,
+    "sensitivity": 1
+  }
+}
