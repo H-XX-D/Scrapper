@@ -1,4 +1,5 @@
 import{PILOTS}from'./catalog.js';
+import{availablePilot}from'./crew.js';
 export const PROTOCOL=4,MODES=['coop','ffa','pvpve'];
 const PREFIX='scrapper-recovery-1-';
 export const cleanCode=value=>String(value||'').toUpperCase().replace(/[^A-Z2-9]/g,'').slice(0,6);
@@ -25,7 +26,7 @@ export class NetRoom{
  receive(conn,d){if(!d||d.v!==PROTOCOL||typeof d.type!=='string')return;
   if(this.role==='host'){
    if(!this.connections.has(conn.peer))return;
-   if(d.type==='hello'&&!this.active&&!this.members.some(p=>p.id===conn.peer)){if(this.members.length>=4){this.send(conn,{type:'reject',message:'Crew full.'});return;}this.members.push({id:conn.peer,pilot:PILOTS[d.pilot]?d.pilot:'rook'});this.roster();}
+   if(d.type==='hello'&&!this.active&&!this.members.some(p=>p.id===conn.peer)){const pilot=availablePilot(d.pilot,this.members);if(this.members.length>=4||!pilot){this.send(conn,{type:'reject',message:'Crew full.'});return;}this.members.push({id:conn.peer,pilot});this.roster();}
    else if(d.type==='input'&&this.active&&d.runId===this.runId){const clean=sanitizeInput(d);if(clean&&clean.seq>(this.inputs.get(conn.peer)?.seq??-1))this.inputs.set(conn.peer,{...clean,received:performance.now()});}
    else if(d.type==='ping')this.send(conn,{type:'pong',stamp:d.stamp});
   }else if(this.role==='guest'&&conn===this.host){

@@ -1,0 +1,450 @@
+{
+  "alphaPreserved": true,
+  "checks": [
+    {
+      "frame": 0,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-bolt",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-arc",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-beam",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-rockets",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-frost",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-blades",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 4,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 5,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 6,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 7,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 8,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 9,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 10,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 11,
+      "id": "reload-flame",
+      "variants": 3
+    },
+    {
+      "frame": 0,
+      "id": "wipe",
+      "variants": 3
+    },
+    {
+      "frame": 1,
+      "id": "wipe",
+      "variants": 3
+    },
+    {
+      "frame": 2,
+      "id": "wipe",
+      "variants": 3
+    },
+    {
+      "frame": 3,
+      "id": "wipe",
+      "variants": 3
+    }
+  ],
+  "frames": 88,
+  "onlyOrangePixelsChanged": true,
+  "originalWipeHasNoOrangeOnOtherPilots": true,
+  "passed": true,
+  "pilotVariants": 264
+}

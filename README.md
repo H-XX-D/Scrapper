@@ -1,8 +1,8 @@
 # Scrapper
 
-[Download the playable v7 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v7/Scrapper-Playable-v7.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v7)
+[Download the playable v8 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v8/Scrapper-Playable-v8.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v8)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v7.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 232 MiB.
+First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v8.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 232 MiB.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
@@ -61,13 +61,13 @@ Three solo save slots preserve position, equipment, ammunition, score, enemies, 
 
 ## Online rooms
 
-Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a mode, **HOST ROOM**, share the six-character code, and **DEPLOY CREW** after friends join. Up to four players can choose Rook, Echo, Flint or EOS. Each has weapon-specific pixel sprites with sixteen facing slots and two to four walking poses. Your own view remains first person with the selected sleeve color.
+Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a mode, **HOST ROOM**, share the six-character code, and **DEPLOY CREW** after friends join. The host assigns up to four different salvagers: Rook, Echo, Flint and EOS. Your preferred salvager is kept when available; otherwise the next unused character is assigned. The large share code and COPY CODE button appear in the crew lobby and pause menu. Each has weapon-specific pixel sprites with sixteen facing slots and two to four walking poses. Your own view remains first person with matching sleeves, gloves and fingertips, including all reload poses and the original single-pass wipe. Weapon crystals, missiles and fuel panels retain their own colors. Co-op deployment places teammates on separate walkable spots ahead of the host; host and guest movement both animate.
 
 - **CO-OP RECOVERY:** shared mission, no friendly fire, enemy populations and spawned broods multiplied by crew count; hold E to revive. Four players begin the first contract with 372 enemies.
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V5, v6 and v7 share room protocol 4 and can play together; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V5 through v8 share room protocol 4. Use v8 on every device for the rendering and suit fixes, and host on v8 for unique character assignment; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -103,3 +103,5 @@ V6 adds five compass tests, for 70 passing tests in total. A shared route traver
 Original images are preserved in **assets/legacy**. New and extended sheets are in **assets/generated**; generation provenance is recorded under **docs**. Cropping, keying, palette mixing and sleeve recoloring happen during runtime import. Screenshots and verification artifacts are in **artifacts**. No tower-defense, dropship or gun-leveling mechanics remain in this first-person build.
 
 V7 adds seven controller tests (77 total) covering analog movement, drift, frame-rate-independent aiming, press edges, neutral rearming, jump transmission buffering and menu repeat. The exact HTML passes browser checks using a simulated standard Gamepad API; the reproducible script is `tests/browser/controller-check.js`. No physical gamepad was connected during verification, so hardware/browser mapping still needs a hands-on playtest. The original title art and in-mission HUD layout are unchanged.
+
+V8 adds six regression tests (83 total) for unique host-assigned characters, separated floor-checked crew deployment, directional walk animation and disconnected glove/wipe recoloring. Four browser clients joined the live room service with the same requested character and received four different salvagers. Screenshots verify teammate rendering from host and guest views, with recovery after a deliberately detached sprite. Validation and limits are recorded in **artifacts/final-verification-v8.json** and **docs/crew-and-suits-v8.md**.

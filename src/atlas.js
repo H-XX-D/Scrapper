@@ -2,6 +2,7 @@ import * as THREE from '../vendor/three.module.js';
 import{ACTORS,WEAPONS,PILOTS,ANIMATIONS}from'./catalog.js';
 import{CREW_LAYOUTS}from'./crew-layouts.js';
 import{GOO_COLORS}from'./visor.js';
+import{recolorSuit}from'./suit-palette.js';
 export const THEMES=[
  {id:'transit',name:'Freight Transit',subtitle:'Breach the cargo spine',color:'#8cbbc7',fog:'#111c24'},
  {id:'research',name:'Overgrown Research',subtitle:'Recover the living archive',color:'#98bb73',fog:'#17221f'},
@@ -52,7 +53,7 @@ export class Atlas{
   const inset=spec.inset||0,cw=img.width/spec.cols,y0=spec.bounds?spec.bounds[row]/(spec.boundHeight||1254)*img.height:row*img.height/spec.rows,y1=spec.bounds?spec.bounds[row+1]/(spec.boundHeight||1254)*img.height:(row+1)*img.height/spec.rows;
   const xBounds=spec.columnBounds?.[row]||spec.xBounds,x0=xBounds?xBounds[col]/spec.boundWidth*img.width:col*cw,x1=xBounds?xBounds[col+1]/spec.boundWidth*img.width:(col+1)*cw,pad=spec.padding||0;
   const c=document.createElement('canvas');c.width=Math.round(x1-x0-inset*2)+pad*2;c.height=Math.round(y1-y0-inset*2)+pad*2;const ctx=c.getContext('2d',{willReadFrequently:true});ctx.imageSmoothingEnabled=false;ctx.drawImage(img,x0+inset,y0+inset,x1-x0-inset*2,y1-y0-inset*2,pad,pad,c.width-pad*2,c.height-pad*2);
-  if(spec.key){const data=ctx.getImageData(0,0,c.width,c.height);keyBackground(data,spec.key);if(pilot!=='rook'&&(id.startsWith('reload')||['onehand','arsenal','wipe','sticky'].includes(id)))recolorArms(data,PILOTS[pilot].hue);ctx.putImageData(data,0,0);}
+  if(spec.key){const data=ctx.getImageData(0,0,c.width,c.height);keyBackground(data,spec.key);if(pilot!=='rook'&&(id.startsWith('reload')||['onehand','arsenal','wipe','sticky'].includes(id)))recolorSuit(data,PILOTS[pilot].hue,id,row*spec.cols+col);ctx.putImageData(data,0,0);}
   this.cache.set(cacheKey,c);return c;
  }
  actor(id,state,age,duration){const spec=SPECS[id],s=state==='recover'?'idle':state;
@@ -89,10 +90,4 @@ function keyBackground(image,mode){const{data:d,width:w,height:h}=image,isKey=i=
  const seen=new Uint8Array(w*h),q=new Int32Array(w*h);let read=0,write=0;const push=i=>{if(i>=0&&i<w*h&&!seen[i]&&isKey(i)){seen[i]=1;q[write++]=i;}};
  for(let x=0;x<w;x++){push(x);push((h-1)*w+x);}for(let y=0;y<h;y++){push(y*w);push(y*w+w-1);}
  while(read<write){const i=q[read++];d[i*4+3]=0;if(i%w)push(i-1);if(i%w<w-1)push(i+1);push(i-w);push(i+w);}
-}
-function recolorArms(image,hue){const{data:d,width:w,height:h}=image,seen=new Uint8Array(w*h),q=[],orange=i=>{const r=d[4*i],g=d[4*i+1],b=d[4*i+2];return d[4*i+3]>0&&r>70&&g>25&&r>g*1.22&&g>b*1.35;};
- const push=i=>{if(i>=0&&i<w*h&&!seen[i]&&orange(i)){seen[i]=1;q.push(i);}};
- for(let y=Math.floor(h*.72);y<h;y++)for(let x=0;x<w;x++)if(x<w*.31||x>w*.72)push(y*w+x);
- const color=new THREE.Color().setHSL(hue/360,.64,.52),r=color.r,g=color.g,b=color.b;
- for(let k=0;k<q.length;k++){const i=q[k],v=Math.max(d[i*4],d[i*4+1],d[i*4+2]);d[i*4]=v*r;d[i*4+1]=v*g;d[i*4+2]=v*b;if(i%w)push(i-1);if(i%w<w-1)push(i+1);push(i-w);push(i+w);}
 }

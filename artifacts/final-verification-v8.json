@@ -1,0 +1,51 @@
+{
+  "version": 8,
+  "build": "2026-09-28-crew-and-suit-fixes-v8",
+  "file": "exports/Scrapper-Playable-v8.html",
+  "bytes": 243452549,
+  "sha256": "80a6ef28671f0c99ae8a4321626d305eec718aa24407fac0138f526e24e6bc53",
+  "aliasIdentical": true,
+  "automatedTests": {
+    "total": 83,
+    "passed": 83,
+    "source": "artifacts/final-tests-v8.txt"
+  },
+  "fourPlayerRoom": {
+    "source": "artifacts/crew-room-v8.json",
+    "exactExport": "artifacts/crew-file-v8.json",
+    "samePreferredCharacterAssignedUnique": true,
+    "allThreeTeammatesVisibleFromHost": true,
+    "hostVisibleFromGuests": true,
+    "hostWalkReplicated": true,
+    "missingSpriteRestored": true,
+    "roomCodeVisibleInLobbyAndPause": true,
+    "pauseCopyButton": "COPIED",
+    "windows": [
+      "760x480",
+      "1280x577"
+    ],
+    "scope": "Four local Chromium browser instances using the live PeerJS room service, repeated with all four on the exact standalone HTML. Screenshot review supplements sprite-state checks."
+  },
+  "suits": {
+    "source": "artifacts/suit-frames-v8.json",
+    "frames": 88,
+    "recoloredVariants": 264,
+    "alphaPreserved": true,
+    "wipeNoOrangeFabricOnOtherPilots": true,
+    "originalSinglePassAndMixedGooPreserved": true,
+    "visualReview": "All 84 weapon poses for Echo, original wipe for all four pilots with mixed goo, all seven idle weapons for all four pilots, and actual first-person guest views."
+  },
+  "limits": [
+    "No separate-network multiplayer test or prolonged four-player soak",
+    "No physical gamepad attached",
+    "No full human campaign playthrough"
+  ],
+  "release": "https://github.com/H-XX-D/Scrapper/releases/tag/v8",
+  "controllerRegression": {
+    "passed": true,
+    "checks": 26,
+    "source": "artifacts/controller-file-v8.json",
+    "input": "simulated standard Gamepad API",
+    "physicalController": false
+  }
+}
