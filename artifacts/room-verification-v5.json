@@ -1,0 +1,27 @@
+{
+  "players": 2,
+  "bothActive": true,
+  "guestFrames": 9,
+  "sameChoices": true,
+  "sameHistory": true,
+  "sameQueue": true,
+  "sameJournal": true,
+  "guestWipe": {
+    "accepted": true,
+    "observedVisibleFrames": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "gunHiddenDuringGlove": true,
+    "finished": true
+  },
+  "testRoomClosed": true
+}

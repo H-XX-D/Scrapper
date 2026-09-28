@@ -1,0 +1,27 @@
+{
+  "tool": "Built-in image_gen",
+  "created": "2026-09-28",
+  "assets": [
+    {
+      "id": "wallGrowth",
+      "path": "assets/generated/wall-infestation-v3.png",
+      "source": "generation-archive/exec-76b0f5bd-1109-47b1-aec3-fc94cca39af9.png",
+      "reference": "assets/generated/props.png",
+      "prompt": "Use case: stylized-concept. Production sprite atlas for an existing 1990s industrial sci-fi first-person pixel game. Reference image 1 provides color/detail style only. Create a NEW 8 columns by 4 rows evenly spaced atlas of destructible ALIEN WALL INFESTATION, isolated on a perfectly flat solid #FF00FF chroma key background (no checkerboard, no shadows on background). Exactly 32 cells, all aligned with equal cell size. Each row is one wall parasite growing over time, viewed straight-on as a wall decal with irregular branching organic silhouette. Row 1: purple-black sinewy roots with lime green eggs and acid veins. Row 2: dark red armored barnacles with cyan blue glowing interiors and dangling tendrils. Row 3: pale bone fungal coral with violet luminescent sacs and black roots. Row 4: infestation of dark steel machinery with orange amber nodules, cables and green parasitic roots. In EVERY row columns 1-4 = tiny bud, small branching patch, medium growth, full mature growth. Columns 5-7 = three lively pulsating mature animation frames, changing sacs and tendrils while retaining identity. Column 8 = destroyed burnt dark husk with torn empty sacs and ragged dry tendrils. Rich hand-painted crunchy pixel art, dark ink edges, chunky 2-3 pixel highlights, textured dithering, sharply visible silhouette, classic sprite-shooter look consistent with reference. No smooth 3D, no voxel cubes, no signage, no text, no interface. Each sprite must stay completely inside its own cell with at least 12% clear empty magenta margin on all four sides, even the largest mature growth. Do not draw grid lines or cell borders. Square canvas. Return the atlas only."
+    },
+    {
+      "id": "areaVfx",
+      "path": "assets/generated/flame-area-vfx-v3.png",
+      "source": "generation-archive/exec-f243a575-d120-4574-8eec-4170e8f1c4d9.png",
+      "reference": "assets/generated/attack-vfx-padded.png",
+      "prompt": "Use case: stylized-concept. Production animated pixel-art combat effects atlas for the existing industrial alien shooter, using reference image 1 only to match the crunchy painted pixel style. Create a NEW exactly 8 columns by 4 rows sprite sheet on perfectly solid flat #FF00FF magenta background, no checkerboard. 32 equal cells. Row 1: an actual turbulent flamethrower flame puff growing then dissolving, bright white-yellow hot core, orange and deep red jagged licking flame tongues curling upward and forward, 8 continuous frames. Must read as FIRE, not an energy orb. Row 2: neon lime acid splash geyser rising from the floor, tearing liquid ribbons and droplets, 8 frames erupt then settle. Row 3: bone-white and cyan jagged psychic shockwave crest erupting upward from the floor, crackling arcs and irregular branching spikes, 8 frames swell and fade. Row 4: violet lightning eruption with white core and tendrils, 8 frames expanding and fragmenting. Face the viewer directly; each effect is a self-contained volumetric front-facing sprite. Rough chunky pixels, crisp isolated silhouettes, small detailed highlights, no blur, no bloom halo, no voxel cubes, no 3D rendering, no characters, no guns, no letters, no grid lines. All art INCLUDING detached droplets must have at least 15% empty margin inside its own cell. Square canvas. Follow the equal grid precisely. Entire sprite sheet only."
+    },
+    {
+      "id": "bursts",
+      "path": "assets/generated/combat-bursts-v3.png",
+      "source": "generation-archive/exec-13bc6a0c-f1a2-490c-8981-4d35b94a249a.png",
+      "brief": "Sixteen complete cyan energy, orange fire, violet lightning and ice burst frames with source gutters. Final edit changed background to solid magenta for runtime chroma key."
+    }
+  ],
+  "import": "Original PNGs preserved. Runtime Atlas chroma-keys magenta, uses measured row-specific crop seams and adds 8 pixels of transparent padding. Nearest texture filtering."
+}

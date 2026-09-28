@@ -1,0 +1,4 @@
+*.png binary
+*.ttf binary
+vendor/** -whitespace
+assets/**/FONT-LICENSE.txt -whitespace

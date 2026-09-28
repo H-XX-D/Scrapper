@@ -1,0 +1,32 @@
+[
+  {
+    "id": "env-extra-transit",
+    "source": "generation-archive/exec-854b31df-6300-4894-ab97-f92f9b3eba1b.png",
+    "path": "assets/generated/env-extra-transit.png"
+  },
+  {
+    "id": "env-extra-research",
+    "source": "generation-archive/exec-11527349-f035-4f1b-86f6-f7e4ee517022.png",
+    "path": "assets/generated/env-extra-research.png"
+  },
+  {
+    "id": "env-extra-foundry",
+    "source": "generation-archive/exec-f861253d-be20-492d-aa07-03ed4fe77f9b.png",
+    "path": "assets/generated/env-extra-foundry.png"
+  },
+  {
+    "id": "env-extra-cryo",
+    "source": "generation-archive/exec-43f713e9-87ad-4e07-8dc7-a6df74794148.png",
+    "path": "assets/generated/env-extra-cryo.png"
+  },
+  {
+    "id": "station-motion",
+    "source": "generation-archive/exec-87eee6cc-1f55-4b92-a0eb-64818b8d365d.png",
+    "path": "assets/generated/station-motion.png"
+  },
+  {
+    "id": "puzzle-devices",
+    "source": "generation-archive/exec-68844e30-5ca4-48b2-a287-19f473d3999e.png",
+    "path": "assets/generated/puzzle-devices.png"
+  }
+]

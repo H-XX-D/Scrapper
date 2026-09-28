@@ -1,0 +1,102 @@
+{
+  "build": "2026-09-28-original-wipe-story-v5",
+  "artifact": "exports/Scrapper-Playable-v5.html",
+  "bytes": 243426629,
+  "sha256": "13d8c96496a650d50de7945d77494a1e199cc0bf96a5487612778229c46db19c",
+  "sameAsScrapperHtml": true,
+  "embeddedAssets": 79,
+  "externalScripts": [],
+  "checks": {
+    "syntax": "passed",
+    "nodeTests": 65,
+    "failed": 0,
+    "storyChapters": 12,
+    "allStoryMilestonesVerified": true
+  },
+  "originalWipe": {
+    "source": "assets/legacy/visor-wipe.png",
+    "sha256": "3f0821d459c75484c6ca2e368cae8606789d463aa0ed1650478ec6c6a810c746",
+    "poses": 4,
+    "variants": 128,
+    "empty": 0,
+    "clipped": 0,
+    "minimumSourceMargin": 3,
+    "alphaOutsideGlove": 0,
+    "nativeQClearedFiveColors": true,
+    "gunAbsentDuringVisibleGlove": true,
+    "gunReturnsAfterSweep": true
+  },
+  "fileBrowser": {
+    "assets": 79,
+    "build": "2026-09-28-original-wipe-story-v5",
+    "choicesRestored": true,
+    "chronologySurvivesArchiveRecovery": true,
+    "earlyPurgeNarration": true,
+    "earlyPurgeRecorded": true,
+    "historyRestored": true,
+    "httpRequests": [],
+    "journalRestored": true,
+    "laterWipeAbsent": true,
+    "loaded": true,
+    "originalEmbedded": true,
+    "pendingLogsRestored": true,
+    "ready": true,
+    "saved": true,
+    "stagedStationProps": 354,
+    "wipeSource": "assets/legacy/visor-wipe.png"
+  },
+  "twoBrowserCoop": {
+    "players": 2,
+    "bothActive": true,
+    "guestFrames": 9,
+    "sameChoices": true,
+    "sameHistory": true,
+    "sameQueue": true,
+    "sameJournal": true,
+    "guestWipe": {
+      "accepted": true,
+      "observedVisibleFrames": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "gunHiddenDuringGlove": true,
+      "finished": true
+    },
+    "testRoomClosed": true
+  },
+  "endingPanel": {
+    "buttonReachable": true,
+    "completed": true,
+    "ending": "Carrier line stopped. Recovery beacon transmitting. If another station calls, the union knows where to find me.\nBRIDGE RESTORED \u00b7 RESEARCH PRESERVED \u00b7 SCRAP SCORE 0\nThe carrier line is stopped. The surviving banks establish a workable isolation procedure, with gaps marked wherever the research was lost. The union clears stations in stages and leaves the uncertain sections sealed.\n\nEcho keeps new rescue calls under independent verification until the missing relay records can be recovered.\n\nFlint builds the clean repair effort around your recovered equipment records. The remaining blocked service routes will need another crew.\n\nYour surviving manifests enter the union inquiry. The original Dock Nine approvals still need to be recovered.\n\nRook files the last report as salvage and recovery. The union keeps \u201cspecialist\u201d beside his name. His suit still needs an overhaul. When the next station calls, he asks for its crew list before its cargo value.",
+    "panelFits": true,
+    "panelHeight": 491,
+    "scrollHeight": 677,
+    "success": true,
+    "title": "CONTRACT CLOSED"
+  },
+  "preservedV4Sha256": "41b402fdd98b945dd6b4bf55021d0ec4f926231739f9373bb5d83fc4c8cc3a54",
+  "evidence": [
+    "artifacts/final-tests-v5.txt",
+    "artifacts/check-v5.txt",
+    "artifacts/file-verification-v5.json",
+    "artifacts/live-story-audit-v5.json",
+    "artifacts/wipe-alpha-v5.json",
+    "artifacts/room-verification-v5.json",
+    "artifacts/wipe-v5-contact.png",
+    "artifacts/wipe-v5-sweep.png",
+    "artifacts/wipe-v5-return.png"
+  ],
+  "limitations": [
+    "Chapter browser checks use verification teleports and enemy-damage hooks; this is not a complete human campaign playthrough.",
+    "The two-peer room check was local; no new four-player or cross-network latency soak was performed.",
+    "The video recorder captured the inactive title tab; that recording was rejected. Exact-file screenshots and native Q plus guest pose observations verify the wipe."
+  ]
+}

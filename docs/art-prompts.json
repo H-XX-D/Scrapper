@@ -1,0 +1,224 @@
+{
+  "generatedWith": "Built-in image_gen tool",
+  "outputDirectory": "assets/generated",
+  "originalArtDirectory": "assets/legacy",
+  "spriteStyleAndLayout": "Use case: stylized-concept. Asset type: production animation sprite atlas for Scrapper, a first-person pixel-art alien shooter. Rebuild the creature art direction of the supplied reference into the new character specified below; reference is style and palette only. Output ONE square 1024 x 1024 atlas with EXACTLY 8 columns and 8 rows, 64 equal 128 x 128 cells, no gutters, no borders, no labels or text. Each cell contains ONE full-body frame. Keep the creature fully inside each cell with at least 12 pixels clear padding, same scale, horizontally centered, feet/contact at y=112 in each cell; DO NOT crop limbs. Fixed front three-quarter camera matching classic first-person billboard enemies, no top-down angle. Genuine transparent background, no checkerboard painting, no floor, no scenery. Detailed crisp pixel clusters, hard edges, dark outlines, violet/teal/orange biology and worn metal matching references, no smooth painted gradients. Every row has eight DISTINCT sequential hand-drawn poses, animate actual limbs/body instead of merely stretching a still.\nRows top to bottom: 1 idle breathing; 2 locomotion cycle advancing toward viewer; 3 primary attack anticipation with increasingly clear readable tell; 4 primary attack release then physical follow-through/recovery; 5 alternate attack anticipation; 6 alternate attack release then recovery; 7 hit response progressing small flinch, recoil, stagger, armor/weakpoint break and recovering posture; 8 death progressing mortally hit, buckling, falling, breaking apart, settling into alien remains. Death is stylized nonhuman green/violet ichor and shell pieces. Row and column positions must be strictly regular for direct game slicing. No UI, weapons held by humans, titles, extra characters, reflections, watermark, or ground shadow extending outside the cell.",
+  "creatureDirections": [
+    {
+      "key": "skitter",
+      "name": "Rift Skitter",
+      "detail": "A NEW lean violet six-limbed insect predator, cyan eyes, long angular hind legs, two ivory sickle foreclaws, low quick silhouette. Primary: crouches and folds hind legs, leaps toward viewer, slashes then lands. Alternate: leans left, darts sideways, bites and regains stance. Hit reactions snap the head back, buckle forelegs and finally crack the cyan chest shell."
+    },
+    {
+      "key": "spitter",
+      "name": "Spore Spitter",
+      "detail": "A NEW squat amber/orange alien with four rooted legs, bulbous lime-green translucent throat sac, violet chitin back and small mandibles. Primary: sac swells visibly, head rises then coughs three green acid projectiles with shrinking sac and recoil. Alternate: torso hunches, mouth opens wide, shoots a slow larger lime orb and recoils. Keep most emitted projectile close to creature inside cell; flight sprites will be separate. Hit response shows sac jolt and a stagger, ending a visible sac rupture, death deflates and collapses."
+    },
+    {
+      "key": "bulwark",
+      "name": "Shellback",
+      "detail": "A NEW bulky upright crab-like violet alien with layered dark indigo shield plates on both broad forearms, orange seams and small exposed cyan abdomen. Heavy broad readable silhouette. Primary: braces both arms in front, draws right arm back, heavy diagonal cleave then recovers. Alternate: squats, lifts paired plated arms overhead, smashes down then reopens plates. Hit response visibly deflects against armor, then one plate chips, then the weak belly recoils; the final hit pose breaks a plate away."
+    },
+    {
+      "key": "screamer",
+      "name": "Signal Leech",
+      "detail": "A NEW floating violet jellyfish-like alien with six short hooked tendrils, a luminous cyan split-mouth and orange ring organs along its head. Medium thin silhouette, no legs, baseline is bottom of tendrils. Primary: folds tendrils and flares throat ring orange, screams/sends a short concentric energy pulse then closes mouth. Alternate: rotates hooked tendrils forward, discharges a pair of violet bolts and visibly recoils. Hit reaction interrupts its scream, flashes throat organ then spins/staggers; death drops and collapses in tangled tendrils."
+    },
+    {
+      "key": "warden",
+      "name": "Hatch Warden",
+      "detail": "Refined MINIBOSS: huge bipedal alien beetle in orange industrial scrap armor, violet flesh, broad shoulder shields, glowing cyan chest seam and heavy two-pronged head crest. Primary: lowers head, plants feet, readable charge windup, then powerful forward rushing poses and wall-impact recovery. Alternate: lifts both fists, smashes deck, recoils and exposes cyan chest. Hit reactions progress ricochet/deflection, stagger, shoulder armor breaking, exposed chest flinch. Larger than normal enemies but fit consistent cell."
+    },
+    {
+      "key": "marshal",
+      "name": "Choir Marshal",
+      "detail": "Refined MINIBOSS: tall twisted green/violet fungal stalk creature with three small skull-like nonhuman flower mouths, thick root feet, orange spore sacs and cyan vein lines. Primary: all three mouths face forward and swell, release a fan of spore needles then recoil independently. Alternate: central mouth opens and side heads bow, vocal summoning pulse from cyan veins, then roots settle. Hits cause different heads to recoil in succession, one spore sac bursts and interrupts channeling. Death roots fold and heads collapse, alien only."
+    },
+    {
+      "key": "matriarch",
+      "name": "The Matriarch",
+      "detail": "Refine the orange brood-boss visual from the supplied boss reference. Massive orange spiked crab queen, layered luminous egg sacs, cyan face/core and six heavy insect legs. Preserve recognizable orange/cyan queen identity. Primary: foreclaws spread, abdomen swells, throws a broad fan of acid seeds then folds limbs. Alternate: raises abdomen and front legs, tears open brood sacs to release small violet larvae then recoils exposing cyan core. Hit reaction distinct shell block, sac recoil, broken egg sac and vulnerable core stagger. Death legs buckle, sacs collapse and shell splits. No extra full-size enemies in any cell."
+    },
+    {
+      "key": "parallax",
+      "name": "Parallax",
+      "detail": "Refine the silver/cyan biomechanical scorpion boss in the supplied boss reference. Preserve broad gun-claws, six steel legs, dish antenna on back and segmented raised cyan tail. Primary: dish tilts and tail/rail claws gather bright cyan light, then fires a narrow bright rail burst toward viewer with heavy kickback and cooling posture. Alternate: claws spread, dish rotates, release crossing violet/cyan short projectiles then retract. Hit reactions metallic deflection, antenna stagger, dish cracking and exposed orange core recoil. Death tail sags, legs fold, core bursts in contained pixel sparks then wreck settles."
+    }
+  ],
+  "props": "Use case: stylized-concept. Create a production game sprite sheet matching the supplied Scrapper pixel-art references. EXACTLY 8 columns by 8 rows on a 1024 x 1024 transparent canvas, each cell 128 x 128, all cell centers aligned, 12 pixel minimum margin, no grid lines, no text or labels. True alpha transparency, no painted checkerboard or floor. Detailed crisp SNES/early-FPS pixel clusters, dark steel, cyan displays, rusty orange highlights and violet alien biomass. Each row has 8 distinct sequential frames of the SAME object, consistent scale and fixed front three-quarter camera at player eye level.\nRow 1: violet/orange infestation egg-nest breathing idle, root-like feet and visible cyan inner core, pulsing sacs.\nRow 2: SAME nest opening and spawning: closed, swelling, splitting, tiny alien silhouette emerging from mouth, emerging fully, mouth closing, recovery, closed. Keep all within cell.\nRow 3: SAME nest reacting to bullets: twitch, shell impact, stagger, cracked sac, recovery, another impact, cracked growth, stable wounded.\nRow 4: SAME nest destruction: shell rupture, violet-green nonhuman ichor, collapsing roots, deflated biomass, then remains settling across last frames.\nRow 5: small industrial steel bulkhead DOOR open animation, orange hazard borders, cyan status lamp. Entire rectangular doorway frame is visible in each cell, closed to fully open.\nRow 6: freestanding mission communications/power terminal activation: dark screen, flicker, cyan boot lines, bright cyan online panel, confirmation light, then steady online frames; no readable text.\nRow 7: compact cyan/orange ammunition cell crate slowly rotating through eight views, coherent geometry.\nRow 8: compact cream/orange medical canister with a simple cyan medical plus slowly rotating through eight views.\nNo humans, no turrets, no ships, no structures for player building, no background scenes. Each object fully contained in its cell.",
+  "mechanicalEnemy": "Use case: stylized-concept. Asset type: production animation sprite atlas for Scrapper, a first-person pixel-art alien shooter. Rebuild the creature art direction of the supplied reference into the new character specified below; reference is style and palette only. Output ONE square 1024 x 1024 atlas with EXACTLY 8 columns and 8 rows, 64 equal 128 x 128 cells, no gutters, no borders, no labels or text. Each cell contains ONE full-body frame. Keep the creature fully inside each cell with at least 12 pixels clear padding, same scale, horizontally centered, feet/contact at y=112 in each cell; DO NOT crop limbs. Fixed front three-quarter camera matching classic first-person billboard enemies, no top-down angle. Genuine transparent background, no checkerboard painting, no floor, no scenery. Detailed crisp pixel clusters, hard edges, dark outlines, violet/teal/orange biology and worn metal matching references, no smooth painted gradients. Every row has eight DISTINCT sequential hand-drawn poses, animate actual limbs/body instead of merely stretching a still.\nRows top to bottom: 1 idle breathing; 2 locomotion cycle advancing toward viewer; 3 primary attack anticipation with increasingly clear readable tell; 4 primary attack release then physical follow-through/recovery; 5 alternate attack anticipation; 6 alternate attack release then recovery; 7 hit response progressing small flinch, recoil, stagger, armor/weakpoint break and recovering posture; 8 death progressing mortally hit, buckling, falling, breaking apart, settling into alien remains. Death is stylized nonhuman green/violet ichor and shell pieces. Row and column positions must be strictly regular for direct game slicing. No UI, weapons held by humans, titles, extra characters, reflections, watermark, or ground shadow extending outside the cell.\nOVERRIDE organic palette and death: this character is mechanical. NEW purely mechanical enemy, NO flesh: a compact hovering industrial security robot built from worn navy steel and orange hazard plates, one large cyan optical lens, twin articulated gun pods and three short stabilizer fins. Preserve the tiny round robotic-drone lineage in reference but give it a unique hard-edged silhouette. Primary tells: gun pods unfold, cyan capacitors brighten, fires paired short orange muzzle flashes then recoils. Alternate: optic closes to a targeting slit and turns red-orange, fires a concentrated cyan pulse then cools. Hit response sparks off armor, optic flickers, gun pod buckles, then pronounced EMP shudder. Death breaks steel shells, orange sparks, dark smoke and mechanical wreck only: NO alien blood or organic gore. Hover at a constant height within each cell.",
+  "stickyWipe": "Use case: identity-preserve. Extend the supplied Scrapper glove animation into a NEW second visor wipe animation. Preserve exactly the orange armored LEFT hand and sleeve identity, dark grey palm pads, cyan knuckle/wrist lights, pixel-art shading and lime green sticky alien goo of the reference. One 1024 x 1024 sprite atlas, EXACTLY 4 columns by 4 rows, 16 equal 256 x 256 cells. Each cell contains one complete first-person forearm and hand pose, same size and camera, forearm coming from lower left, hand centered, 16 pixels of clear padding around all art; no cropped fingertips or goo at borders. True transparent background, no magenta, no painted checkerboard, no floor, no text, no labels, no grid lines. Pixel-art with crisp clusters, no smooth painting.\nThe 16 cells in row-major order form ONE continuous sequence:\n1 hand rises fingers curled; 2 opens reaching visor; 3 palm wipes glass with sticky goo; 4 finishes first swipe, coated palm visible;\n5 pauses and inspects goo on fingers; 6 flexes fingers with stretchy strands; 7 pinches/flicks fingers; 8 wrist tilts sharply left;\n9 shakes wrist sharply right throwing several green droplets; 10 shakes left, fingers splayed and trailing goo; 11 shakes right, fewer droplets; 12 brief left shake, mostly clean;\n13 reopens palm for a short finishing wipe; 14 final sweep removing residual smear; 15 withdraws fingers curled with one tiny green droplet; 16 nearly lowered arm/clean palm.\nActual articulated finger and wrist changes between frames. No extra hands, no mirrored right hand, no weapons, no body or face, no UI. Keep the arm orange so runtime can recolor the armor consistently for selected character while leaving grey palm, cyan lights, and green goo unchanged.",
+  "infestationPod": "Use case: precise-object-edit. Create animation sprites of ONLY the LARGE CENTRAL GREEN POD in the reference screenshot for first person pixel shooter Scrapper. Preserve exact silhouette: tall translucent slime-green egg sac full of luminous round green blisters, vertical dark purple tentacle cage, roots spreading at base, narrow pointed antennae. No bugs standing beside it, no background from screenshot. New game asset sprite sheet EXACT 8 columns x 4 rows, 32 equally sized cells, fixed floor baseline and fixed full-pod scale. SOLID FLAT #ff00ff magenta background across all empty pixels, NOT checkerboard. No text or labels or grid lines. Row 1 eight breathing animation poses sac pulses, vines flex subtly. Row 2 eight sequential spawning animation poses: opens lower slit, squeezes out small purple alien larvae, slit closes. Row 3 eight destruction animation poses: first sac inflates hugely, splits top to bottom, violent lime goo fountain explodes in all directions, multiple alien larvae tumble out, purple shell collapses progressively. Row 4 eight corpse/husk poses: collapsed split empty purple roots, deflated torn green membrane, goo dripping decreases, final four frames same stable dead hollow husk. Green goo splashes stay inside own cell with 10px gutter. Pixel-art retro Doom level of detail, front three-quarter view, sharp pixels not painterly, matching reference. Destruction visibly spawns creatures AND leaves husk.",
+  "pickups": "Use case: stylized-concept. Production world pickup sprite sheet for retro first-person pixel shooter Scrapper. Follow gun reference shapes, without any hands. EXACT 8 columns x 3 rows, 24 evenly sized square cells. Solid flat #ff00ff magenta background, no checkerboard, no words, no aura, no bloom, no radiating light, NO shadows outside object. Crisp chunky pixel art, industrial worn gunmetal, subtle orange and cyan painted labels, high readable silhouettes. Row 1: seven individual gun pickups in this order: cyan Ion Carbine rifle, violet coil Arc Relay, orange crystal Prism Beam, triple rocket Comet Rack, cyan canister Cryo Spindle, violet crescent Moon Blades, orange fuel Solar Torch; cell8 medical kit. Guns drawn side-on as freestanding objects NOT held by hands, fill 75% cell width. Row 2: seven unique corresponding ammunition pickups matching gun color and shape: cyan rectangular energy magazine, violet capacitor pair, amber triangular crystal cartridges, orange rocket bundle, ice-blue pressure canister, purple crescent disc stack, orange fuel cylinder; cell8 utility power cell. Row 3: 8 sequential frames of one FUTURISTIC WEAPON SUPPLY CASE opening, closed flat rectangular armored dark steel box with beveled corners, orange stripes and cyan latch, mechanical lid separates then rises exposing dark foam weapon compartment, ends fully open with lid up. Case fits spaceship industrial passage art, no medieval wood, no treasure chest, no gold, no glow. Same case baseline and camera in all 8 frames. Keep 12px margin within every cell, no overlap.",
+  "selectedWeaponReloadPrompts": [
+    {
+      "id": "reload-bolt",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-arc",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-beam",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-rockets",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-frost",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-blades",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    },
+    {
+      "id": "reload-flame",
+      "prompt": "Use case: precise-object-edit. Correct this Scrapper first-person reload animation sheet. Preserve EXACT 4-column by 3-row twelve-cell layout, magenta background, original gun design, pixel-art style, orange gloves, and reload action sequence. CRITICAL CHANGE: In frame 1 (top left) AND frame 12 (bottom right), show BOTH hands holding the gun normally: right hand on pistol grip, LEFT hand wrapped underneath the forward fore-end just behind the barrel, fingers supporting the barrel housing from below, left forearm entering from the bottom left. Frame 2 shows left hand just releasing its support grip to begin reload. Frame 11 shows left hand returning to that same forward support grip. The final frame MUST be visually identical to the starting two-handed frame. Do not remove the left hand in ready poses. It must support the front of gun well forward of the magazine, never cover muzzle. Keep gun bore aimed straight up toward the center vanishing point, with muzzle centered on the upper middle of the cell. Preserve reload mechanics of interior frames 3 through 10. Orange armor sleeve on both arms, black glove pads. All frames centered consistently, each cell with 10px magenta margin, no text."
+    }
+  ],
+  "environmentPrompts": [
+    {
+      "id": "transit",
+      "prompt": "Use case: stylized-concept. A production game texture atlas for Scrapper pixel-art first-person corridors. Match reference texture art: sharp pixels, riveted industrial steel, hand-dithered depth. INDUSTRIAL TRANSIT: weathered blue-gray steel, orange safety markings, cyan electrical strips, freight rail grooves and bulkhead plates. EXACT 4 columns by 4 rows, sixteen equal square texture cells, no borders, no gutters, no labels. These are FLAT ORTHOGRAPHIC MATERIAL TEXTURES that fill the ENTIRE square edge-to-edge, NOT isolated objects, NOT perspective scenes, NOT isometric. Row1: plain floor plate, grated floor, damaged floor, hazard-striped floor edge. Row2: plain wall panel, wall with pipe detail, wall vent, wall with small lit strip. Row3: closed split bulkhead door frontal fills square, ceiling conduits, maintenance hatch, heavy structural support. Row4: control terminal inset into wall, sealed glass containment window inset wall, broken damaged wall, reinforced reactor panel. Four separate floor variants, four separate wall variants. Consistent visual scale, limited rich palette, each square independently usable tile. No magenta no checkerboard no text, no UI. Keep architecture readable, variation subtle inside same theme."
+    },
+    {
+      "id": "research",
+      "prompt": "Use case: stylized-concept. A production game texture atlas for Scrapper pixel-art first-person corridors. Match reference texture art: sharp pixels, riveted industrial steel, hand-dithered depth. INFESTED RESEARCH: off-white and dark teal laboratory panels, ruptured green slime conduits, purple vines, failed containment glass, alien growth creeping into seams. EXACT 4 columns by 4 rows, sixteen equal square texture cells, no borders, no gutters, no labels. These are FLAT ORTHOGRAPHIC MATERIAL TEXTURES that fill the ENTIRE square edge-to-edge, NOT isolated objects, NOT perspective scenes, NOT isometric. Row1: plain floor plate, grated floor, damaged floor, hazard-striped floor edge. Row2: plain wall panel, wall with pipe detail, wall vent, wall with small lit strip. Row3: closed split bulkhead door frontal fills square, ceiling conduits, maintenance hatch, heavy structural support. Row4: control terminal inset into wall, sealed glass containment window inset wall, broken damaged wall, reinforced reactor panel. Four separate floor variants, four separate wall variants. Consistent visual scale, limited rich palette, each square independently usable tile. No magenta no checkerboard no text, no UI. Keep architecture readable, variation subtle inside same theme."
+    },
+    {
+      "id": "cryo",
+      "prompt": "Use case: stylized-concept. A production game texture atlas for Scrapper pixel-art first-person corridors. Match reference texture art: sharp pixels, riveted industrial steel, hand-dithered depth. FROZEN MAINTENANCE: blue-gray steel heavily rimed with ice, frosted pipes, broken pale blue glass, snow and ice accumulated on grates, orange hazard accents. EXACT 4 columns by 4 rows, sixteen equal square texture cells, no borders, no gutters, no labels. These are FLAT ORTHOGRAPHIC MATERIAL TEXTURES that fill the ENTIRE square edge-to-edge, NOT isolated objects, NOT perspective scenes, NOT isometric. Row1: plain floor plate, grated floor, damaged floor, hazard-striped floor edge. Row2: plain wall panel, wall with pipe detail, wall vent, wall with small lit strip. Row3: closed split bulkhead door frontal fills square, ceiling conduits, maintenance hatch, heavy structural support. Row4: control terminal inset into wall, sealed glass containment window inset wall, broken damaged wall, reinforced reactor panel. Four separate floor variants, four separate wall variants. Consistent visual scale, limited rich palette, each square independently usable tile. No magenta no checkerboard no text, no UI. Keep architecture readable, variation subtle inside same theme."
+    },
+    {
+      "id": "foundry",
+      "prompt": "Use case: stylized-concept. A production game texture atlas for Scrapper pixel-art first-person corridors. Match reference texture art: sharp pixels, riveted industrial steel, hand-dithered depth. REACTOR FOUNDRY: dark burgundy metal, copper conduits, furnace grates, amber heat vents, charred steel, orange-hot cracks and reactor shields. EXACT 4 columns by 4 rows, sixteen equal square texture cells, no borders, no gutters, no labels. These are FLAT ORTHOGRAPHIC MATERIAL TEXTURES that fill the ENTIRE square edge-to-edge, NOT isolated objects, NOT perspective scenes, NOT isometric. Row1: plain floor plate, grated floor, damaged floor, hazard-striped floor edge. Row2: plain wall panel, wall with pipe detail, wall vent, wall with small lit strip. Row3: closed split bulkhead door frontal fills square, ceiling conduits, maintenance hatch, heavy structural support. Row4: control terminal inset into wall, sealed glass containment window inset wall, broken damaged wall, reinforced reactor panel. Four separate floor variants, four separate wall variants. Consistent visual scale, limited rich palette, each square independently usable tile. No magenta no checkerboard no text, no UI. Keep architecture readable, variation subtle inside same theme."
+    }
+  ],
+  "effectPrompts": [
+    {
+      "id": "creature-bursts",
+      "prompt": "Use case: stylized-concept. Expand Scrapper's existing pixel-art effects using both references for style. Sprite sheet EXACT 8 columns x 4 rows, 32 same-size cells, flat solid #ff00ff background, NO checkerboard NO text NO borders. Each row is one DISTINCT CREATURE DEATH animation in 8 chronological frames, exploding outward then dissipating. Row1: purple chitin insect shatters into angular dark purple carapace pieces, cyan ichor jets and torn cream mandibles; jagged shards, not fire. Row2: green spitter alien sac ruptures into thick amber-yellow globules, stringy acid and splashed green membrane; lobed fluid balloon burst, not fire. Row3: violet signal alien collapses into a spiraling lavender spore cloud, pink tendril fragments and violet ribbons, then falling purple goo; distinct spiral silhouette, not fire. Row4: mechanical drone blows apart in orange sparks, cyan electrical arcs, dark gray metal panels and black oil droplets, with a brief small orange ignition at frame3; mechanical debris stays dark gray, not alien flesh. Every frame isolated with 12px margin. Pixel art, chunky hard edges, strong silhouettes and flat colors shaded with pixel clusters. No smooth airbrush, no bloom surrounding cells. Different fragment shapes, timing and colors in every row. Row1 cyan+purple, row2 amber+green, row3 purple+magenta, row4 orange+cyan+black. Preserve game's retro industrial palette."
+    },
+    {
+      "id": "colored-splatter",
+      "prompt": "Use case: precise-object-edit. Extend the existing green-splatter atlas with ADDITIONAL colored pixel-art goo decals for Scrapper. EXACT 4 columns x 4 rows, 16 equal square cells, SOLID FLAT #ff00ff magenta background, no checkerboard no labels no border. Maintain crisp pixel style and viscous liquid feel of reference. Row1 four varied CYAN alien ichor splashes: radial burst, long diagonal streak, hanging droplet smear, scattered globs. Row2 four AMBER-YELLOW acidic splatters with different jagged star and branching stringy shapes. Row3 four VIOLET-LAVENDER alien blood splashes, readable purple rather than chromakey-magenta, different crescents, sprays and thick pools. Row4 four dark almost-black blue MACHINE OIL splashes with charcoal-blue highlights and tiny orange metal flecks; different tarry smears and droplets. Each cell one separate irregular decal, fills 70% width, 12px margin. NO glow, NO aura, NO fireballs. These will stain visor and floors; retain distinct saturated and dark colors."
+    }
+  ],
+  "originalGenerationPaths": [
+    {
+      "key": "skitter",
+      "source": "generation-archive/exec-34f2811a-2cea-4049-be08-f47db50aa7eb.png"
+    },
+    {
+      "key": "spitter",
+      "source": "generation-archive/exec-1b0c7817-5bb9-4db0-9f70-77931b10a635.png"
+    },
+    {
+      "key": "bulwark",
+      "source": "generation-archive/exec-9b9b4b97-ca1a-480c-bac9-2de7c75a2d62.png"
+    },
+    {
+      "key": "screamer",
+      "source": "generation-archive/exec-1abbd8a6-f285-4967-ad50-4aa5678b6c7b.png"
+    },
+    {
+      "key": "warden",
+      "source": "generation-archive/exec-3bfa4116-a0e2-4406-9b48-5f90050d79df.png"
+    },
+    {
+      "key": "marshal",
+      "source": "generation-archive/exec-f9ce6614-f6e9-4306-8f82-d4b693b0744e.png"
+    },
+    {
+      "key": "matriarch",
+      "source": "generation-archive/exec-a0e3c925-2826-42a5-90e6-be9cbe9658e3.png"
+    },
+    {
+      "key": "parallax",
+      "source": "generation-archive/exec-3d6ef132-d0cc-4982-acb8-da6e81398ef6.png"
+    },
+    {
+      "key": "props",
+      "source": "generation-archive/exec-f5c7f32e-72a5-449a-82a9-d8582b0a678e.png"
+    },
+    {
+      "key": "hunter",
+      "source": "generation-archive/exec-7664ee05-b9bf-49d9-8fe4-6374a3cd97ef.png"
+    },
+    {
+      "key": "wipe-sticky",
+      "source": "generation-archive/exec-a7e6ab6c-fa46-4642-98b1-63f91c5042c7.png"
+    }
+  ],
+  "podAndPickupGenerationPaths": [
+    {
+      "id": "pod",
+      "path": "generation-archive/exec-4254904f-0d3e-48a6-ba80-c7f9e0a67c6a.png"
+    },
+    {
+      "id": "pickups",
+      "path": "generation-archive/exec-abc1f1af-aa8e-41b1-91a9-a977bce9072e.png"
+    }
+  ],
+  "selectedFinalGenerationPaths": [
+    {
+      "id": "env-transit",
+      "path": "generation-archive/exec-1e4a086d-6efe-4907-8feb-4fc4f24118da.png"
+    },
+    {
+      "id": "env-research",
+      "path": "generation-archive/exec-8b48083f-3ff1-4aa7-a699-27ec60796874.png"
+    },
+    {
+      "id": "env-cryo",
+      "path": "generation-archive/exec-1dec7e7c-1428-4d44-ab27-26168c29bcf9.png"
+    },
+    {
+      "id": "env-foundry",
+      "path": "generation-archive/exec-2a881fdf-0cad-4d7a-9c06-5a02abb08055.png"
+    },
+    {
+      "id": "reload-bolt",
+      "path": "generation-archive/exec-a0c9ae9c-0706-48ba-9f00-e9642d6d96b7.png"
+    },
+    {
+      "id": "reload-arc",
+      "path": "generation-archive/exec-dbdf89e5-1faf-4ef6-9925-ee970be0928c.png"
+    },
+    {
+      "id": "reload-beam",
+      "path": "generation-archive/exec-55882b02-edf4-4d38-84c0-3f6761a61b85.png"
+    },
+    {
+      "id": "reload-rockets",
+      "path": "generation-archive/exec-b1d1dd12-09b9-44d3-82b1-87a0a0353ed3.png"
+    },
+    {
+      "id": "reload-frost",
+      "path": "generation-archive/exec-17e00e5d-0590-4980-8cd0-9221c8799141.png"
+    },
+    {
+      "id": "reload-blades",
+      "path": "generation-archive/exec-946317b8-c0c5-485c-b030-4e15b5f7f331.png"
+    },
+    {
+      "id": "reload-flame",
+      "path": "generation-archive/exec-c155fc27-a89f-4475-866f-c63d5b72f0c9.png"
+    }
+  ],
+  "effectGenerationPaths": [
+    {
+      "id": "creature-bursts",
+      "path": "generation-archive/exec-9cd66ef9-ccb2-40b0-b78f-6c8ab5e854e5.png"
+    },
+    {
+      "id": "colored-splatter",
+      "path": "generation-archive/exec-e328c673-6589-4a59-8759-6742ef6bb69f.png"
+    }
+  ],
+  "notes": "Original generated images are preserved. The game renderer keys backgrounds, crops atlas cells, swaps sleeve colors, and applies the active goo palette at runtime. Older reload drafts were replaced by the two-hand grip sheets. The skitter and screamer sheets require the explicit row bounds in src/atlas.js."
+}

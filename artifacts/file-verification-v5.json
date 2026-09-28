@@ -1,0 +1,19 @@
+{
+  "assets": 79,
+  "build": "2026-09-28-original-wipe-story-v5",
+  "choicesRestored": true,
+  "chronologySurvivesArchiveRecovery": true,
+  "earlyPurgeNarration": true,
+  "earlyPurgeRecorded": true,
+  "historyRestored": true,
+  "httpRequests": [],
+  "journalRestored": true,
+  "laterWipeAbsent": true,
+  "loaded": true,
+  "originalEmbedded": true,
+  "pendingLogsRestored": true,
+  "ready": true,
+  "saved": true,
+  "stagedStationProps": 354,
+  "wipeSource": "assets/legacy/visor-wipe.png"
+}

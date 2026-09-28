@@ -1,0 +1,45 @@
+[
+  {
+    "id": "env-extra-transit",
+    "refs": [
+      "assets/generated/env-transit.png"
+    ],
+    "prompt": "Use case: style-reference. Extend this existing pixel-art environment tile set for a first-person retro FPS. Preserve EXACT gritty hand-painted limited palette pixel style, bolts and weathering, no smooth rendering. Make a flat orthographic 4 columns x 4 rows texture atlas, sixteen equal square tiles, no margins. Do not repeat the reference compositions. Theme abandoned cargo station: copper utility pipes, navy armored walls, grimy concrete, caution yellow, cyan consoles. Row 1 FOUR FLOOR materials: small checker plates, large stained stone slab, radial cross-braced grate, ribbed maintenance tread. Row 2 FOUR WALL materials: layered recessed cable trays, tall ceramic columns with riveted bracing, ribbed insulated duct, rounded pressure hatch panel. Row3 FOUR CEILING materials: recessed waffle cross beams, exposed hoses and conduits, wide ventilation fan housing, small clustered square light recesses. Row4 FOUR accent WALL tiles: mechanical gauge panel, cracked observation window into distinct themed machinery, intricate fuse cabinet, leaking pressure manifold. Distinct readable architecture texture patterns at gameplay distance. Paint each tile right to its square edge; no labels or borders beyond actual mechanical frames. No perspective, no text, no characters."
+  },
+  {
+    "id": "env-extra-research",
+    "refs": [
+      "assets/generated/env-research.png"
+    ],
+    "prompt": "Use case: style-reference. Extend this existing pixel-art environment tile set for a first-person retro FPS. Preserve EXACT gritty hand-painted limited palette pixel style, bolts and weathering, no smooth rendering. Make a flat orthographic 4 columns x 4 rows texture atlas, sixteen equal square tiles, no margins. Do not repeat the reference compositions. Theme infested botanical laboratory: antique ceramic tiles, tangled purple alien vines, humid green stains, amber specimen tanks. Row 1 FOUR FLOOR materials: small checker plates, large stained stone slab, radial cross-braced grate, ribbed maintenance tread. Row 2 FOUR WALL materials: layered recessed cable trays, tall ceramic columns with riveted bracing, ribbed insulated duct, rounded pressure hatch panel. Row3 FOUR CEILING materials: recessed waffle cross beams, exposed hoses and conduits, wide ventilation fan housing, small clustered square light recesses. Row4 FOUR accent WALL tiles: mechanical gauge panel, cracked observation window into distinct themed machinery, intricate fuse cabinet, leaking pressure manifold. Distinct readable architecture texture patterns at gameplay distance. Paint each tile right to its square edge; no labels or borders beyond actual mechanical frames. No perspective, no text, no characters."
+  },
+  {
+    "id": "env-extra-cryo",
+    "refs": [
+      "assets/generated/env-cryo.png"
+    ],
+    "prompt": "Use case: style-reference. Extend this existing pixel-art environment tile set for a first-person retro FPS. Preserve EXACT gritty hand-painted limited palette pixel style, bolts and weathering, no smooth rendering. Make a flat orthographic 4 columns x 4 rows texture atlas, sixteen equal square tiles, no margins. Do not repeat the reference compositions. Theme frozen industrial pumping plant: blue steel and cracked white frost, ribbed insulation, frozen glass, dark drainage grates. Row 1 FOUR FLOOR materials: small checker plates, large stained stone slab, radial cross-braced grate, ribbed maintenance tread. Row 2 FOUR WALL materials: layered recessed cable trays, tall ceramic columns with riveted bracing, ribbed insulated duct, rounded pressure hatch panel. Row3 FOUR CEILING materials: recessed waffle cross beams, exposed hoses and conduits, wide ventilation fan housing, small clustered square light recesses. Row4 FOUR accent WALL tiles: mechanical gauge panel, cracked observation window into distinct themed machinery, intricate fuse cabinet, leaking pressure manifold. Distinct readable architecture texture patterns at gameplay distance. Paint each tile right to its square edge; no labels or borders beyond actual mechanical frames. No perspective, no text, no characters."
+  },
+  {
+    "id": "env-extra-foundry",
+    "refs": [
+      "assets/generated/env-foundry.png"
+    ],
+    "prompt": "Use case: style-reference. Extend this existing pixel-art environment tile set for a first-person retro FPS. Preserve EXACT gritty hand-painted limited palette pixel style, bolts and weathering, no smooth rendering. Make a flat orthographic 4 columns x 4 rows texture atlas, sixteen equal square tiles, no margins. Do not repeat the reference compositions. Theme red-hot orbital smelter: blackened copper, hot orange slots, slag brick, ribbed heat shields. Row 1 FOUR FLOOR materials: small checker plates, large stained stone slab, radial cross-braced grate, ribbed maintenance tread. Row 2 FOUR WALL materials: layered recessed cable trays, tall ceramic columns with riveted bracing, ribbed insulated duct, rounded pressure hatch panel. Row3 FOUR CEILING materials: recessed waffle cross beams, exposed hoses and conduits, wide ventilation fan housing, small clustered square light recesses. Row4 FOUR accent WALL tiles: mechanical gauge panel, cracked observation window into distinct themed machinery, intricate fuse cabinet, leaking pressure manifold. Distinct readable architecture texture patterns at gameplay distance. Paint each tile right to its square edge; no labels or borders beyond actual mechanical frames. No perspective, no text, no characters."
+  },
+  {
+    "id": "station-motion",
+    "refs": [
+      "assets/generated/env-transit.png"
+    ],
+    "prompt": "Use case: style-reference. Matching this gritty painted pixel space station, create sprite animation sheet EXACTLY 8 columns by 4 rows. Equal square cells with flat magenta #ff00ff key, small margin. Row1 eight frames of a circular industrial ventilation fan turning, FRONT face. Row2 eight frames of broken pipe spewing translucent white STEAM curls. Row3 eight frames of rusty riveted computer panel with cyan radar sweeping and orange blinking little LEDs. Row4 eight frames of green purple alien tendrils inflating and releasing spore motes. These are environmental billboards; all front-facing, centered, identical baseline, no background, no labels or grid. Detailed hard pixel contours consistent with original game, no voxels, no smoothing."
+  },
+  {
+    "id": "puzzle-devices",
+    "refs": [
+      "assets/generated/pickups.png",
+      "assets/generated/env-transit.png"
+    ],
+    "prompt": "Use case: style-reference. Create exact 8 columns x 8 rows pixel-art animation sheet of seven futuristic SALVAGE PUZZLE devices and one extra. Every row has eight frames of one object subtly blinking or mechanically cycling. Flat magenta key #ff00ff no margins no text no grid. Match detailed painted pixel mechanical art reference. Row1 removable bright AMBER cylindrical electric power COUPLER with black grips, eight idle pulses. Row2 low navy steel pedestal with TWO hollow coupler sockets, lights. Row3 rusty upright PRESSURE VALVE WHEEL on a squat pedestal, turns incrementally, needle gauge. Row4 squat metal pedestal with a tilted silver MIRROR and cyan lens, reflector slowly glints. Row5 riveted timing console with three AMBER AND GREEN lights blinking. Row6 industrial PRESSURE PUMP with a yellow handle and blue canister, cycles down and up. Row7 upright COOLANT RETURN VALVE, teal handwheel and small blue pipes. Row8 little portable repair beacon with red-cross light blinking. Every object seen frontally, entire object in cell, identical size across each row, alpha-key magenta background. 8 by 8 exact grid, eight distinct evenly spaced horizontal rows, prioritize correct grid. Crisp pixels, dark outlines, no cubes, no smooth 3D."
+  }
+]

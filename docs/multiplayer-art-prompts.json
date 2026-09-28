@@ -1,0 +1,399 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "crew-rook-bolt",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the FIRST weapon in the upper row: slim gray-black cyan ION CARBINE with glowing cyan chamber in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-arc",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the SECOND weapon in the upper row: gray-black purple ARC RELAY with violet barrel coil and capacitor in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-beam",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the THIRD weapon in the upper row: orange PRISM BEAM with amber triangular muzzle crystal in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-rockets",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the FOURTH weapon in the upper row: chunky COMET RACK with three visible orange-tipped rockets in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-frost",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the FIFTH weapon in the upper row: cyan CRYO SPINDLE with pale blue cylinder and perforated gray muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-blades",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the SIXTH weapon in the upper row: MOON BLADES launcher with two violet crescent discs in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-rook-flame",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ROOK, the original ORANGE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack, carrying the SEVENTH weapon in the upper row: orange SOLAR TORCH with thick fuel canister and perforated flamethrower muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-bolt",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the FIRST weapon in the upper row: slim gray-black cyan ION CARBINE with glowing cyan chamber in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-arc",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the SECOND weapon in the upper row: gray-black purple ARC RELAY with violet barrel coil and capacitor in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-beam",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the THIRD weapon in the upper row: orange PRISM BEAM with amber triangular muzzle crystal in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-rockets",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the FOURTH weapon in the upper row: chunky COMET RACK with three visible orange-tipped rockets in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-frost",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the FIFTH weapon in the upper row: cyan CRYO SPINDLE with pale blue cylinder and perforated gray muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-blades",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the SIXTH weapon in the upper row: MOON BLADES launcher with two violet crescent discs in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-echo-flame",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY ECHO, the original PURPLE armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but purple shell armor, carrying the SEVENTH weapon in the upper row: orange SOLAR TORCH with thick fuel canister and perforated flamethrower muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-bolt",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the FIRST weapon in the upper row: slim gray-black cyan ION CARBINE with glowing cyan chamber in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-arc",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the SECOND weapon in the upper row: gray-black purple ARC RELAY with violet barrel coil and capacitor in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-beam",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the THIRD weapon in the upper row: orange PRISM BEAM with amber triangular muzzle crystal in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-rockets",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the FOURTH weapon in the upper row: chunky COMET RACK with three visible orange-tipped rockets in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-frost",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the FIFTH weapon in the upper row: cyan CRYO SPINDLE with pale blue cylinder and perforated gray muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-blades",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the SIXTH weapon in the upper row: MOON BLADES launcher with two violet crescent discs in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-flint-flame",
+      "refs": [
+        "assets/legacy/sprites.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY FLINT, the original TEAL GREEN armored salvager with cyan sealed visor, dark knee plates, heavy boots and square backpack. Same equipment silhouette as the original orange suit, but teal green shell armor, carrying the SEVENTH weapon in the upper row: orange SOLAR TORCH with thick fuel canister and perforated flamethrower muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-bolt",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the FIRST weapon in the upper row: slim gray-black cyan ION CARBINE with glowing cyan chamber in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-arc",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the SECOND weapon in the upper row: gray-black purple ARC RELAY with violet barrel coil and capacitor in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-beam",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the THIRD weapon in the upper row: orange PRISM BEAM with amber triangular muzzle crystal in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-rockets",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the FOURTH weapon in the upper row: chunky COMET RACK with three visible orange-tipped rockets in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-frost",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the FIFTH weapon in the upper row: cyan CRYO SPINDLE with pale blue cylinder and perforated gray muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-blades",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the SIXTH weapon in the upper row: MOON BLADES launcher with two violet crescent discs in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    },
+    {
+      "id": "crew-eos-flame",
+      "refs": [
+        "assets/legacy/story-portraits.png",
+        "assets/generated/pickups.png",
+        "assets/legacy/rook-directions.png"
+      ],
+      "prompt": "Use case: identity-preserve. Production multiplayer character SPRITE SHEET for this existing pixel-art game. Input1 is character identity, input2 is weapon identity, input3 shows original suit proportions and directional style. Subject ONLY EOS, the AI character: weathered WHITE/SILVER mechanical armored humanoid recovery body, round helmet with glowing cyan holographic woman's face from the BOTTOM ROW of reference image 1, black joints, cyan status lights and steel backpack. Preserve her AI identity, carrying the SEVENTH weapon in the upper row: orange SOLAR TORCH with thick fuel canister and perforated flamethrower muzzle in BOTH hands, left support hand under the barrel. Body and weapon rotate TOGETHER. Preserve original pixel art, rough painted armor, bright cyan visor and hard black contours. No new weapon designs. Output SQUARE 1536x1536 with EXACTLY EIGHT columns and EIGHT rows of equal 192x192 cells, all 64 cells used. FOUR walk cycle poses at SIXTEEN distinct directions around 360 degrees. Read row pairs: Rows1-2 WALK POSE A (left foot forward), rows3-4 WALK POSE B (passing feet), rows5-6 WALK POSE C (right foot forward), rows7-8 WALK POSE D (passing feet). Each row pair gives the SAME sixteen evenly spaced directions: first row left-to-right 0/front toward camera, 22.5/front-right, 45/front-right, 67.5/almost right, 90/right profile, 112.5/rear-right, 135/rear-right, 157.5/almost back; second row left-to-right 180/back away camera, 202.5/rear-left, 225/rear-left, 247.5/almost left, 270/left profile, 292.5/front-left, 315/front-left, 337.5/almost front. Front views aim the muzzle toward the viewer; back views show backpack and weapon mostly occluded; side views show the weapon foreshortening appropriately. Keep all character feet on the same baseline within each cell, same scale, centered, entire body and barrel fit with padding. Four leg poses must visibly alternate, torso stable. PERFECTLY FLAT key magenta #ff00ff background. No gridlines, labels, text, shadow on backdrop or checkerboard. No smooth 3D, no voxel cubes. Do not omit or repeat directions."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "crew-rook-arc",
+      "source": "generation-archive/exec-c2262dc7-3560-48d2-8191-54adfd37407a.png",
+      "path": "assets/generated/crew-rook-arc.png"
+    },
+    {
+      "id": "crew-rook-bolt",
+      "source": "generation-archive/exec-99ed281b-fa9d-4ccf-964f-7d717e8507b7.png",
+      "path": "assets/generated/crew-rook-bolt.png"
+    },
+    {
+      "id": "crew-rook-frost",
+      "source": "generation-archive/exec-47162496-c154-408b-a6db-e74706f6d455.png",
+      "path": "assets/generated/crew-rook-frost.png"
+    },
+    {
+      "id": "crew-rook-beam",
+      "source": "generation-archive/exec-17a1a568-1332-47d5-8f02-bd866eb306aa.png",
+      "path": "assets/generated/crew-rook-beam.png"
+    },
+    {
+      "id": "crew-rook-blades",
+      "source": "generation-archive/exec-ac469e07-ec7e-4525-a9ad-dbb73b5e2cdb.png",
+      "path": "assets/generated/crew-rook-blades.png"
+    },
+    {
+      "id": "crew-rook-flame",
+      "source": "generation-archive/exec-7fbcade3-7e0d-47d1-9363-30cdd812a519.png",
+      "path": "assets/generated/crew-rook-flame.png"
+    },
+    {
+      "id": "crew-rook-rockets",
+      "source": "generation-archive/exec-31a872b7-4137-49af-bed6-5cef4a39b751.png",
+      "path": "assets/generated/crew-rook-rockets.png"
+    },
+    {
+      "id": "crew-echo-bolt",
+      "source": "generation-archive/exec-29d715b9-efb3-400f-9667-3def4262a8a4.png",
+      "path": "assets/generated/crew-echo-bolt.png"
+    },
+    {
+      "id": "crew-echo-rockets",
+      "source": "generation-archive/exec-af5c94b1-92cc-45a7-a3e9-558c2bded6bd.png",
+      "path": "assets/generated/crew-echo-rockets.png"
+    },
+    {
+      "id": "crew-echo-arc",
+      "source": "generation-archive/exec-64973a63-0c1e-4378-a2e2-a49af1aee6e6.png",
+      "path": "assets/generated/crew-echo-arc.png"
+    },
+    {
+      "id": "crew-echo-frost",
+      "source": "generation-archive/exec-0ca72497-8e63-4444-907c-e81727ea89cb.png",
+      "path": "assets/generated/crew-echo-frost.png"
+    },
+    {
+      "id": "crew-echo-beam",
+      "source": "generation-archive/exec-91c79e1b-6573-4bad-83fe-441335a9bfb5.png",
+      "path": "assets/generated/crew-echo-beam.png"
+    },
+    {
+      "id": "crew-echo-blades",
+      "source": "generation-archive/exec-63b41124-75e0-44bb-b738-61d79f0c1dee.png",
+      "path": "assets/generated/crew-echo-blades.png"
+    },
+    {
+      "id": "crew-flint-arc",
+      "source": "generation-archive/exec-8b7df698-3a2e-4af9-9413-e9312cec5904.png",
+      "path": "assets/generated/crew-flint-arc.png"
+    },
+    {
+      "id": "crew-echo-flame",
+      "source": "generation-archive/exec-15223d69-e15c-4d5f-a144-720c5a32e531.png",
+      "path": "assets/generated/crew-echo-flame.png"
+    },
+    {
+      "id": "crew-flint-beam",
+      "source": "generation-archive/exec-29060bbf-37b9-4a3c-bfac-eeccad786ce2.png",
+      "path": "assets/generated/crew-flint-beam.png"
+    },
+    {
+      "id": "crew-flint-bolt",
+      "source": "generation-archive/exec-a742672e-3215-4827-a4b2-aa45f66aea6b.png",
+      "path": "assets/generated/crew-flint-bolt.png"
+    },
+    {
+      "id": "crew-flint-rockets",
+      "source": "generation-archive/exec-e80d705f-c7fa-41b7-93cd-65df7ccaeaa5.png",
+      "path": "assets/generated/crew-flint-rockets.png"
+    },
+    {
+      "id": "crew-eos-bolt",
+      "source": "generation-archive/exec-14a02806-f007-4b64-b38f-810fcf52d4e3.png",
+      "path": "assets/generated/crew-eos-bolt.png"
+    },
+    {
+      "id": "crew-flint-frost",
+      "source": "generation-archive/exec-58665810-da97-4599-9e2d-55a134a689c1.png",
+      "path": "assets/generated/crew-flint-frost.png"
+    },
+    {
+      "id": "crew-eos-arc",
+      "source": "generation-archive/exec-04323658-06a9-4089-8d06-a815e48318eb.png",
+      "path": "assets/generated/crew-eos-arc.png"
+    },
+    {
+      "id": "crew-flint-blades",
+      "source": "generation-archive/exec-c4075948-83e9-43b5-a98a-07c08a752767.png",
+      "path": "assets/generated/crew-flint-blades.png"
+    },
+    {
+      "id": "crew-eos-beam",
+      "source": "generation-archive/exec-97df6000-77a4-4072-ac16-caf50c38ff3c.png",
+      "path": "assets/generated/crew-eos-beam.png"
+    },
+    {
+      "id": "crew-flint-flame",
+      "source": "generation-archive/exec-2e245711-4608-47ad-acec-a396ed89edd1.png",
+      "path": "assets/generated/crew-flint-flame.png"
+    },
+    {
+      "id": "crew-eos-rockets",
+      "source": "generation-archive/exec-0f66b5f6-6fea-481c-89d7-f81969cca7e1.png",
+      "path": "assets/generated/crew-eos-rockets.png"
+    },
+    {
+      "id": "crew-eos-frost",
+      "source": "generation-archive/exec-4d408573-219b-46ee-aa8d-883a42d9bfac.png",
+      "path": "assets/generated/crew-eos-frost.png"
+    },
+    {
+      "id": "crew-eos-blades",
+      "source": "generation-archive/exec-d47ddac6-c4ba-43a0-8d28-a3f32d993d1a.png",
+      "path": "assets/generated/crew-eos-blades.png"
+    },
+    {
+      "id": "crew-eos-flame",
+      "source": "generation-archive/exec-57485a4c-a636-4f83-aeaa-77d373b8c52c.png",
+      "path": "assets/generated/crew-eos-flame.png"
+    }
+  ]
+}

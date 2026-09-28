@@ -1,0 +1,152 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "original-beetle",
+      "ref": "assets/legacy/sprites.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: upper-right purple six-legged beetle with a domed spiny violet shell, amber eyes, and long purple front mandibles. Attack choreography: mandibles part, legs crouch, then snaps and lunges forward; cyan internal fluid. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-crawler",
+      "ref": "assets/legacy/sprites.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: lower-left orange/red spherical spiny crawler with a black circular central mouth, amber interior, and long thin red legs. Attack choreography: spines flare, core swells then discharges a fiery seed; collapses into orange shell fragments. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-drone",
+      "ref": "assets/legacy/sprites.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: bottom row second character: floating dark-steel spherical sentinel with cyan circular lens and four short symmetrical metal projections. Attack choreography: lens shutters open, cyan capacitor charges, then fires a cyan electric burst; shorts out and falls apart. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-tank",
+      "ref": "assets/legacy/sprites.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: bottom row third character: broad heavy purple armored crab/brute, orange glowing crest, cyan mouth and large purple front claws. Attack choreography: rears and raises both huge claws, then slams down with force; cracks and slumps. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-jelly",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: upper-left bright blue and cyan medusa with a bulbous glowing dome and multiple long curled tentacles. Attack choreography: tentacles coil upward, dome charges bright cyan, then electrical discharge with all tentacles flared. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-scorpion",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: upper row second creature: red-orange rust scorpion with huge twin claws and a long curled segmented stinger tail. Attack choreography: claws spread, tail draws back, then emphatic downward stinger strike. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-priest",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: upper row third creature: ivory skeletal Spore Oracle with horned bone mask, black oval face with violet center, purple abdomen and four thin limbs. Attack choreography: bone arms open, violet core swells, then releases circular spores. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-bat",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: upper-right purple bat with large pink membrane wings, horned head, amber eyes and blue-violet chest. Attack choreography: six-frame wingbeat, folds wings then dives with jaws open and claws reaching. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-worm",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: second row far-left green bile worm with long curved segmented body, amber dorsal nodules and a small tusked head, green drool. Attack choreography: segments bunch, neck rears, jaw spreads and spits a green bile glob. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "original-spider",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: second row second creature: gray-steel mechanical six-legged spider, dark jointed legs, orange nodes and forward pointing orange cannon. Attack choreography: legs brace, cannon retracts to charge then recoils from three powerful cannon shots. All 36 cells contain only this same creature."
+    },
+    {
+      "id": "attack-vfx",
+      "ref": "assets/legacy/combat-bursts.png",
+      "prompt": "Use case: style-transfer. Asset type: pixel-art combat VFX sprite sheet for this existing game. Reference is the game's original painted pixel explosion style. Create a SQUARE 1536x1536 atlas with EXACTLY EIGHT equal columns and EIGHT equal rows, 64 192x192 cells, on perfectly flat #ff00ff magenta key background, no grid lines or text. Each row eight animation frames left-to-right. Row 1 green acid glob with irregular wet trailing droplets, looping. Row 2 violet spore/needle projectile with jagged tail, looping. Row 3 cyan electric plasma projectile crackling, looping. Row 4 orange burning seed/fire projectile, looping. Row 5 top-down circular ragged white/gray shockwave ring expanding and dissolving, ring fits entirely in each cell. Row 6 horizontal white/gray energy beam between left and right edges in every cell, narrow jagged lightning and heated core with animated irregular edges, no arrows. Row 7 white/gray impact sparks and fluid bursts, explosion progression. Row 8 white/gray irregular spinning liquid droplets and tiny curved torn shell fragments, animation progression. White rows will be tinted by the game. Retain dense textured 1990s shooter pixel clusters, black contour pixels, colorful highlights. Flat illustrated sprites only, never voxel cubes or low-poly shapes. Keep cell grid exact and every effect within its cell."
+    },
+    {
+      "id": "original-overseer",
+      "ref": "assets/legacy/sprites.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: ONLY the lower-right huge dark teal armored floating orb from the reference, with central black open circular mouth rimmed in orange, gray-blue segmented armor, orange plates, long curled violet-black tentacles. Preserve this original enemy. Attack choreography: tentacles coil backward, central mouth opens and builds violet plasma, then fires a massive volley while tentacles lash; on death its armor fractures, tentacles collapse and it leaves a mechanical/organic husk. All 36 cells contain this one original boss. No other characters."
+    },
+    {
+      "id": "attack-vfx-front",
+      "ref": "assets/generated/attack-vfx.png",
+      "prompt": "Use case: precise-object-edit. Asset type: replacement game projectile/effects atlas. The provided atlas is the style and grid reference. Preserve EXACTLY the 8 columns by 8 rows, solid #ff00ff background, illustrated pixel texture, palette, and dark outlines. Change rows 1 through 4 ONLY to DIRECTLY FRONT-FACING projectiles flying STRAIGHT INTO THE CAMERA. These must be end-on views: round uneven green acid glob faces with radial surrounding droplets in row1, violet spore spear TIP aimed into camera with foreshortened shards radiating behind it in row2, spherical cyan lightning core with radial branches row3, turbulent orange fireball FRONT with embers radiating behind it row4. All eight cells in each of these four rows are successive pulsing/spinning LOOP frames of that same head-on projectile, centered at identical size with no directional sideways tails. Think seeing the nose of a projectile as it approaches your face in a first person shooter. Rows 5 through 8 stay the shockwave ring, horizontal beam strip, impact splash, and debris animations as supplied. Do NOT turn any projectile sideways. No side-view streaks in the first four rows. No perspective scene, text, cube particles or 3D renders. Square 1536x1536 production sheet."
+    },
+    {
+      "id": "original-hit-gore",
+      "ref": "assets/legacy/monsters-loot.png",
+      "prompt": "Use case: style-transfer. Asset type: elaborate hit and destruction pixel-art VFX sheet for the original creatures in the reference. Square 1536x1536, EXACTLY EIGHT columns and EIGHT equal rows of 192x192, no grid or text. Flat uniform key magenta #ff00ff backdrop. Each row eight successive frames of a violent illustrated impact/spewing explosion aimed toward the viewer, tiny starting hit in frame1, blooming front-facing burst in 2-4, flying irregular tissue, droplets and fragments in 5-7, scattered scraps in8. Row1 cyan blood with violet BEETLE shell and mandible shards. Row2 amber orange blood with red CRAWLER spines and burst sacs. Row3 thick lime blood with chunky purple BRUTE carapace plates. Row4 violet blood with ivory ORACLE bone fragments and torn magenta BAT membranes. Row5 viscous green WORM fluid with curling green segment scraps. Row6 luminous cyan MEDUSA fluid with severed thin blue curling tendrils. Row7 amber blood and large rust red SCORPION claw/stinger fragments. Row8 black blue OIL, orange sparks, gray mechanical SPIDER/SENTINEL metal plates and copper wires. DISTINCT SILHOUETTES AND COLORS PER ROW. Irregular pointed or curved pixels, textured chunky classic shooter art matching original reference, sharp dark contours. No cube voxels, no square confetti, no generic smoke balls. Keep all particles in their own cell with wide magenta gutters. No whole intact characters, only their hit/destruction effects."
+    },
+    {
+      "id": "original-overseer",
+      "ref": "assets/generated/original-overseer.png",
+      "prompt": "Use case: identity-preserve. Asset type: production pixel-art sprite animation sheet for an existing first-person shooter. Input image 1 is the character identity reference. Extend ONLY the specified original creature into animation frames; faithfully preserve its exact silhouette, materials, colors, eyes, appendages, outline and 1990s textured pixel style. Do not redesign it. Output a SQUARE 1536x1536 sprite sheet with EXACTLY SIX equal columns and SIX equal rows, 36 cells. Each cell is 256x256. SAME frontal slightly elevated view and SAME body scale and baseline in every cell, generous empty padding, no cropping. Rows top to bottom: 1 six idle breathing frames; 2 six walking or hovering motion frames; 3 six attack anticipation frames; 4 six attack action and recovery frames; 5 six hit reaction frames; 6 six death/collapse frames ending in a husk. Read each row left to right. Background solid flat key-magenta #ff00ff, no checkerboard, no labels, no gridlines, no shadows on backdrop. Sharp pixel clusters, dark outlines, no smooth 3D rendering, no cubes. Subject: ONLY the lower-right huge dark teal armored floating orb from the reference, with central black open circular mouth rimmed in orange, gray-blue segmented armor, orange plates, long curled violet-black tentacles. Preserve this original enemy. Attack choreography: tentacles coil backward, central mouth opens and builds violet plasma, then fires a massive volley while tentacles lash; on death its armor fractures, tentacles collapse and it leaves a mechanical/organic husk. All 36 cells contain this one original boss. No other characters. CORRECTION TO THE PROVIDED EXISTING SHEET: it is viewed from a side angle. Redraw ALL cells with the monster facing DIRECTLY INTO THE CAMERA, central huge circular orange-rimmed black mouth exactly in the horizontal center, armor foreshortened symmetrically around it, curled purple tentacles radiating behind. Preserve its original armor plates, teal/black steel, orange nodes and violet tentacles. The attack row must show shots firing straight OUT OF THE IMAGE at the player, front-on circular purple plasma, never to the left or right. Six equal columns, six equal rows, same action row order. Do not copy the sideways perspective of the reference. Keep exact uniform key magenta backdrop."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "original-beetle",
+      "path": "assets/generated/original-beetle.png",
+      "source": "generation-archive/exec-4272ae28-331d-4f1c-be95-567360c4383f.png"
+    },
+    {
+      "id": "original-jelly",
+      "path": "assets/generated/original-jelly.png",
+      "source": "generation-archive/exec-d38c7701-b78c-4e70-959a-eb96442b4744.png"
+    },
+    {
+      "id": "original-crawler",
+      "path": "assets/generated/original-crawler.png",
+      "source": "generation-archive/exec-540ea3e8-34e3-4041-969a-a97c8e7b1da1.png"
+    },
+    {
+      "id": "original-scorpion",
+      "path": "assets/generated/original-scorpion.png",
+      "source": "generation-archive/exec-46fbcab9-7940-4089-aaa1-397052b6b06f.png"
+    },
+    {
+      "id": "original-drone",
+      "path": "assets/generated/original-drone.png",
+      "source": "generation-archive/exec-f96a324c-cb30-4572-bbd9-fd9e7dc36b62.png"
+    },
+    {
+      "id": "original-priest",
+      "path": "assets/generated/original-priest.png",
+      "source": "generation-archive/exec-e5e1b986-8ef7-44f7-afde-1b6e2d81c64e.png"
+    },
+    {
+      "id": "original-tank",
+      "path": "assets/generated/original-tank.png",
+      "source": "generation-archive/exec-fb98845d-2707-4a2f-b32e-5528bb116008.png"
+    },
+    {
+      "id": "original-spider",
+      "path": "assets/generated/original-spider.png",
+      "source": "generation-archive/exec-08b54d56-0550-4e48-b6a4-9cd0f23ce801.png"
+    },
+    {
+      "id": "original-bat",
+      "path": "assets/generated/original-bat.png",
+      "source": "generation-archive/exec-dec1bed3-2241-4005-8269-8ce964945865.png"
+    },
+    {
+      "id": "original-worm",
+      "path": "assets/generated/original-worm.png",
+      "source": "generation-archive/exec-820ced9c-7673-4038-a35a-d9007f446e44.png"
+    },
+    {
+      "id": "attack-vfx",
+      "path": "assets/generated/attack-vfx.png",
+      "source": "generation-archive/exec-00053e6f-6abb-452a-b37a-79d58b78ea05.png"
+    },
+    {
+      "id": "attack-vfx-front",
+      "path": "assets/generated/attack-vfx-front.png",
+      "source": "generation-archive/exec-1c1aaece-5dc7-4da1-bfa2-83f2853c58a4.png"
+    },
+    {
+      "id": "original-hit-gore",
+      "path": "assets/generated/original-hit-gore.png",
+      "source": "generation-archive/exec-03c7309c-2eab-4e6d-8eb1-8dfe0494adf6.png"
+    },
+    {
+      "id": "original-overseer",
+      "path": "assets/generated/original-overseer.png",
+      "source": "generation-archive/exec-f5e05c45-5c0e-484e-8d47-84d4f4026ae5.png"
+    }
+  ]
+}
