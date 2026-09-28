@@ -21,7 +21,7 @@ export class RouteGuide{
  update(player,goal,dt){
   this.timer-=dt;this.portal=null;this.action='';if(!goal){this.route=[];this.next=null;this.distance=0;this.status='idle';return;}
   const goalKey=[goal.id||'',goal.x,goal.z,goal.y??0].join(':'),playerKey=location(player),gates=this.world.gates?.map(g=>+g.open).join('')||'';
-  if(this.timer<=0||goalKey!==this.goalKey||playerKey!==this.playerKey||gates!==this.gates){this.goalKey=goalKey;this.playerKey=playerKey;this.gates=gates;this.timer=.35;this.plan(player,goal);}
+  if(goalKey!==this.goalKey||playerKey!==this.playerKey||gates!==this.gates||this.timer<=0&&this.world.at(player.x,player.z,player.y)?.liftId){this.goalKey=goalKey;this.playerKey=playerKey;this.gates=gates;this.timer=.35;this.plan(player,goal);}
   this.next=null;if(!this.route.length){this.distance=0;this.status='blocked';return;}
   const currentCell=this.world.at(player.x,player.z,player.y),liftId=currentCell?.liftId;
   if(liftId)for(const p of this.route)if(p.liftId===liftId)p.y=player.y;

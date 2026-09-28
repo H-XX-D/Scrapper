@@ -1,0 +1,62 @@
+{
+  "local": {
+    "attached": true,
+    "frame": {
+      "col": 1,
+      "direction": 8,
+      "pilot": "eos",
+      "row": 3,
+      "sheet": "crewGrab",
+      "step": 0,
+      "weapon": "bolt"
+    },
+    "opacity": 1,
+    "point": [
+      -9.768081790572571e-15,
+      0.07540654153170705,
+      0.9590652126155962
+    ],
+    "position": [
+      129,
+      0,
+      229
+    ],
+    "scale": [
+      2.6,
+      2.6,
+      1
+    ],
+    "textureSize": [
+      256,
+      256
+    ],
+    "visible": true
+  },
+  "patch": 1363,
+  "player": {
+    "grab": {
+      "age": 0.24999999999999997,
+      "lastDirection": "",
+      "lastInput": -1,
+      "nextDamage": 1,
+      "patch": 1363,
+      "steps": 0
+    },
+    "grabImmune": 0,
+    "grabRecovery": 0,
+    "grounded": true,
+    "hp": 1000,
+    "hurtCooldown": 0.9000000000000032,
+    "pitch": 0,
+    "safe": {
+      "x": 129,
+      "y": 0,
+      "z": 229
+    },
+    "vy": 0,
+    "x": 129,
+    "y": 0,
+    "yaw": 0,
+    "z": 229
+  }
+}

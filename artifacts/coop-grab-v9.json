@@ -1,0 +1,86 @@
+{
+  "after": {
+    "grab": null,
+    "grabImmune": 2.583399999999963,
+    "grabRecovery": 0,
+    "grabRelease": "escaped",
+    "grounded": true,
+    "hp": 99952,
+    "hurtCooldown": 0.10339999999996506,
+    "pitch": 0,
+    "safe": {
+      "x": 147.9,
+      "y": 0,
+      "z": 230.5079
+    },
+    "vy": 0,
+    "x": 147.9,
+    "y": 0,
+    "yaw": 0,
+    "z": 230.5079
+  },
+  "before": {
+    "localSprite": {
+      "attached": true,
+      "frame": {
+        "col": 0,
+        "direction": 8,
+        "pilot": "echo",
+        "row": 1,
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "opacity": 1,
+      "point": [
+        -3.0906821290483265e-15,
+        0.07540654153170642,
+        0.9590652126155964
+      ],
+      "position": [
+        147.9,
+        0,
+        231
+      ],
+      "scale": [
+        2.6,
+        2.6,
+        1
+      ],
+      "textureSize": [
+        256,
+        256
+      ],
+      "visible": true
+    },
+    "player": {
+      "grab": {
+        "age": 0.11659999999997672,
+        "lastDirection": "",
+        "lastInput": -1,
+        "nextDamage": 1,
+        "patch": 836,
+        "steps": 0
+      },
+      "grabImmune": 0,
+      "grabRecovery": 0,
+      "grounded": true,
+      "hp": 99988,
+      "hurtCooldown": 0,
+      "pitch": 0,
+      "safe": {
+        "x": 147.9,
+        "y": 0,
+        "z": 231
+      },
+      "vy": 0,
+      "x": 147.9,
+      "y": 0,
+      "yaw": 0,
+      "z": 231
+    }
+  },
+  "net": {
+    "frames": 1754,
+    "rtt": 7
+  }
+}

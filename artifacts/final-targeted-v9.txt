@@ -1,0 +1,19 @@
+✔ standalone export contains executable scripts and embeds every requested asset (1991.540583ms)
+✔ wall colonies are deterministic, attach to walls and leave mission terminals clear (1254.709708ms)
+✔ unattended growth matures and spreads within a bounded population; dead patches do not regrow (143.466167ms)
+✔ flame clears infestation faster; saves restore spreading timers and destroyed husks exactly (72.673458ms)
+✔ FFA has no spreading colonies and sustained combat lights track flame and area effects (81.967333ms)
+✔ every strain and mounting surface warns before grabbing, then accepts alternating movement (1.741708ms)
+✔ holding one key does not rapidly escape, timeout is bounded, and walls or dodging defeat a strike (0.17775ms)
+✔ destroyed colonies free a co-op captive; snapshots preserve an in-progress struggle (0.501ms)
+✔ bosses and mini bosses remember a sensed player beyond normal acquisition range (0.40925ms)
+✔ vertical neighbours and stair risers cannot create see-through wall intervals (0.286167ms)
+✔ all chapters keep solid devices reachable and eliminate shallow overlapping stair decks (1935.89375ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2089.386916
