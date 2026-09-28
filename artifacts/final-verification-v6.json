@@ -1,0 +1,209 @@
+{
+  "build": "2026-09-28-compass-contacts-v6",
+  "artifact": "exports/Scrapper-Playable-v6.html",
+  "bytes": 243433119,
+  "sha256": "b4ddb9e82129b5ac771f2a8f0ce8776aff51f2156650c032f433041eb4560786",
+  "aliasMatches": true,
+  "checks": {
+    "nodeTests": 70,
+    "failures": 0,
+    "syntax": "passed",
+    "sharedRouteChapterConfigurations": 24
+  },
+  "compass": {
+    "limit": 20,
+    "currentObjectiveReserved": true,
+    "colors": {
+      "objective": "blue",
+      "suppliesAndDiscoveredSecrets": "yellow",
+      "enemy": "red"
+    },
+    "objectivesAndSuppliesUseWalkableRoutes": true
+  },
+  "browser": {
+    "errors": [],
+    "initialEnemyIds": [
+      "enemy:185",
+      "enemy:171",
+      "enemy:193",
+      "enemy:191",
+      "enemy:186",
+      "enemy:188",
+      "enemy:184",
+      "enemy:187",
+      "enemy:189",
+      "enemy:192",
+      "enemy:190",
+      "enemy:170"
+    ],
+    "states": [
+      {
+        "allTicksInside": true,
+        "count": 20,
+        "domCount": 20,
+        "primary": {
+          "action": "PASSAGE",
+          "distance": 42,
+          "edge": "",
+          "elevation": 0,
+          "id": "main",
+          "kind": "objective",
+          "label": "TOGGLE ADJACENT FUSES",
+          "lane": 0,
+          "next": {
+            "link": "arrival:hall",
+            "room": "passage",
+            "stair": false,
+            "x": 161,
+            "y": 0,
+            "z": 261
+          },
+          "primary": true,
+          "relative": 0,
+          "routeDistance": 42,
+          "x": 50,
+          "y": 0,
+          "z": 235
+        },
+        "red": 12,
+        "yaw": 0
+      },
+      {
+        "allTicksInside": true,
+        "count": 20,
+        "domCount": 20,
+        "primary": {
+          "action": "PASSAGE",
+          "distance": 42,
+          "edge": "",
+          "elevation": 0,
+          "id": "main",
+          "kind": "objective",
+          "label": "TOGGLE ADJACENT FUSES",
+          "lane": 0,
+          "next": {
+            "link": "arrival:hall",
+            "room": "passage",
+            "stair": false,
+            "x": 161,
+            "y": 0,
+            "z": 261
+          },
+          "primary": true,
+          "relative": -1.5707963267948966,
+          "routeDistance": 42,
+          "x": 98,
+          "y": 0,
+          "z": 235
+        },
+        "red": 12,
+        "yaw": 1.5707963267948966
+      },
+      {
+        "allTicksInside": true,
+        "count": 20,
+        "domCount": 20,
+        "primary": {
+          "action": "PASSAGE",
+          "distance": 42,
+          "edge": "right",
+          "elevation": 0,
+          "id": "main",
+          "kind": "objective",
+          "label": "TOGGLE ADJACENT FUSES",
+          "lane": 0,
+          "next": {
+            "link": "arrival:hall",
+            "room": "passage",
+            "stair": false,
+            "x": 161,
+            "y": 0,
+            "z": 261
+          },
+          "primary": true,
+          "relative": -3.141592653589793,
+          "routeDistance": 42,
+          "x": 98,
+          "y": 0,
+          "z": 235
+        },
+        "red": 12,
+        "yaw": 3.141592653589793
+      },
+      {
+        "allTicksInside": true,
+        "count": 20,
+        "domCount": 20,
+        "primary": {
+          "action": "PASSAGE",
+          "distance": 42,
+          "edge": "",
+          "elevation": 0,
+          "id": "main",
+          "kind": "objective",
+          "label": "TOGGLE ADJACENT FUSES",
+          "lane": 0,
+          "next": {
+            "link": "arrival:hall",
+            "room": "passage",
+            "stair": false,
+            "x": 161,
+            "y": 0,
+            "z": 261
+          },
+          "primary": true,
+          "relative": 1.5707963267948966,
+          "routeDistance": 42,
+          "x": 2,
+          "y": 0,
+          "z": 235
+        },
+        "red": 12,
+        "yaw": -1.5707963267948966
+      }
+    ]
+  },
+  "fileBrowser": {
+    "build": "2026-09-28-compass-contacts-v6",
+    "colors": [
+      "objective",
+      "supply",
+      "enemy"
+    ],
+    "deadEnemyRemoved": true,
+    "embeddedAssets": 79,
+    "markerCount": 20,
+    "noExternalAssets": true,
+    "pickupRemoved": true,
+    "ready": true,
+    "turnMovesMain": true
+  },
+  "multiplayer": {
+    "bothActive": true,
+    "guestFrames": 5,
+    "counts": [
+      20,
+      20
+    ],
+    "positionsDiffer": true,
+    "mainBearingsDiffer": true,
+    "localEnemySetsDiffer": true,
+    "testRoomClosed": true
+  },
+  "narrowViewport": {
+    "width": 760,
+    "height": 480,
+    "allTwentyTicksInsideBezel": true
+  },
+  "preservedV5Sha256": "13d8c96496a650d50de7945d77494a1e199cc0bf96a5487612778229c46db19c",
+  "evidence": [
+    "tests/compass.test.mjs",
+    "artifacts/final-tests-v6.txt",
+    "artifacts/compass-v6-opening.png",
+    "artifacts/compass-v6-narrow.png"
+  ],
+  "limitations": [
+    "Browser interactions use verification teleports and damage hooks.",
+    "No complete human campaign playthrough or cross-network multiplayer soak."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "bothActive": true,
+  "guestFrames": 5,
+  "counts": [
+    20,
+    20
+  ],
+  "positionsDiffer": true,
+  "mainBearingsDiffer": true,
+  "localEnemySetsDiffer": true,
+  "testRoomClosed": true
+}

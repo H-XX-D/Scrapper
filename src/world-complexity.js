@@ -35,11 +35,14 @@ export function extendWorld(w){
    for(const[ox,oz]of [[.3,.3],[.3,-.3],[-.3,.3],[-.3,-.3]]){const cell=at(x+ox,z+oz,actual),f=cell&&baseHeight(cell,x+ox,z+oz);if(!cell||cell.ceiling<actual+1.8||f>actual+.51||occupied(x+ox,actual,z+oz)){clear=false;break;}}
   }edgeCache.set(k,clear);return clear;
  }
- function waypoint(x,z,tx,tz,options={}){const start=at(x,z,options.startY),end=at(tx,tz,options.endY);if(!start||!end)return null;const q=[start],prev=new Map([[nodeKey(start),null]]);let found=false;
-  for(let i=0;i<q.length;i++){const c=q[i];if(c===end){found=true;break;}for(const[dx,dz]of [[1,0],[-1,0],[0,1],[0,-1]]){const cx=c.x+dx,cz=c.z+dz;for(const n of[w.cells.get(key(cx,cz)),...byXZ(cx,cz)]){if(!n||n.gap||n.ceiling<n.y+1.8||occupied(cx*2+1,n.y,cz*2+1,.3)||prev.has(nodeKey(n))||!options.ignoreGates&&gateClosed(n))continue;if(!clearEdge(c,n,dx,dz)&&!(options.includeLifts&&(c.liftId||n.liftId)))continue;prev.set(nodeKey(n),c);q.push(n);}}}
-  if(!found)return null;const path=[];let c=end;while(c){path.push(center(c));c=prev.get(nodeKey(c));}path.reverse();return options.fullPath?path:path[Math.min(1,path.length-1)];
+ function searchPaths(x,z,options={},end=null){const start=at(x,z,options.startY),prev=new Map();if(!start)return prev;const q=[start];prev.set(nodeKey(start),null);
+  for(let i=0;i<q.length;i++){const c=q[i];if(c===end)break;for(const[dx,dz]of [[1,0],[-1,0],[0,1],[0,-1]]){const cx=c.x+dx,cz=c.z+dz;for(const n of[w.cells.get(key(cx,cz)),...byXZ(cx,cz)]){if(!n||n.gap||n.ceiling<n.y+1.8||occupied(cx*2+1,n.y,cz*2+1,.3)||prev.has(nodeKey(n))||!options.ignoreGates&&gateClosed(n))continue;if(!clearEdge(c,n,dx,dz)&&!(options.includeLifts&&(c.liftId||n.liftId)))continue;prev.set(nodeKey(n),c);q.push(n);}}}return prev;
  }
- Object.assign(w,{layers,renderCells:all,at,floor,canMove,blocked,los,waypoint,invalidateRoutes:()=>{edgeCache.clear();indexObstacles();},deadEnds,overpass:{lower,upper,goal:upper[Math.floor(upper.length*.68)]},layerCount:[...layers.values()].reduce((n,a)=>n+a.length,0)});
+ function tracePath(prev,end){if(!end||!prev.has(nodeKey(end)))return null;const path=[];let c=end;while(c){path.push(center(c));c=prev.get(nodeKey(c));}return path.reverse();}
+ function waypoint(x,z,tx,tz,options={}){const end=at(tx,tz,options.endY);if(!end)return null;const path=tracePath(searchPaths(x,z,options,end),end);return!path?null:options.fullPath?path:path[Math.min(1,path.length-1)];}
+ // One traversal supplies every compass destination without one BFS per marker.
+ function routesFrom(x,z,options={}){const prev=searchPaths(x,z,options);return(tx,tz,endY)=>tracePath(prev,at(tx,tz,endY));}
+ Object.assign(w,{layers,renderCells:all,at,floor,canMove,blocked,los,waypoint,routesFrom,invalidateRoutes:()=>{edgeCache.clear();indexObstacles();},deadEnds,overpass:{lower,upper,goal:upper[Math.floor(upper.length*.68)]},layerCount:[...layers.values()].reduce((n,a)=>n+a.length,0)});
  const values=all();w.bounds={x1:Math.min(...values.map(c=>c.x))*2,z1:Math.min(...values.map(c=>c.z))*2,x2:(Math.max(...values.map(c=>c.x))+1)*2,z2:(Math.max(...values.map(c=>c.z))+1)*2};
  for(let i=0;i<deadEnds.length;i++)w.supplies.push({...deadEnds[i],kind:i%2?'ammo':'scrap',gun:'bolt',amount:75});
  return w;
