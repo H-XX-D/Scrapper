@@ -1,0 +1,239 @@
+{
+  "build": "2026-09-28-tentacle-hunt-world-fixes-v9",
+  "frames": {
+    "clips": [],
+    "count": 64,
+    "missing": []
+  },
+  "rows": [
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "rook",
+        "row": 0,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 7,
+      "released": true,
+      "surface": "wall",
+      "type": 0,
+      "visible": true
+    },
+    {
+      "chapter": 1,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "rook",
+        "row": 0,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 851,
+      "released": true,
+      "surface": "floor",
+      "type": 0,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "rook",
+        "row": 0,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 1695,
+      "released": true,
+      "surface": "ceiling",
+      "type": 0,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "echo",
+        "row": 1,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 21,
+      "released": true,
+      "surface": "wall",
+      "type": 1,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "echo",
+        "row": 1,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 2148,
+      "released": true,
+      "surface": "floor",
+      "type": 1,
+      "visible": true
+    },
+    {
+      "chapter": 1,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "echo",
+        "row": 1,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 1968,
+      "released": true,
+      "surface": "ceiling",
+      "type": 1,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "flint",
+        "row": 2,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 23,
+      "released": true,
+      "surface": "wall",
+      "type": 2,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "flint",
+        "row": 2,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 836,
+      "released": true,
+      "surface": "floor",
+      "type": 2,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "flint",
+        "row": 2,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 1033,
+      "released": true,
+      "surface": "ceiling",
+      "type": 2,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "eos",
+        "row": 3,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 25,
+      "released": true,
+      "surface": "wall",
+      "type": 3,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "eos",
+        "row": 3,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 2406,
+      "released": true,
+      "surface": "floor",
+      "type": 3,
+      "visible": true
+    },
+    {
+      "chapter": 0,
+      "firstPersonReturned": true,
+      "frame": {
+        "col": 2,
+        "direction": 8,
+        "pilot": "eos",
+        "row": 3,
+        "sheet": "crewGrab",
+        "step": 0,
+        "weapon": "bolt"
+      },
+      "grabbed": true,
+      "id": 1363,
+      "released": true,
+      "surface": "ceiling",
+      "type": 3,
+      "visible": true
+    }
+  ],
+  "url": "file:///Users/hendrixx./Documents/ChatGPT/Scrapper/exports/Scrapper-Playable-v9.html"
+}

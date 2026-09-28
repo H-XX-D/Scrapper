@@ -13,19 +13,25 @@ export function extendWorld(w){
  const lower=corridor([{x:ox-9,z:oz,y:lo},{x:ox-9,z:oz-9,y:lo},{x:ox-3,z:oz-9,y:lo},{x:ox-3,z:oz-4,y:lo},{x:ox-15,z:oz-4,y:lo}],'winding service tunnels');
  const upper=corridor([{x:ox-9,z:oz,y:lo},{x:ox-9,z:oz+15,y:hi},{x:ox+2,z:oz+15,y:hi},{x:ox+2,z:oz+8,y:hi},{x:ox-2,z:oz+8,y:hi},{x:ox-2,z:oz+2,y:hi},{x:ox+3,z:oz+2,y:hi},{x:ox+3,z:oz-5,y:hi},{x:ox-1,z:oz-5,y:hi},{x:ox-1,z:oz-16,y:hi},{x:ox-7,z:oz-16,y:hi},{x:ox-7,z:oz-19,y:hi},{x:ox-15,z:oz-19,y:hi},{x:ox-15,z:oz-4,y:lo}],'overhead recovery conduit');
  const deadEnds=[];for(let i=0;i<4;i++){const z=oz-1-i*2,x=ox-9,endX=x-3-(w.seed+i)%3,path=corridor([{x,z,y:lo},{x:endX,z,y:lo},{x:endX,z:z+2,y:lo}],'blind service spur');deadEnds.push(path.at(-1));}
+ // Merge shallow duplicate decks created by the widened elbows of the same
+ // staircase. They are one stair landing, not a second crawlspace/floor.
+ for(const [k,list]of layers){let base=w.cells.get(k),changed=true;while(changed){changed=false;const sorted=[base,...list].sort((a,b)=>a.y-b.y);for(let i=0;i<sorted.length-1;i++){const low=sorted[i],high=sorted[i+1];if(high.y-low.y>=1.8)continue;const keep=low.stair?low:high,drop=keep===low?high:low;keep.ceiling=Math.max(keep.ceiling,drop.ceiling);if(drop===base){base=keep;w.cells.set(k,keep);}const at=list.indexOf(drop);if(at>=0)list.splice(at,1);const duplicate=list.indexOf(base);if(duplicate>=0)list.splice(duplicate,1);changed=true;break;}}if(!list.length)layers.delete(k);}
  // Lower ceilings stop at the underside of a crossing deck, rather than blocking the upper route.
  for(const[k,list]of layers){const sorted=[w.cells.get(k),...list].sort((a,b)=>a.y-b.y);for(let i=0;i<sorted.length-1;i++)sorted[i].ceiling=Math.min(sorted[i].ceiling,sorted[i+1].y-.28);}
  const all=()=>[...w.cells.values(),...[...layers.values()].flat()];
  function at(x,z,feetY){const cx=Math.floor(x/2),cz=Math.floor(z/2),base=w.cells.get(key(cx,cz));if(feetY===undefined||!Number.isFinite(feetY))return base;const candidates=[base,...byXZ(cx,cz)].filter(Boolean).filter(c=>baseHeight(c,x,z)<=feetY+.51);return candidates.sort((a,b)=>baseHeight(b,x,z)-baseHeight(a,x,z)||Number(!!b.stair)-Number(!!a.stair))[0]||base;}
+ const gatePhysical=c=>{const g=c?.gate&&w.gates.find(g=>g.id===c.gate);return g&&(!g.open||(g.amount||0)*3.8<1.85);};
  const gateClosed=c=>c?.gate&&!w.gates.find(g=>g.id===c.gate)?.open;
  const obstacleIndex=new Map();let obstacleCount=-1;
  function indexObstacles(){obstacleIndex.clear();for(const o of w.obstacles)for(let x=Math.floor((o.x-o.w/2-.5)/2);x<=Math.floor((o.x+o.w/2+.5)/2);x++)for(let z=Math.floor((o.z-o.d/2-.5)/2);z<=Math.floor((o.z+o.d/2+.5)/2);z++){const k=key(x,z);if(!obstacleIndex.has(k))obstacleIndex.set(k,[]);obstacleIndex.get(k).push(o);}obstacleCount=w.obstacles.length;}
  function nearbyObstacles(x,z,r=0){if(obstacleCount!==w.obstacles.length)indexObstacles();return r>.5?w.obstacles:obstacleIndex.get(key(Math.floor(x/2),Math.floor(z/2)))||[];}
  const occupied=(x,y,z,r=0)=>nearbyObstacles(x,z,r).some(o=>x>o.x-o.w/2-r&&x<o.x+o.w/2+r&&z>o.z-o.d/2-r&&z<o.z+o.d/2+r&&y<o.y+o.h&&y+1.7>o.y);
  function floor(x,z,y=Infinity){const c=at(x,z,y);if(!c||c.gap)return null;if(c.liftId)return baseFloor(x,z,y);return baseHeight(c,x,z);}
- function canMove(x,z,r=.3,y=Infinity){return[[r,r],[r,-r],[-r,r],[-r,-r]].every(([dx,dz])=>{const c=at(x+dx,z+dz,y);if(!c||gateClosed(c)||(Number.isFinite(y)&&occupied(x+dx,y,z+dz)))return false;const f=floor(x+dx,z+dz,y);return(f===null||f<=y+.51)&&(!Number.isFinite(y)||c.ceiling>=y+1.8);});}
+ function canMove(x,z,r=.3,y=Infinity){return[[r,r],[r,-r],[-r,r],[-r,-r]].every(([dx,dz])=>{const c=at(x+dx,z+dz,y);if(!c||gatePhysical(c)||(Number.isFinite(y)&&occupied(x+dx,y,z+dz)))return false;const f=floor(x+dx,z+dz,y);return(f===null||f<=y+.51)&&(!Number.isFinite(y)||c.ceiling>=y+1.8);});}
  function blocked(x,y,z){const c=at(x,z,y-.9);if(!c||gateClosed(c)||nearbyObstacles(x,z).some(o=>x>o.x-o.w/2&&x<o.x+o.w/2&&z>o.z-o.d/2&&z<o.z+o.d/2&&y>o.y&&y<o.y+o.h))return true;const f=baseHeight(c,x,z);if(!c.gap&&y<f-.05||y>c.ceiling)return true;if(c.liftId){const lift=w.lifts.find(l=>l.id===c.liftId);if(y>lift.y-.25&&y<lift.y)return true;}return false;}
  function los(x,z,tx,tz,y=null,ty=null){y??=(at(x,z)?.y||0)+1;ty??=(at(tx,tz)?.y||0)+1;const count=Math.ceil(Math.hypot(tx-x,tz-z)/.55);for(let i=1;i<=count;i++)if(blocked(x+(tx-x)*i/count,y+(ty-y)*i/count,z+(tz-z)*i/count))return false;return true;}
+ let huntCache=new Map();
+ function huntWaypoint(x,z,target,startY){const gateKey=w.gates.map(g=>+g.open).join(''),key=[Math.floor(target.x/2),Math.floor(target.z/2),Math.round(target.y*2),gateKey,Math.floor((w.aiTime||0)*2)].join(':');let to=huntCache.get(key);if(!to){to=routesFrom(target.x,target.z,{startY:target.y});if(huntCache.size>8)huntCache.clear();huntCache.set(key,to);}const path=to(x,z,startY);return path?.[Math.max(0,path.length-2)]||null;}
  const nodeKey=c=>key(c.x,c.z)+','+c.y.toFixed(4),center=c=>({x:c.x*2+1,z:c.z*2+1,y:baseHeight(c,c.x*2+1,c.z*2+1),liftId:c.liftId,room:c.room,link:c.link,stair:!!c.stair});
  const edgeCache=new Map();
  function clearEdge(c,n,dx,dz){
@@ -42,8 +48,8 @@ export function extendWorld(w){
  function waypoint(x,z,tx,tz,options={}){const end=at(tx,tz,options.endY);if(!end)return null;const path=tracePath(searchPaths(x,z,options,end),end);return!path?null:options.fullPath?path:path[Math.min(1,path.length-1)];}
  // One traversal supplies every compass destination without one BFS per marker.
  function routesFrom(x,z,options={}){const prev=searchPaths(x,z,options);return(tx,tz,endY)=>tracePath(prev,at(tx,tz,endY));}
- Object.assign(w,{layers,renderCells:all,at,floor,canMove,blocked,los,waypoint,routesFrom,invalidateRoutes:()=>{edgeCache.clear();indexObstacles();},deadEnds,overpass:{lower,upper,goal:upper[Math.floor(upper.length*.68)]},layerCount:[...layers.values()].reduce((n,a)=>n+a.length,0)});
+ Object.assign(w,{layers,renderCells:all,at,floor,canMove,blocked,los,waypoint,routesFrom,huntWaypoint,invalidateRoutes:()=>{edgeCache.clear();indexObstacles();},deadEnds,overpass:{lower,upper,goal:upper[Math.floor(upper.length*.68)]},layerCount:[...layers.values()].reduce((n,a)=>n+a.length,0)});
  const values=all();w.bounds={x1:Math.min(...values.map(c=>c.x))*2,z1:Math.min(...values.map(c=>c.z))*2,x2:(Math.max(...values.map(c=>c.x))+1)*2,z2:(Math.max(...values.map(c=>c.z))+1)*2};
- for(let i=0;i<deadEnds.length;i++)w.supplies.push({...deadEnds[i],kind:i%2?'ammo':'scrap',gun:'bolt',amount:75});
+ for(let i=0;i<deadEnds.length;i++)w.supplies.push({...deadEnds[i],y:floor(deadEnds[i].x,deadEnds[i].z,deadEnds[i].y)??deadEnds[i].y,kind:i%2?'ammo':'scrap',gun:'bolt',amount:75});
  return w;
 }

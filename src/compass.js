@@ -28,7 +28,7 @@ export class CompassContacts{
  update(player,targets,dt,primaryGuide){
   this.timer-=dt;
   const key=[Math.floor(player.x/2),Math.floor(player.z/2),Math.round((player.y||0)*2),this.world.gates.map(g=>+g.open).join(''),...targets.filter(t=>t.kind!=='enemy').map(t=>t.id+':'+t.x+':'+t.z)].join('|');
-  const refresh=this.timer<=0||key!==this.key;
+  const refresh=key!==this.key||!this.reachable;
   if(refresh){this.key=key;this.timer=.25;this.revision++;
    const pathTo=this.world.routesFrom(player.x,player.z,{startY:player.y,includeLifts:true});
    const routedWorld=Object.create(this.world);routedWorld.waypoint=(x,z,tx,tz,o={})=>pathTo(tx,tz,o.endY);

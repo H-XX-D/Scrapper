@@ -8,10 +8,10 @@ export class TaskVisuals{
   for(const n of tasks.nodes){
    const row=n.row??Math.max(0,rows.indexOf(n.kind)),material=new THREE.SpriteMaterial({map:atlas.texture(atlas.frame('puzzleDevices',0,row)),transparent:true,alphaTest:.2});
    const sprite=n.plate?new THREE.Mesh(new THREE.PlaneGeometry(2.2,2.2),new THREE.MeshBasicMaterial({map:material.map,transparent:true,alphaTest:.2,side:THREE.DoubleSide})):new THREE.Sprite(material);
-   if(n.plate){material.dispose();sprite.rotation.x=-Math.PI/2;sprite.position.set(n.x,n.y+.04,n.z);}else{sprite.center.set(.5,0);sprite.position.set(n.x,n.y,n.z);sprite.scale.setScalar(n.kind==='coupler'?1.2:2.8);}
+   if(n.plate){material.dispose();sprite.rotation.x=-Math.PI/2;sprite.position.set(n.x,n.y+.04,n.z);}else{sprite.center.set(.5,0);sprite.position.set(n.body?.x??n.x,n.y,n.body?.z??n.z);sprite.scale.setScalar(n.kind==='coupler'?1.2:2.8);}
    scene.add(sprite);
    const label=n.kind==='coupler'?null:levels.terminal(this.readout(n),n.x,n.y+(n.plate?.07:1.65),n.z+(n.plate?0:.2),n.plate?1.65:2.35);
-   if(label){scene.add(label);if(n.plate)label.rotation.x=-Math.PI/2;}
+   if(label){scene.add(label);if(n.plate)label.rotation.x=-Math.PI/2;else if(n.body){label.position.set(n.body.x+n.body.nx*.38,n.y+1.55,n.body.z+n.body.nz*.38);label.rotation.y=Math.atan2(n.body.nx,n.body.nz);label.scale.setScalar(.57);}}
    this.nodes.push({n,sprite,label,row});
   }
   this.optics=(tasks.systems||[tasks]).find(t=>t.kind==='mirrors');
@@ -22,7 +22,7 @@ export class TaskVisuals{
  state(n){return this.tasks.stateFor?.(n)||this.tasks;}
  readout(n){const t=this.state(n);if(t.readout)return t.readout(n);if(t.solved)return'SYSTEM\nRESTORED';return n.kind==='pressure'?'VALVE +'+(1<<n.index)+'\n'+t.pressure+' / '+t.target:n.kind==='socket'?'AUX POWER\n'+t.taken.length+' / 2 COUPLERS':n.kind==='mirror'?'REFLECTOR '+(n.index+1)+'\n'+(t.mirrors[n.index]?'\\':'/'):n.kind==='sync'?'PHASE '+(n.index+1)+'\n'+(n.index<t.sync?'LOCKED':n.index===t.sync&&t.windowOpen?'ACTIVATE':'WAIT'):n.kind==='pump'?'COOLANT PUMP\n'+(t.remaining>0?Math.ceil(t.remaining)+'s':'HOLD E '+Math.round(t.charge/3*100)+'%'):'RETURN VALVE\n'+(t.remaining>0?Math.ceil(t.remaining)+'s':'NO PRESSURE');}
  update(camera){
-  for(const{n,sprite,label,row}of this.nodes){const t=this.state(n);sprite.visible=this.tasks.visible(n);if(label){label.visible=sprite.visible;label.userData.setText(this.readout(n));if(!n.plate)label.quaternion.copy(camera.quaternion);}
+  for(const{n,sprite,label,row}of this.nodes){const t=this.state(n);sprite.visible=this.tasks.visible(n);if(label){label.visible=sprite.visible;label.userData.setText(this.readout(n));if(!n.plate&&!n.body)label.quaternion.copy(camera.quaternion);}
    const active=t.active?t.active(n):n.kind==='pressure'?t.valves[n.index]:n.kind==='sync'?n.index<t.sync||n.index===t.sync&&t.windowOpen:false;
    sprite.material.color.set(t.solved?'#87b993':active?'#caff83':n.tint||'#ffffff');sprite.material.map=this.atlas.texture(this.atlas.frame('puzzleDevices',active?Math.floor(t.clock*9)%8:Math.floor(t.clock*3)%8,row));
   }

@@ -16,12 +16,13 @@ export function makeNest(x,z,machine=false){return{id:++serial,x,z,machine,hp:ma
 export function damageNest(n,damage,emit){if(n.state==='husk'||n.state==='rupture')return false;n.hp-=damage;if(n.hp>0){n.state='hurt';n.age=0;return false;}n.hp=0;n.state='rupture';n.age=0;if(!n.burstDone){n.burstDone=true;emit({type:'nestBurst',nest:n,count:n.machine?2:4});}return true;}
 export function updateNest(n,dt,active,emit){n.age+=dt;if(n.state==='rupture'){if(n.age>.9){n.state='husk';n.age=0;}return;}if(n.state==='husk')return;if(n.state==='hurt'&&n.age>.3){n.state='idle';n.age=0;}if(n.state==='spawn'&&n.age>1){n.state='idle';n.age=0;}if(active){n.timer-=dt;if(n.timer<=0){n.timer=8;n.state='spawn';n.age=0;n.spawned++;emit({type:'spawn',nest:n,count:n.machine?1:2});}}}
 const setState=(a,state,duration=0)=>{a.state=state;a.age=0;a.duration=duration;};
-export function hurtActor(a,amount,mode='bullet',emit=()=>{}){if(a.hp<=0)return false;const d=ACTORS[a.type];if(d.armor&&!['recover','hurt'].includes(a.state)&&mode==='bullet')amount*=.42;a.hp=Math.max(0,a.hp-amount);a.hitFlash=.1;if(mode==='freeze')a.slow=2.5;if(a.hp===0){setState(a,'death',1);emit({type:'killed',actor:a});return true;}
+export function hurtActor(a,amount,mode='bullet',emit=()=>{}){if(a.hp<=0)return false;const d=ACTORS[a.type];if(d.tier!=='ENEMY')a.hunting=true;if(d.armor&&!['recover','hurt'].includes(a.state)&&mode==='bullet')amount*=.42;a.hp=Math.max(0,a.hp-amount);a.hitFlash=.1;if(mode==='freeze')a.slow=2.5;if(a.hp===0){setState(a,'death',1);emit({type:'killed',actor:a});return true;}
  const interrupt=d.interruptible||((mode==='chain'||mode==='pierce')&&['tell','altTell'].includes(a.state));if(interrupt&&a.state!=='attack'&&a.state!=='altAttack'){setState(a,'hurt',.45);a.cooldown=.8;}return false;}
 export function updateActor(a,dt,player,world,emit){
  const d=ACTORS[a.type];a.groundY=world.floor(a.x,a.z,a.groundY??Infinity)??a.groundY??0;a.age+=dt;a.cooldown-=dt;a.slow=Math.max(0,a.slow-dt);a.hitFlash=Math.max(0,a.hitFlash-dt);
  if(a.hp<=0)return;
- const dx=player.x-a.x,dz=player.z-a.z,dist=Math.hypot(dx,dz,(a.groundY||0)-(player.y||0)),sight=world.los(a.x,a.z,player.x,player.z,(a.groundY||0)+1,(player.y||0)+1);
+ const dx=player.x-a.x,dz=player.z-a.z,dist=Math.hypot(dx,dz,(a.groundY||0)-(player.y||0)),sight=dist<38&&world.los(a.x,a.z,player.x,player.z,(a.groundY||0)+1,(player.y||0)+1);
+ if(d.tier!=='ENEMY'&&sight)a.hunting=true;
  a.phase=d.tier==='BOSS'?(a.hp<a.maxHp*.33?3:a.hp<a.maxHp*.66?2:1):1;
  if(a.state==='hurt'||a.state==='recover'){if(a.age>a.duration)setState(a,'move');return;}
  if(a.state==='tell'||a.state==='altTell'){
@@ -33,10 +34,10 @@ export function updateActor(a,dt,player,world,emit){
   if(a.age>=a.duration){setState(a,'recover',d.recovery/(a.phase===3?1.2:1));a.y=0;a.cooldown=d.recovery+.25;}return;
  }
  if(dist<d.range&&sight&&a.cooldown<=0){a.cycle++;a.target={x:player.x,y:player.y+1,z:player.z};a.contact=false;const alt=a.cycle%2===0;setState(a,alt?'altTell':'tell',d.windup*(a.phase===3?.85:1));emit({type:'tell',actor:a,kind:alt?d.alternate:d.primary});return;}
- if(dist>2&&dist<34){setStateUnless(a,'move');a.pathAge-=dt;let target=player;if(!sight){if(a.pathAge<0){a.waypoint=world.waypoint(a.x,a.z,player.x,player.z,{startY:a.groundY,endY:player.y});a.pathAge=.8;}target=a.waypoint||a;}const tx=target.x-a.x,tz=target.z-a.z,l=Math.hypot(tx,tz)||1;
+ if(dist>2&&(dist<34||a.hunting)){setStateUnless(a,'move');a.pathAge-=dt;let target=player;if(!sight){if(a.pathAge<0){a.waypoint=world.huntWaypoint?world.huntWaypoint(a.x,a.z,player,a.groundY):world.waypoint(a.x,a.z,player.x,player.z,{startY:a.groundY,endY:player.y});a.pathAge=.65+(a.id%7)*.035;}target=a.waypoint||a;}const tx=target.x-a.x,tz=target.z-a.z,l=Math.hypot(tx,tz)||1;
   let vx=tx/l*d.speed,vz=tz/l*d.speed;if(d.family==='MACHINE'&&sight&&dist<10){vx=-tz/l*d.speed*Math.sin(a.id);vz=tx/l*d.speed*Math.sin(a.id);}
   if(d.ranged&&sight&&dist<d.range*.38){vx=-tx/l*d.speed;vz=-tz/l*d.speed;}if(d.flanker&&sight){const weave=Math.sin(a.age*6+a.id)*d.speed*.65;vx+=-tz/l*weave;vz+=tx/l*weave;}
-  const slow=a.slow>0?.4:1,nx=a.x+vx*dt*slow,nz=a.z+vz*dt*slow;if(world.canMove(nx,a.z,.5,a.groundY||0)&&world.floor(nx,a.z)!==null)a.x=nx;if(world.canMove(a.x,nz,.5,a.groundY||0)&&world.floor(a.x,nz)!==null)a.z=nz;
+  const slow=a.slow>0?.4:1,nx=a.x+vx*dt*slow,nz=a.z+vz*dt*slow;if(world.canMove(nx,a.z,.5,a.groundY||0)&&world.floor(nx,a.z,a.groundY)!==null)a.x=nx;if(world.canMove(a.x,nz,.5,a.groundY||0)&&world.floor(a.x,nz,a.groundY)!==null)a.z=nz;
  }else setStateUnless(a,'idle');
 }
 function setStateUnless(a,state){if(a.state!==state)setState(a,state);}

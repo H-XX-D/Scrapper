@@ -1,6 +1,6 @@
 import{PILOTS}from'./catalog.js';
 import{availablePilot}from'./crew.js';
-export const PROTOCOL=4,MODES=['coop','ffa','pvpve'];
+export const PROTOCOL=5,MODES=['coop','ffa','pvpve'];
 const PREFIX='scrapper-recovery-1-';
 export const cleanCode=value=>String(value||'').toUpperCase().replace(/[^A-Z2-9]/g,'').slice(0,6);
 export function sanitizeInput(d){if(!d||!Number.isSafeInteger(d.seq)||d.seq<0)return null;const number=(v,a,b)=>Number.isFinite(v)?Math.max(a,Math.min(b,v)):0;return{seq:d.seq,forward:number(d.forward,-1,1),strafe:number(d.strafe,-1,1),yaw:number(d.yaw,-1e6,1e6),pitch:number(d.pitch,-1.25,1.25),fire:d.fire===true,sprint:d.sprint===true,jump:d.jump===true,revive:d.revive===true,paused:d.paused===true,weapon:['bolt','arc','beam','rockets','frost','blades','flame'].includes(d.weapon)?d.weapon:'bolt',actions:Object.fromEntries(['interact','reload','wipe','choice0','choice1'].map(k=>[k,Number.isSafeInteger(d.actions?.[k])?Math.max(0,Math.min(1e9,d.actions[k])):0]))};}

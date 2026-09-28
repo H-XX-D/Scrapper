@@ -1,8 +1,8 @@
 # Scrapper
 
-[Download the playable v8 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v8/Scrapper-Playable-v8.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v8)
+[Download the playable v9 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v9/Scrapper-Playable-v9.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v9)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v8.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 232 MiB.
+First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v9.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 237 MiB.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
@@ -67,7 +67,7 @@ Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a m
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V5 through v8 share room protocol 4. Use v8 on every device for the rendering and suit fixes, and host on v8 for unique character assignment; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V9 uses room protocol 5. Use V9 on every device for synchronized tentacle grabs and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -105,3 +105,9 @@ Original images are preserved in **assets/legacy**. New and extended sheets are 
 V7 adds seven controller tests (77 total) covering analog movement, drift, frame-rate-independent aiming, press edges, neutral rearming, jump transmission buffering and menu repeat. The exact HTML passes browser checks using a simulated standard Gamepad API; the reproducible script is `tests/browser/controller-check.js`. No physical gamepad was connected during verification, so hardware/browser mapping still needs a hands-on playtest. The original title art and in-mission HUD layout are unchanged.
 
 V8 adds six regression tests (83 total) for unique host-assigned characters, separated floor-checked crew deployment, directional walk animation and disconnected glove/wipe recoloring. Four browser clients joined the live room service with the same requested character and received four different salvagers. Screenshots verify teammate rendering from host and guest views, with recovery after a deliberately detached sprite. Validation and limits are recorded in **artifacts/final-verification-v8.json** and **docs/crew-and-suits-v8.md**.
+
+## V9 tentacle and world update
+
+Colonies on walls, ceilings and floors can grab a salvager after a visible tell. Wiggle WASD or the controller left stick to escape the brief third-person struggle; teammates can destroy the root or gripping hook. Four strains and all four characters have matching animation sheets. Bosses and mini-bosses continue hunting once they detect you.
+
+This build also repairs arm/HUD framing, layered wall boundaries, overlapping stair landings, lift-floor z-fighting, floating accessory panels and solid puzzle-device placement, and reduces repeated pathfinding during crowded fights. See [implementation and verification](docs/tentacles-and-world-v9.md), [new art provenance](docs/art-prompts-v9.md) and [measured performance](artifacts/performance-v9.json).

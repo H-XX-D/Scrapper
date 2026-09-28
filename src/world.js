@@ -156,7 +156,7 @@ export function makeWorld(seed=2709,theme=0,chapter=null){
  const nests=rooms.filter(r=>r.id!=='arrival').flatMap((r,ri)=>Array.from({length:r.id==='lock'?2:5},(_,i)=>{const angle=i*Math.PI*2/5+.3,rx=Math.max(3,r.w*.48),rz=Math.max(3,r.d*.48);return{x:r.center.x+Math.cos(angle)*rx,z:r.center.z+Math.sin(angle)*rz,y:r.y,variant:(i+ri)%3};}));
  const fabricator=point(byId.armory.cx-5,byId.armory.cz+4,byId.armory.y);
  const obstacles=[];
- const obstacle=(x,z,y,w,d,h)=>obstacles.push({x,z,y,w,d,h:Math.min(h,3.4)});
+ const obstacle=(x,z,y,w,d,h)=>obstacles.push({x,z,y,w,d,h:Math.min(h,3.0),kind:'landmark'});
  for(const r of rooms)if(r.id==='hall'||r.id==='boss'){
   const {x,z}=r.center;
   if(config.landmark==='crane')for(const dx of[-13,13])obstacle(x+dx,z-4,r.y,1.6,1.6,12);
@@ -164,7 +164,9 @@ export function makeWorld(seed=2709,theme=0,chapter=null){
   else if(config.landmark==='reactor')obstacle(x,z-6,r.y,6.5,6.5,15);
   else for(let i=0;i<5;i++){const a=i*Math.PI*2/5;obstacle(x+Math.cos(a)*11,z+Math.sin(a)*11,r.y,4,4,9);}
  }
- for(const p of props){if(p.kind==='cargo')for(let i=0;i<3;i++)obstacle(p.x+i*2.2,p.z+(i%2)*2,p.y,2,2,2);else if(p.kind==='furnace')obstacle(p.x,p.z,p.y,3,3,5);}
+ const landmarkCount=obstacles.length;
+ for(const p of props){if(p.kind==='cargo')for(let i=0;i<3;i++)obstacle(p.x+i*2.2,p.z+(i%2)*2,p.y,2,2,2);else if(p.kind==='furnace')obstacle(p.x,p.z,p.y,3,3,3.2);}
+ for(const o of obstacles.slice(landmarkCount))delete o.kind;
  const occupied=(x,y,z,r=0)=>obstacles.some(o=>x>o.x-o.w/2-r&&x<o.x+o.w/2+r&&z>o.z-o.d/2-r&&z<o.z+o.d/2+r&&y<o.y+o.h&&y+1.7>o.y);
  for(const p of [...cases,...nests,...encounters,...supplies]){
   const original=cells.get(key(Math.floor(p.x/2),Math.floor(p.z/2)));if(original&&!original.gap&&Math.abs(original.y-p.y)<.2&&!occupied(p.x,p.y,p.z,.7))continue;

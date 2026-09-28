@@ -1,5 +1,6 @@
 import * as THREE from '../vendor/three.module.js';
 import{ACTORS,WEAPONS,PILOTS,ANIMATIONS}from'./catalog.js';
+import{GRAB_LAYOUTS}from'./grab-layouts.js';
 import{CREW_LAYOUTS}from'./crew-layouts.js';
 import{GOO_COLORS}from'./visor.js';
 import{recolorSuit}from'./suit-palette.js';
@@ -23,6 +24,8 @@ export const SPECS={...Object.fromEntries(Object.keys(ACTORS).map(id=>[id,{path:
  onehand:{path:'assets/legacy/fps-weapon-onehand-v18.png',cols:1,rows:1,key:'magenta'},arsenal:{path:'assets/legacy/fps-arsenal-onehand-v18.png',cols:3,rows:3,key:'magenta'},
  ...Object.fromEntries(WEAPONS.map(w=>['reload-'+w.id,{path:`assets/generated/reload-${w.id}.png`,cols:4,rows:3,key:'magenta'}])),
  ...Object.fromEntries(THEMES.map(t=>['env-'+t.id,{path:`assets/generated/env-${t.id}.png`,cols:4,rows:4}]))};
+SPECS.tentacles={path:'assets/generated/tentacles-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.tentacles};
+SPECS.crewGrab={path:'assets/generated/crew-grab-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.crewGrab};
 SPECS.attackVfx={path:'assets/generated/attack-vfx-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,160,313,457,615,784,920,1086,1254],xBounds:[0,157,313,470,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 SPECS.originalGore={path:'assets/generated/original-hit-gore-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,157,313,470,627,784,939,1095,1254],xBounds:[0,153,296,458,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 for(const pilot of Object.keys(PILOTS))for(const w of WEAPONS)SPECS['crew-'+pilot+'-'+w.id]={path:'assets/generated/crew-'+pilot+'-'+w.id+'.png',cols:8,rows:8,key:'magenta',...CREW_LAYOUTS['crew-'+pilot+'-'+w.id]};
@@ -49,7 +52,7 @@ export class Atlas{
  frame(id,col=0,row=0,pilot='rook'){
   const spec=SPECS[id],img=this.images[id];if(!img)throw Error('Atlas not loaded: '+id);
   const cacheKey=`${spec.path}:${col}:${row}:${pilot}`;if(this.cache.has(cacheKey))return this.cache.get(cacheKey);
-  if(spec.rects){const [sx,sy,sw,sh]=spec.rects[row][col],c=document.createElement('canvas');c.width=c.height=spec.cellSize;const x=c.getContext('2d',{willReadFrequently:true});x.imageSmoothingEnabled=false;x.drawImage(img,sx,sy,sw,sh,Math.floor((c.width-sw)/2),c.height-sh-6,sw,sh);const data=x.getImageData(0,0,c.width,c.height);keyBackground(data,spec.key);x.putImageData(data,0,0);this.cache.set(cacheKey,c);return c;}
+  if(spec.rects){const [sx,sy,sw,sh]=spec.rects[row][col],c=document.createElement('canvas');c.width=c.height=spec.cellSize;const x=c.getContext('2d',{willReadFrequently:true});x.imageSmoothingEnabled=false;x.drawImage(img,sx,sy,sw,sh,Math.floor((c.width-sw)/2),c.height-sh-6,sw,sh);const data=x.getImageData(0,0,c.width,c.height);if(spec.key)keyBackground(data,spec.key);x.putImageData(data,0,0);this.cache.set(cacheKey,c);return c;}
   const inset=spec.inset||0,cw=img.width/spec.cols,y0=spec.bounds?spec.bounds[row]/(spec.boundHeight||1254)*img.height:row*img.height/spec.rows,y1=spec.bounds?spec.bounds[row+1]/(spec.boundHeight||1254)*img.height:(row+1)*img.height/spec.rows;
   const xBounds=spec.columnBounds?.[row]||spec.xBounds,x0=xBounds?xBounds[col]/spec.boundWidth*img.width:col*cw,x1=xBounds?xBounds[col+1]/spec.boundWidth*img.width:(col+1)*cw,pad=spec.padding||0;
   const c=document.createElement('canvas');c.width=Math.round(x1-x0-inset*2)+pad*2;c.height=Math.round(y1-y0-inset*2)+pad*2;const ctx=c.getContext('2d',{willReadFrequently:true});ctx.imageSmoothingEnabled=false;ctx.drawImage(img,x0+inset,y0+inset,x1-x0-inset*2,y1-y0-inset*2,pad,pad,c.width-pad*2,c.height-pad*2);
