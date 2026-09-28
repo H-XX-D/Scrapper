@@ -1,0 +1,3 @@
+
+> scrapper-infestation@0.1.0 check
+> for file in src/*.js scripts/*.mjs; do node --check "$file" || exit; done

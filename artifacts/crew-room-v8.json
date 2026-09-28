@@ -1,0 +1,840 @@
+{
+  "roomCode": "6YMSHF",
+  "rosters": {
+    "scrapper-compass-v6": {
+      "code": "6YMSHF",
+      "names": [
+        "ROOK",
+        "ECHO",
+        "FLINT",
+        "EOS"
+      ],
+      "pilot": "rook"
+    },
+    "scrapper-controller-file-v7": {
+      "code": "6YMSHF",
+      "names": [
+        "ROOK",
+        "ECHO",
+        "FLINT",
+        "EOS"
+      ],
+      "pilot": "echo"
+    },
+    "scrapper-flint-v8": {
+      "code": "6YMSHF",
+      "names": [
+        "ROOK",
+        "ECHO",
+        "FLINT",
+        "EOS"
+      ],
+      "pilot": "flint"
+    },
+    "scrapper-eos-v8": {
+      "code": "6YMSHF",
+      "names": [
+        "ROOK",
+        "ECHO",
+        "FLINT",
+        "EOS"
+      ],
+      "pilot": "eos"
+    }
+  },
+  "initial": {
+    "scrapper-compass-v6": [
+      {
+        "id": "host",
+        "local": true,
+        "moving": false,
+        "pilot": "rook",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.673100000000021,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 277
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 277
+        },
+        "sprite": null,
+        "walkAge": 0
+      },
+      {
+        "id": "d125ca36-e151-4dc6-b9ba-6c2339645cf2",
+        "local": false,
+        "moving": false,
+        "pilot": "echo",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.673100000000021,
+          "pitch": 0,
+          "safe": {
+            "x": 159,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 159,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 1,
+            "direction": 9,
+            "pilot": "echo",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            -0.40419209437676173,
+            -0.11199489281689436,
+            0.9657644639582058
+          ],
+          "position": [
+            159,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            176,
+            176
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "6c002d66-087d-4952-bbca-0f24279b7277",
+        "local": false,
+        "moving": false,
+        "pilot": "flint",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.673100000000021,
+          "pitch": 0,
+          "safe": {
+            "x": 163,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 163,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 7,
+            "direction": 7,
+            "pilot": "flint",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0.40419209437676173,
+            -0.11199489281689436,
+            0.9657644639582058
+          ],
+          "position": [
+            163,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            168,
+            168
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "c1b286c3-abe6-46f0-b0a0-a307a61252b2",
+        "local": false,
+        "moving": false,
+        "pilot": "eos",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.673100000000021,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 270
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 270
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 0,
+            "direction": 8,
+            "pilot": "eos",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0,
+            -0.06399708160965391,
+            0.98077029956094
+          ],
+          "position": [
+            161,
+            0,
+            270
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            167,
+            167
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      }
+    ],
+    "scrapper-controller-file-v7": [
+      {
+        "id": "host",
+        "local": false,
+        "moving": false,
+        "pilot": "rook",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 277
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 277
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 1,
+            "direction": 1,
+            "pilot": "rook",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            -0.2884868444435182,
+            0.11199489281689436,
+            1.0357916967709664
+          ],
+          "position": [
+            161,
+            0,
+            277
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            156,
+            156
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "d125ca36-e151-4dc6-b9ba-6c2339645cf2",
+        "local": true,
+        "moving": false,
+        "pilot": "echo",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 159,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 159,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": null,
+        "walkAge": 0
+      },
+      {
+        "id": "6c002d66-087d-4952-bbca-0f24279b7277",
+        "local": false,
+        "moving": false,
+        "pilot": "flint",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 163,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 163,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 4,
+            "direction": 4,
+            "pilot": "flint",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            null,
+            null,
+            null
+          ],
+          "position": [
+            163,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            168,
+            168
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "c1b286c3-abe6-46f0-b0a0-a307a61252b2",
+        "local": false,
+        "moving": false,
+        "pilot": "eos",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 270
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 270
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 7,
+            "direction": 7,
+            "pilot": "eos",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0.3846491259246909,
+            -0.14932652375585914,
+            0.9540932584894124
+          ],
+          "position": [
+            161,
+            0,
+            270
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            167,
+            167
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      }
+    ],
+    "scrapper-flint-v8": [
+      {
+        "id": "host",
+        "local": false,
+        "moving": false,
+        "pilot": "rook",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 277
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 277
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 7,
+            "direction": 15,
+            "pilot": "rook",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0.2884868444435182,
+            0.11199489281689436,
+            1.0357916967709664
+          ],
+          "position": [
+            161,
+            0,
+            277
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            156,
+            156
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "d125ca36-e151-4dc6-b9ba-6c2339645cf2",
+        "local": false,
+        "moving": false,
+        "pilot": "echo",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 159,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 159,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 4,
+            "direction": 12,
+            "pilot": "echo",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            null,
+            null,
+            null
+          ],
+          "position": [
+            159,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            176,
+            176
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "6c002d66-087d-4952-bbca-0f24279b7277",
+        "local": true,
+        "moving": false,
+        "pilot": "flint",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 163,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 163,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": null,
+        "walkAge": 0
+      },
+      {
+        "id": "c1b286c3-abe6-46f0-b0a0-a307a61252b2",
+        "local": false,
+        "moving": false,
+        "pilot": "eos",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4682000000000124,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 270
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 270
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 1,
+            "direction": 9,
+            "pilot": "eos",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            -0.3846491259246909,
+            -0.14932652375585914,
+            0.9540932584894124
+          ],
+          "position": [
+            161,
+            0,
+            270
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            167,
+            167
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      }
+    ],
+    "scrapper-eos-v8": [
+      {
+        "id": "host",
+        "local": false,
+        "moving": false,
+        "pilot": "rook",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4332000000000125,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 277
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 277
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 0,
+            "direction": 0,
+            "pilot": "rook",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0,
+            0.06399708160965391,
+            1.020785861168232
+          ],
+          "position": [
+            161,
+            0,
+            277
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            156,
+            156
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "d125ca36-e151-4dc6-b9ba-6c2339645cf2",
+        "local": false,
+        "moving": false,
+        "pilot": "echo",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4332000000000125,
+          "pitch": 0,
+          "safe": {
+            "x": 159,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 159,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 7,
+            "direction": 15,
+            "pilot": "echo",
+            "row": 1,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            0.3846491259246909,
+            0.14932652375585914,
+            1.0474629022397597
+          ],
+          "position": [
+            159,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            176,
+            176
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "6c002d66-087d-4952-bbca-0f24279b7277",
+        "local": false,
+        "moving": false,
+        "pilot": "flint",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4332000000000125,
+          "pitch": 0,
+          "safe": {
+            "x": 163,
+            "y": 0,
+            "z": 273
+          },
+          "vy": 0,
+          "x": 163,
+          "y": 0,
+          "yaw": 0,
+          "z": 273
+        },
+        "sprite": {
+          "attached": true,
+          "frame": {
+            "col": 1,
+            "direction": 1,
+            "pilot": "flint",
+            "row": 0,
+            "step": 0,
+            "weapon": "bolt"
+          },
+          "opacity": 1,
+          "point": [
+            -0.3846491259246909,
+            0.14932652375585914,
+            1.0474629022397597
+          ],
+          "position": [
+            163,
+            0,
+            273
+          ],
+          "scale": [
+            2.6,
+            2.6,
+            1
+          ],
+          "textureSize": [
+            168,
+            168
+          ],
+          "visible": true
+        },
+        "walkAge": 0
+      },
+      {
+        "id": "c1b286c3-abe6-46f0-b0a0-a307a61252b2",
+        "local": true,
+        "moving": false,
+        "pilot": "eos",
+        "position": {
+          "grounded": true,
+          "hp": 100,
+          "hurtCooldown": 1.4332000000000125,
+          "pitch": 0,
+          "safe": {
+            "x": 161,
+            "y": 0,
+            "z": 270
+          },
+          "vy": 0,
+          "x": 161,
+          "y": 0,
+          "yaw": 0,
+          "z": 270
+        },
+        "sprite": null,
+        "walkAge": 0
+      }
+    ]
+  },
+  "hostWalking": {
+    "id": "host",
+    "local": true,
+    "moving": true,
+    "pilot": "rook",
+    "position": {
+      "grounded": true,
+      "hp": 100,
+      "hurtCooldown": 0,
+      "pitch": 0,
+      "safe": {
+        "x": 161,
+        "y": 0,
+        "z": 274.21315999999996
+      },
+      "vy": 0,
+      "x": 161,
+      "y": 0,
+      "yaw": 0,
+      "z": 274.21315999999996
+    },
+    "sprite": null,
+    "walkAge": 0.3765999999999913
+  },
+  "missingSpriteRestored": true,
+  "pause": {
+    "code": "6YMSHF",
+    "visible": true
+  }
+}
