@@ -26,3 +26,10 @@ artifacts/*
 !artifacts/compass-room-v6.json
 !artifacts/compass-v6-opening.png
 !artifacts/compass-v6-narrow.png
+
+!artifacts/final-verification-v7.json
+!artifacts/final-tests-v7.txt
+!artifacts/check-v7.txt
+!artifacts/controller-file-v7.json
+!artifacts/controller-room-v7.json
+!artifacts/controller-v7-manual.png

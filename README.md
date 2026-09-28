@@ -1,8 +1,8 @@
 # Scrapper
 
-[Download the playable v6 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v6/Scrapper-Playable-v6.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v6)
+[Download the playable v7 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v7/Scrapper-Playable-v7.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v7)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v6.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 232 MiB.
+First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v7.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 232 MiB.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
@@ -20,6 +20,24 @@ The original title artwork and painted steel HUD remain. Gameplay uses low ceili
 | Communications / station plan | Tab / M |
 | Choose an option | Z / X, or the choice buttons |
 | Pause | Esc / pause button |
+
+Standard Xbox and PlayStation controllers are supported through the browser Gamepad API. Connect the controller, click the page once if needed for browser audio, and press/release a button to wake detection. You can deploy and play without mouse pointer lock.
+
+| Action | Xbox / PlayStation |
+| --- | --- |
+| Move / look | Left / right stick |
+| Sprint / precise aim | Hold L3 / LT or L2 |
+| Fire / reload | RT or R2 / X or Square |
+| Jump / wipe | A or Cross / B or Circle |
+| Interact / revive | Y or Triangle; hold to revive |
+| Previous / next owned weapon | LB or L1 / RB or R1 |
+| Comms / station plan | R3 / View or Share |
+| Story choices | D-pad left / right |
+| Pause / resume | Menu or Options |
+
+In menus, use the D-pad or left stick to move focus, A/Cross to select, B/Circle to go back, and left/right to change values. Right stick scrolls. Selecting the room-code field starts six-character editing: up/down changes a character, left/right moves the cursor, A accepts and B cancels. System file pickers for save import still use the operating system's controls.
+
+**FIELD MANUAL** contains saved look sensitivity, stick dead zone and inverted-look settings. Analog movement scales with stick pressure and diagonal movement stays capped. LT/L2 slows aiming without changing the weapon artwork. Disconnecting the active controller pauses local control; buttons and sticks must return to neutral after resume/reconnection. Online rooms continue simulating while an individual player pauses.
 
 Each chapter has its own route topology, room silhouette and primary recovery puzzle. The repeated two-coupler opening is gone from new missions. Twelve new mechanics join the four earlier systems (sixteen in total): neighbor fuse circuits, sliding cargo, signal tuning, an interlocked airlock, a cargo crane, signal memory, walking a sensor grid, power sharing, temperature stabilization, species-matched specimen isolation, RGB filtering and timed dispatch shutdown. Pressure, optical, phase-lock and coolant systems are secondary puzzles in selected chapters. Restore the chapter system, recover access and the archive, decide how to route power, defeat the guardian and extract. Chapters 1, 5 and 9 retain the extra relay sequence; the other chapters restore that circuit through their own puzzles.
 
@@ -49,7 +67,7 @@ Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a m
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V5 and v6 share room protocol 4 and can play together; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V5, v6 and v7 share room protocol 4 and can play together; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -83,3 +101,5 @@ V5 adds seven focused tests for the original art identity, the single-hand motio
 V6 adds five compass tests, for 70 passing tests in total. A shared route traversal supplies multiple objective markers without a separate breadth-first search per diamond. Checks compare those paths with the existing pathfinder across all twelve chapters, including gates and the overhead deck, then verify the 20-contact cap, heading rotation, filtering and route replanning. Current evidence is in **artifacts/final-verification-v6.json**.
 
 Original images are preserved in **assets/legacy**. New and extended sheets are in **assets/generated**; generation provenance is recorded under **docs**. Cropping, keying, palette mixing and sleeve recoloring happen during runtime import. Screenshots and verification artifacts are in **artifacts**. No tower-defense, dropship or gun-leveling mechanics remain in this first-person build.
+
+V7 adds seven controller tests (77 total) covering analog movement, drift, frame-rate-independent aiming, press edges, neutral rearming, jump transmission buffering and menu repeat. The exact HTML passes browser checks using a simulated standard Gamepad API; the reproducible script is `tests/browser/controller-check.js`. No physical gamepad was connected during verification, so hardware/browser mapping still needs a hands-on playtest. The original title art and in-mission HUD layout are unchanged.

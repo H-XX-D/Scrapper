@@ -6,8 +6,8 @@ export function playerFloor(world,x,z,y){
 export function movePlayer(player,world,dt,{forward=0,strafe=0,sprint=false,jump=false}={}){
  const support=world.at(player.x,player.z,player.y),lift=support?.liftId&&world.lifts.find(l=>l.id===support.liftId);
  if(lift&&player.grounded&&Math.abs(player.y-lift.previousY)<.15)player.y+=lift.y-lift.previousY;
- const length=Math.hypot(forward,strafe)||1,speed=sprint?11.5:7.4,f=forward/length,r=strafe/length;
- const dx=(-Math.sin(player.yaw)*f+Math.cos(player.yaw)*r)*speed*dt,dz=(-Math.cos(player.yaw)*f-Math.sin(player.yaw)*r)*speed*dt;
+ const magnitude=Math.hypot(forward,strafe),length=Math.max(1,magnitude),rate=sprint?11.5:7.4,speed=rate*Math.min(1,magnitude),f=forward/length,r=strafe/length;
+ const dx=(-Math.sin(player.yaw)*f+Math.cos(player.yaw)*r)*rate*dt,dz=(-Math.cos(player.yaw)*f-Math.sin(player.yaw)*r)*rate*dt;
  // Short substeps make narrow stair treads usable at low frame rates and while sprinting.
  const substeps=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.12));
  for(let i=0;i<substeps;i++){
