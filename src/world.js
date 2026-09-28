@@ -181,7 +181,7 @@ export function makeWorld(seed=2709,theme=0,chapter=null){
  const solid=(x,z)=>{const c=at(x,z);return Boolean(c)&&(!c.gate||gateFor(c)?.open);};
  function canMove(x,z,r=.3,feetY=Infinity){return[[r,r],[r,-r],[-r,r],[-r,-r]].every(([dx,dz])=>{const c=at(x+dx,z+dz);if(!c||!solid(x+dx,z+dz)||(Number.isFinite(feetY)&&occupied(x+dx,feetY,z+dz)))return false;const f=floor(x+dx,z+dz,feetY);return(f===null||f<=feetY+.51)&&(!Number.isFinite(feetY)||c.ceiling>=feetY+1.8);});}
  function blocked(x,y,z){const c=at(x,z);if(!c||!solid(x,z)||obstacles.some(o=>x>o.x-o.w/2&&x<o.x+o.w/2&&z>o.z-o.d/2&&z<o.z+o.d/2&&y>o.y&&y<o.y+o.h))return true;const f=cellHeight(c,x,z);if((!c.gap&&y<f-.05)||y>c.ceiling)return true;if(c.liftId){const l=lifts.find(v=>v.id===c.liftId);if(y>l.y-.25&&y<l.y)return true;}return false;}
- function los(x,z,tx,tz,y=null,ty=null){const a=at(x,z),b=at(tx,tz);y??=(a?.y||0)+1;ty??=(b?.y||0)+1;const n=Math.ceil(Math.hypot(tx-x,tz-z)/.55);for(let i=1;i<=n;i++)if(blocked(x+(tx-x)*i/n,y+(ty-y)*i/n,z+(tz-z)*i/n))return false;return true;}
+ function los(x,z,tx,tz,y=null,ty=null){const a=at(x,z),b=at(tx,tz);y??=(a?.y||0)+1;ty??=(b?.y||0)+1;const n=Math.ceil(Math.hypot(tx-x,tz-z,ty-y)/.55);for(let i=1;i<=n;i++)if(blocked(x+(tx-x)*i/n,y+(ty-y)*i/n,z+(tz-z)*i/n))return false;return true;}
  function walkEdge(c,n,dx,dz){const ax=c.x*2+1+dx*.99,az=c.z*2+1+dz*.99,bx=n.x*2+1-dx*.99,bz=n.z*2+1-dz*.99;return Math.abs(cellHeight(c,ax,az)-cellHeight(n,bx,bz))<=.51;}
  function waypoint(x,z,tx,tz,options={}){
   const start=at(x,z),end=at(tx,tz);if(!start||!end)return null;
