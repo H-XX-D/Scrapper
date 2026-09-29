@@ -1,0 +1,22 @@
+{
+  "actors": 149,
+  "art": {
+    "frames": 199,
+    "images": 109
+  },
+  "frames": 270,
+  "maxMs": 33.30000000000018,
+  "meanCalls": 418.8222222222222,
+  "meanTriangles": 5181.644444444444,
+  "medianMs": 16.699999999999818,
+  "over33": 0,
+  "p95Ms": 16.799999999999272,
+  "renderer": {
+    "calls": 450,
+    "triangles": 5244
+  },
+  "viewport": [
+    1280,
+    577
+  ]
+}

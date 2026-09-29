@@ -29,7 +29,8 @@ export class LevelVisuals {
    if((c.x%6===0&&c.z%6===0)||(c.room==='passage'&&(c.x+c.z)%7===0))tile('light',x,c.ceiling-.03,z,Math.PI/2,0,.18,1.5);
   }
   for(const[k,items]of groups){let mat;if(k==='light'||k==='pit')mat=new THREE.MeshBasicMaterial({color:k==='light'?this.theme.color:'#03050a',side:THREE.DoubleSide});else{const row=k.startsWith('wall')?1:k.startsWith('ceiling')?2:0,col=Number(k.at(-1));mat=this.material(col,row,k.startsWith('ceiling')?'#6e7f8d':'#d7d5cc');}
-   const mesh=new THREE.InstancedMesh(new THREE.PlaneGeometry(1,1),mat,items.length);items.forEach((v,i)=>{matrix.position.set(v.x,v.y,v.z);matrix.rotation.set(v.rx,v.ry,0);matrix.scale.set(v.sx,v.sy,1);matrix.updateMatrix();mesh.setMatrixAt(i,matrix.matrix);});mesh.computeBoundingSphere();this.group.add(mesh);
+   const chunks=new Map();for(const v of items){const key=Math.floor(v.x/16)+':'+Math.floor(v.z/16)+':'+Math.floor(v.y/8);if(!chunks.has(key))chunks.set(key,[]);chunks.get(key).push(v);}
+   for(const chunk of chunks.values()){const mesh=new THREE.InstancedMesh(new THREE.PlaneGeometry(1,1),mat,chunk.length);chunk.forEach((v,i)=>{matrix.position.set(v.x,v.y,v.z);matrix.rotation.set(v.rx,v.ry,0);matrix.scale.set(v.sx,v.sy,1);matrix.updateMatrix();mesh.setMatrixAt(i,matrix.matrix);});mesh.computeBoundingSphere();this.group.add(mesh);}
   }
   // Wall accessories come from StationPropPlan's validated anchors.
   // Render landmark collision volumes at their real size, below the low ceiling.

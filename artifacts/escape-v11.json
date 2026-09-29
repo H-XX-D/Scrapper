@@ -1,0 +1,1568 @@
+{
+  "art": [
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20626,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 22941,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 19061,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 19177,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20572,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21876,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21238,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 16009,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20584,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 23107,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 18968,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 19212,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20601,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21762,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21154,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 16044,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20701,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 23100,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 18933,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 19187,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20516,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21854,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21092,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 16068,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20639,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 22985,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 18819,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 19173,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 20376,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21692,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 21047,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "fp-facehugger-peel",
+      "opaque": 16087,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18459,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18097,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18278,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 17106,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 16288,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19271,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19224,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19005,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18567,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18062,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18245,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 17380,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 16333,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19163,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19496,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19064,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18449,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18237,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18289,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 17220,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 16431,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19450,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19648,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19076,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18166,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 17724,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18157,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 16814,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 16038,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18656,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 19394,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "escape-facehugger-peel",
+      "opaque": 18951,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 4671,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5187,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5749,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5726,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5342,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5482,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5369,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5007,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8893,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 9583,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 9773,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 10659,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 10089,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 10470,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 9866,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 9324,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6127,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7167,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6364,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7276,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7023,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6317,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6642,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6008,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5628,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6577,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6884,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6534,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6550,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6392,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6397,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5987,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5714,
+      "r": 4
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5555,
+      "r": 4
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6044,
+      "r": 4
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5594,
+      "r": 4
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6091,
+      "r": 4
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6278,
+      "r": 4
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6165,
+      "r": 4
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 5131,
+      "r": 4
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7552,
+      "r": 5
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8645,
+      "r": 5
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8462,
+      "r": 5
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8375,
+      "r": 5
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8674,
+      "r": 5
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8570,
+      "r": 5
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8312,
+      "r": 5
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7978,
+      "r": 5
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 6651,
+      "r": 6
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7455,
+      "r": 6
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7795,
+      "r": 6
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7919,
+      "r": 6
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7767,
+      "r": 6
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8412,
+      "r": 6
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8090,
+      "r": 6
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7217,
+      "r": 6
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7534,
+      "r": 7
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8267,
+      "r": 7
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8522,
+      "r": 7
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8546,
+      "r": 7
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8672,
+      "r": 7
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8129,
+      "r": 7
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 8049,
+      "r": 7
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "player-projectiles",
+      "opaque": 7845,
+      "r": 7
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 41090,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 30731,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 40176,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 37960,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 46173,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 35905,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 34026,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 40861,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 57978,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 47348,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 51559,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 60244,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 58475,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 66562,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 67484,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-transit",
+      "opaque": 59770,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 41666,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 35137,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 44362,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 44764,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 44481,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 36870,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 45427,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 48097,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 67756,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 54678,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 59509,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 63991,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 51802,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 60770,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 63368,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-research",
+      "opaque": 71599,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 47323,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 36212,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 46992,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 36763,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 49732,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 42891,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 46549,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 44521,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 67686,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 51078,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 54726,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 60895,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 55516,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 61366,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 61314,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-cryo",
+      "opaque": 62842,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 45026,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 40777,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 55893,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 41269,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 47074,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 37204,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 47676,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 46546,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 71314,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 54624,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 57768,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 64512,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 56152,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 61243,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 61822,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "dressing-foundry",
+      "opaque": 64743,
+      "r": 3
+    }
+  ],
+  "cases": [
+    {
+      "actor": 279,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "facehugger",
+      "pilot": "rook",
+      "recoveryStart": 2.75,
+      "released": "escaped",
+      "required": 12,
+      "restored": true,
+      "seconds": 0.7285,
+      "taps": 13
+    },
+    {
+      "actor": 280,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "gnats",
+      "pilot": "rook",
+      "recoveryStart": 1.1,
+      "released": "escaped",
+      "required": 9,
+      "restored": true,
+      "seconds": 0.3979000000357628,
+      "taps": 10
+    },
+    {
+      "actor": 281,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "burrower",
+      "pilot": "rook",
+      "recoveryStart": 1.0000000000000004,
+      "released": "escaped",
+      "required": 14,
+      "restored": true,
+      "seconds": 0.3799000000357628,
+      "taps": 14
+    },
+    {
+      "actor": 282,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "facehugger",
+      "pilot": "echo",
+      "recoveryStart": 2.75,
+      "released": "escaped",
+      "required": 12,
+      "restored": true,
+      "seconds": 0.4664000000357627,
+      "taps": 13
+    },
+    {
+      "actor": 283,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "gnats",
+      "pilot": "echo",
+      "recoveryStart": 1.1,
+      "released": "escaped",
+      "required": 9,
+      "restored": true,
+      "seconds": 0.3204000000357628,
+      "taps": 10
+    },
+    {
+      "actor": 284,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "burrower",
+      "pilot": "echo",
+      "recoveryStart": 1.0000000000000004,
+      "released": "escaped",
+      "required": 14,
+      "restored": true,
+      "seconds": 0.3655,
+      "taps": 14
+    },
+    {
+      "actor": 285,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "facehugger",
+      "pilot": "flint",
+      "recoveryStart": 2.75,
+      "released": "escaped",
+      "required": 12,
+      "restored": true,
+      "seconds": 0.4177000000476837,
+      "taps": 13
+    },
+    {
+      "actor": 286,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "gnats",
+      "pilot": "flint",
+      "recoveryStart": 1.1,
+      "released": "escaped",
+      "required": 9,
+      "restored": true,
+      "seconds": 0.27120000004768374,
+      "taps": 10
+    },
+    {
+      "actor": 287,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "burrower",
+      "pilot": "flint",
+      "recoveryStart": 1.0000000000000004,
+      "released": "escaped",
+      "required": 14,
+      "restored": true,
+      "seconds": 0.30210000002384185,
+      "taps": 14
+    },
+    {
+      "actor": 288,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "facehugger",
+      "pilot": "eos",
+      "recoveryStart": 2.75,
+      "released": "escaped",
+      "required": 12,
+      "restored": true,
+      "seconds": 0.4143000000119209,
+      "taps": 13
+    },
+    {
+      "actor": 289,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "gnats",
+      "pilot": "eos",
+      "recoveryStart": 1.1,
+      "released": "escaped",
+      "required": 9,
+      "restored": true,
+      "seconds": 0.2585,
+      "taps": 10
+    },
+    {
+      "actor": 290,
+      "frames": [
+        6,
+        7
+      ],
+      "immune": true,
+      "kind": "burrower",
+      "pilot": "eos",
+      "recoveryStart": 1.0000000000000004,
+      "released": "escaped",
+      "required": 14,
+      "restored": true,
+      "seconds": 0.2918000000119209,
+      "taps": 14
+    }
+  ],
+  "complete": true,
+  "errors": []
+}

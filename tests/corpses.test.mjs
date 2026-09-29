@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {CorpseCleanup,corpseAnchor,groundCorpse} from '../src/corpses.js';
 import {makeActor,hurtActor} from '../src/combat.js';
-import {StationFog} from '../src/station-fog.js';
+import {StationFog,VIEW_DISTANCE} from '../src/station-fog.js';
 import * as THREE from '../vendor/three.module.js';
 
 const world={at:(x,z,y)=>({room:'room-'+x+'-deck-'+y}),floor:(x,z,y)=>y};
@@ -45,5 +45,5 @@ test('station volume patches instanced surfaces and sprites once, sharing camera
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(),fog=new StationFog(scene,camera,'#10252a');
  const materials=[new THREE.MeshLambertMaterial(),new THREE.SpriteMaterial()];
  for(const material of materials){fog.attach(material);const version=material.version,shader={uniforms:{},vertexShader:THREE.ShaderLib[material.isSpriteMaterial?'sprite':'lambert'].vertexShader,fragmentShader:THREE.ShaderLib[material.isSpriteMaterial?'sprite':'lambert'].fragmentShader};material.onBeforeCompile(shader);fog.attach(material);assert.equal(material.version,version);assert.equal(shader.uniforms.stationCameraWorld.value,camera.matrixWorld);assert.equal(shader.uniforms.stationFogTime,fog.time);assert.match(shader.vertexShader,/stationCameraWorld \* mvPosition/);assert.match(shader.fragmentShader,/fogStep<4/);assert.doesNotMatch(shader.fragmentShader,/#include <fog_fragment>/);}
- fog.update(.2);assert.equal(fog.time.value,.2);assert.equal(scene.children.length,0);
+ assert.equal(VIEW_DISTANCE,20);assert.equal(scene.fog.far,20);assert.equal(scene.fog.near,4);fog.update(.2);assert.equal(fog.time.value,.2);assert.equal(scene.children.length,0);
 });

@@ -42,5 +42,5 @@ jobs:
       - name: Upload and publish verified HTML
         shell: bash
         run: |
-          gh release upload "$RELEASE_TAG" "exports/Scrapper-Playable-$RELEASE_TAG.html" "exports/Scrapper-Playable-$RELEASE_TAG.sha256" --clobber
+          gh release upload "$RELEASE_TAG" "exports/Scrapper-Playable-$RELEASE_TAG.html" "exports/Scrapper-Playable-$RELEASE_TAG.sha256" "exports/Scrapper-Playable-$RELEASE_TAG.zip" --clobber
           gh release edit "$RELEASE_TAG" --draft=false --latest

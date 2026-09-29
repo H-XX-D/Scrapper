@@ -1,0 +1,714 @@
+{
+  "htmlBytes": 247602302,
+  "sourceBytes": 226090734,
+  "packedBytes": 184960506,
+  "assets": [
+    {
+      "path": "assets/generated/facehugger-v10.png",
+      "sourceBytes": 2534604,
+      "packedBytes": 1928970,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/gnats-v10.png",
+      "sourceBytes": 2272603,
+      "packedBytes": 1922146,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/burrower-v10.png",
+      "sourceBytes": 2010475,
+      "packedBytes": 1598232,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-beetle.png",
+      "sourceBytes": 2187637,
+      "packedBytes": 1829246,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-crawler.png",
+      "sourceBytes": 2065987,
+      "packedBytes": 1781144,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-drone.png",
+      "sourceBytes": 1988055,
+      "packedBytes": 1674918,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-tank.png",
+      "sourceBytes": 2254357,
+      "packedBytes": 1923108,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-jelly.png",
+      "sourceBytes": 2217048,
+      "packedBytes": 1942198,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-scorpion.png",
+      "sourceBytes": 2224730,
+      "packedBytes": 1920410,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-priest.png",
+      "sourceBytes": 2324574,
+      "packedBytes": 1962154,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-bat.png",
+      "sourceBytes": 2098273,
+      "packedBytes": 1765302,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-worm.png",
+      "sourceBytes": 2185072,
+      "packedBytes": 1851820,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-spider.png",
+      "sourceBytes": 2246575,
+      "packedBytes": 1908858,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/boss-motion-keyed.png",
+      "sourceBytes": 2874182,
+      "packedBytes": 2410384,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-overseer.png",
+      "sourceBytes": 2855955,
+      "packedBytes": 2521254,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/zone-props-side-v18.png",
+      "sourceBytes": 2683883,
+      "packedBytes": 2134928,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/scenery.png",
+      "sourceBytes": 1961611,
+      "packedBytes": 1529932,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/green-splatter-atlas.png",
+      "sourceBytes": 1523150,
+      "packedBytes": 1229660,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/combat-bursts-v3.png",
+      "sourceBytes": 1568755,
+      "packedBytes": 1284824,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/monsters-loot.png",
+      "sourceBytes": 1875935,
+      "packedBytes": 1448580,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/hud-skin-v18.png",
+      "sourceBytes": 2806033,
+      "packedBytes": 2315822,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/creature-bursts.png",
+      "sourceBytes": 1976226,
+      "packedBytes": 1676952,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/colored-splatter.png",
+      "sourceBytes": 1795648,
+      "packedBytes": 1491438,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/pod.png",
+      "sourceBytes": 2630641,
+      "packedBytes": 2126838,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/pickups.png",
+      "sourceBytes": 1965540,
+      "packedBytes": 1505648,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/story-portraits.png",
+      "sourceBytes": 2647977,
+      "packedBytes": 2018042,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/visor-wipe.png",
+      "sourceBytes": 1415295,
+      "packedBytes": 959722,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/fps-weapon-onehand-v18.png",
+      "sourceBytes": 1332928,
+      "packedBytes": 872364,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/fps-arsenal-onehand-v18.png",
+      "sourceBytes": 1888714,
+      "packedBytes": 1450026,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-bolt.png",
+      "sourceBytes": 1929768,
+      "packedBytes": 1484984,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-arc.png",
+      "sourceBytes": 2127921,
+      "packedBytes": 1690204,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-beam.png",
+      "sourceBytes": 2072456,
+      "packedBytes": 1617884,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-rockets.png",
+      "sourceBytes": 2204771,
+      "packedBytes": 1743226,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-frost.png",
+      "sourceBytes": 2042423,
+      "packedBytes": 1557820,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-blades.png",
+      "sourceBytes": 2221170,
+      "packedBytes": 1749930,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/reload-flame.png",
+      "sourceBytes": 2199735,
+      "packedBytes": 1791784,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-transit.png",
+      "sourceBytes": 2905749,
+      "packedBytes": 2299326,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-research.png",
+      "sourceBytes": 3143669,
+      "packedBytes": 2422128,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-cryo.png",
+      "sourceBytes": 3280379,
+      "packedBytes": 2550056,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-foundry.png",
+      "sourceBytes": 2831019,
+      "packedBytes": 2313356,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/tentacles-v9.png",
+      "sourceBytes": 1968525,
+      "packedBytes": 1643614,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-grab-v9.png",
+      "sourceBytes": 1732892,
+      "packedBytes": 1418854,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-burrower-v10.png",
+      "sourceBytes": 1969597,
+      "packedBytes": 1591992,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-facehugger-v10.png",
+      "sourceBytes": 1849658,
+      "packedBytes": 1487700,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-gnats-v10.png",
+      "sourceBytes": 2593685,
+      "packedBytes": 2172260,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-tentacle-0-v10.png",
+      "sourceBytes": 2358790,
+      "packedBytes": 1945424,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-tentacle-1-v10.png",
+      "sourceBytes": 2226727,
+      "packedBytes": 1865218,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-tentacle-2-v10.png",
+      "sourceBytes": 2329379,
+      "packedBytes": 1907134,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-tentacle-3-v10.png",
+      "sourceBytes": 2282219,
+      "packedBytes": 1895776,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/fp-facehugger-v10.png",
+      "sourceBytes": 2731374,
+      "packedBytes": 2178822,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/escape-facehugger-peel-v11.png",
+      "sourceBytes": 2068459,
+      "packedBytes": 1663984,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/fp-facehugger-peel-v11.png",
+      "sourceBytes": 2331372,
+      "packedBytes": 1885102,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/dressing-cryo-v11.png",
+      "sourceBytes": 2310275,
+      "packedBytes": 1811880,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/dressing-foundry-v11.png",
+      "sourceBytes": 2269746,
+      "packedBytes": 1811878,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/dressing-research-v11.png",
+      "sourceBytes": 2298246,
+      "packedBytes": 1773208,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/dressing-transit-v11.png",
+      "sourceBytes": 2036031,
+      "packedBytes": 1595842,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/player-projectiles-v11.png",
+      "sourceBytes": 2036763,
+      "packedBytes": 1804648,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/attack-vfx-padded.png",
+      "sourceBytes": 2127517,
+      "packedBytes": 1772480,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/original-hit-gore-padded.png",
+      "sourceBytes": 2006318,
+      "packedBytes": 1696004,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-bolt.png",
+      "sourceBytes": 2141754,
+      "packedBytes": 1796416,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-arc.png",
+      "sourceBytes": 2259486,
+      "packedBytes": 1908608,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-beam.png",
+      "sourceBytes": 2262908,
+      "packedBytes": 1926148,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-rockets.png",
+      "sourceBytes": 2127663,
+      "packedBytes": 1792928,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-frost.png",
+      "sourceBytes": 2272180,
+      "packedBytes": 1969618,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-blades.png",
+      "sourceBytes": 2379114,
+      "packedBytes": 2038950,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-rook-flame.png",
+      "sourceBytes": 2128069,
+      "packedBytes": 1796000,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-bolt.png",
+      "sourceBytes": 2206206,
+      "packedBytes": 1861362,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-arc.png",
+      "sourceBytes": 2342805,
+      "packedBytes": 1950576,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-beam.png",
+      "sourceBytes": 2282712,
+      "packedBytes": 1936130,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-rockets.png",
+      "sourceBytes": 2105999,
+      "packedBytes": 1770036,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-frost-v2.png",
+      "sourceBytes": 1690261,
+      "packedBytes": 1285686,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-blades.png",
+      "sourceBytes": 2358594,
+      "packedBytes": 1992400,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-echo-flame-v2.png",
+      "sourceBytes": 1880529,
+      "packedBytes": 1528922,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-bolt.png",
+      "sourceBytes": 2309305,
+      "packedBytes": 1954316,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-arc.png",
+      "sourceBytes": 2379650,
+      "packedBytes": 1996084,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-beam.png",
+      "sourceBytes": 2195398,
+      "packedBytes": 1855578,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-rockets-v2.png",
+      "sourceBytes": 1720329,
+      "packedBytes": 1336370,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-frost.png",
+      "sourceBytes": 2138592,
+      "packedBytes": 1809116,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-blades.png",
+      "sourceBytes": 2311131,
+      "packedBytes": 1962636,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-flint-flame.png",
+      "sourceBytes": 2260249,
+      "packedBytes": 1934082,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-bolt.png",
+      "sourceBytes": 2194925,
+      "packedBytes": 1799816,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-arc.png",
+      "sourceBytes": 2449081,
+      "packedBytes": 2014838,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-beam.png",
+      "sourceBytes": 2435881,
+      "packedBytes": 2032814,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-rockets.png",
+      "sourceBytes": 2380266,
+      "packedBytes": 1962494,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-frost.png",
+      "sourceBytes": 2465263,
+      "packedBytes": 2026730,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-blades.png",
+      "sourceBytes": 2584992,
+      "packedBytes": 2159248,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/crew-eos-flame.png",
+      "sourceBytes": 2540338,
+      "packedBytes": 2111418,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/station-motion.png",
+      "sourceBytes": 2501759,
+      "packedBytes": 1896220,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/station-machinery-v4.png",
+      "sourceBytes": 2485255,
+      "packedBytes": 2094722,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/station-utilities-v4.png",
+      "sourceBytes": 2533051,
+      "packedBytes": 2115124,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/station-clutter-v4.png",
+      "sourceBytes": 2445439,
+      "packedBytes": 1847248,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/station-exhaust-v4.png",
+      "sourceBytes": 1453055,
+      "packedBytes": 1146138,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/wall-infestation-v3.png",
+      "sourceBytes": 2242064,
+      "packedBytes": 1918336,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/flame-area-vfx-v3.png",
+      "sourceBytes": 1715632,
+      "packedBytes": 1438354,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/puzzle-devices.png",
+      "sourceBytes": 2398573,
+      "packedBytes": 2062872,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-extra-transit.png",
+      "sourceBytes": 3062222,
+      "packedBytes": 2506592,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-extra-research.png",
+      "sourceBytes": 3366877,
+      "packedBytes": 2632860,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-extra-cryo.png",
+      "sourceBytes": 3343917,
+      "packedBytes": 2658698,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/generated/env-extra-foundry.png",
+      "sourceBytes": 3002764,
+      "packedBytes": 2519648,
+      "mime": "image/webp",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/press-start-2p.ttf",
+      "sourceBytes": 115280,
+      "packedBytes": 115280,
+      "mime": "font/ttf",
+      "pixelExact": true
+    },
+    {
+      "path": "assets/legacy/menu-background.png",
+      "sourceBytes": 1722070,
+      "packedBytes": 1371656,
+      "mime": "image/webp",
+      "pixelExact": true
+    }
+  ]
+}

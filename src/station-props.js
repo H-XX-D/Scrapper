@@ -17,8 +17,12 @@ export const STATION_PROPS={
 const clutterNames=['cableReel','refuseBin','oxygenBottles','toolbox','mopBucket','serviceCart','scrapCart','ladder','filterStack','supplyCrates','hoseReel','chair','metalDebris','discardedGear','pipeParts','litter'];
 const sizes=[[1.25,1.45],[1.2,1.65],[1.05,1.7],[1.25,1.3],[1,1.75],[1.15,1.85],[1.5,1.5],[1.15,2.15],[1.15,1.3],[1.3,1.5],[1.3,1.5],[1.1,1.6],[1.25,.48],[1.05,.52],[1.2,.66],[1.2,.4]];
 clutterNames.forEach((name,i)=>STATION_PROPS[name]=type('clutter',Math.floor(i/4),...sizes[i],{frames:1,col:i%4,depth:i>=12?0:.32,clutter:true,billboard:true}));
+export const DRESSING_THEMES=['transit','research','cryo','foundry'];
+const dressingNames=['pipes','riser','elbows','cableTray','cableCoil','cableDrop','valve','ceilingRack','console','wallConsole','analyzer','centrifuge','specimen','microscope','sampleDrawers','diagnostics'];
+const dressingSizes=[[2.65,.95],[1.3,2.5],[2.1,1.65],[2.6,.85],[1.6,1.4],[1.8,2.1],[1.8,1.8],[2.6,.7],[2.1,1.8],[1.75,1.45],[1.8,2.2],[1.9,1.65],[1.45,2.6],[2.3,1.8],[1.6,2.3],[1.75,2.25]];
+for(const theme of DRESSING_THEMES)dressingNames.forEach((name,i)=>STATION_PROPS[theme+'-'+name]=type('dressing-'+theme,Math.floor(i/4),...dressingSizes[i],{frames:1,col:i%4,static:true,detail:i<8,depth:i<8||i===9?0:.38,mount:i===0?1.65:i===3?2.3:i===7?2.7:i===9?1:0}));
 const hash=(seed,x,z,side=0)=>{let h=(seed^Math.imul(x,374761393)^Math.imul(z,668265263)^Math.imul(side,1274126177))>>>0;h=Math.imul(h^(h>>>13),1274126177);return((h^(h>>>16))>>>0)/4294967296;};
-const equipment=Object.keys(STATION_PROPS).filter(k=>!STATION_PROPS[k].clutter);
+const equipment=Object.keys(STATION_PROPS).filter(k=>!STATION_PROPS[k].clutter&&!STATION_PROPS[k].static);
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 export function stationPropPlan(world,reserved=[]){
  const keepClear=[world.start,world.control,world.purge,world.exit,world.clue,world.accessCard,world.fabricator,...world.switches,...world.cases,...world.nests,...world.supplies,...reserved].filter(Boolean);
@@ -41,7 +45,7 @@ export function stationPropPlan(world,reserved=[]){
  for(const[room,list]of groups){
   list.sort((a,b)=>a.roll-b.roll);const target=room==='passage'?48:room.includes('service')||room.includes('conduit')?20:18;let placed=0;
   for(const a of list){if(placed>=target)break;if(props.some(p=>Math.abs(p.y-a.y)<2.8&&distance(p,a)<3.35))continue;
-   const kind=placed%3===0?favored[(placed+Math.floor(a.roll*47))%favored.length]:equipment[(placed+Math.floor(a.roll*233))%equipment.length];add(a,kind);placed++;
+   const theme=DRESSING_THEMES[world.theme]||'transit',kind=placed%2===1?theme+'-'+dressingNames[8+(placed+Math.floor(a.roll*73))%8]:placed%3===0?favored[(placed+Math.floor(a.roll*47))%favored.length]:equipment[(placed+Math.floor(a.roll*233))%equipment.length];add(a,kind);placed++;
   }
  }
  // Small maintenance debris fills gaps between equipment and along service walls.
@@ -50,6 +54,10 @@ export function stationPropPlan(world,reserved=[]){
   if(props.some(p=>Math.abs(p.y-a.y)<2.8&&distance(p,a)<1.6))continue;
   const kind=clutterNames[Math.floor(a.roll*1231)%16];add(a,kind,{x:a.x+a.nx*.3,z:a.z+a.nz*.3});
  }
+ // Bracketed pipes and cable assemblies occupy remaining solid-wall space. No
+ // collision boxes or random floating panels are added to passage centers.
+ const theme=DRESSING_THEMES[world.theme]||'transit';let details=0;
+ for(const a of anchors){if(details>=180)break;if(props.some(p=>Math.abs(p.y-a.y)<2.8&&distance(p,a)<1.65))continue;add(a,theme+'-'+dressingNames[details++%8]);}
  return props;
 }
 export function installStationProps(world,reserved=[]){
