@@ -2,8 +2,8 @@ import{releaseOrphanParasites}from'./parasites.js';
 import{beginGrab,releaseGrab,advanceStruggle}from'./grabs.js';
 import{tentacleSpan,crossesTentacle,dragCaptive}from'./tentacle-path.js';
 export{GRAB_DURATION,ESCAPE_STEPS,struggleDirection,releaseGrab,grabbedFrame}from'./grabs.js';
-export const TENTACLE_TELL=.5,TENTACLE_STRIKE=.2;
-const inReach=(p,player,padding=.85)=>crossesTentacle({...p,extension:p.span?.length??p.reach},player,padding);
+export const TENTACLE_TELL=.07,TENTACLE_STRIKE=.09;
+const inReach=(p,player,padding=1.35)=>crossesTentacle({...p,extension:p.span?.length??p.reach},player,padding);
 export function tickTentacles(system,members,dt,inputFor=()=>({}),damage=()=>{},actors=[],onEscape=()=>{}){
  releaseOrphanParasites(actors,members);
  const byId=new Map(members.map(m=>[m.id,m]));
@@ -21,16 +21,16 @@ export function tickTentacles(system,members,dt,inputFor=()=>({}),damage=()=>{},
   const candidates=members.filter(m=>m.player.hp>0&&!m.player.grab&&!m.player.grabRecovery&&!(m.player.grabImmune>0));
   if(p.tentacleState==='windup'){
    p.extension=0;if(p.tentacleAge<TENTACLE_TELL)continue;const m=candidates.find(m=>m.id===p.grabTarget);
-   if(m&&inReach(p,m.player,2)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9)){p.strikeTarget={x:m.player.x,y:m.player.y+.95,z:m.player.z};p.tentacleState='strike';p.tentacleAge=0;}
+   if(m&&inReach(p,m.player,2)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9)){p.tentacleState='strike';p.tentacleAge=0;}
    else{p.tentacleState='recoil';p.tentacleAge=0;p.grabCooldown=4;p.grabTarget=null;}continue;
   }
   if(p.tentacleState==='strike'){
    const target=p.strikeTarget,length=Math.hypot(target.x-p.x,target.y-p.y,target.z-p.z);p.extension=Math.min(1,p.tentacleAge/TENTACLE_STRIKE)*length;
    if(p.tentacleAge<TENTACLE_STRIKE)continue;const m=candidates.find(m=>m.id===p.grabTarget),path={...p,span:{...target,length}};
-   if(m&&crossesTentacle(path,m.player,1.1)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9)&&beginGrab(m.player,p,'tentacle',inputFor(m.id))){p.tentacleState='grip';p.tentacleAge=0;}
+   if(m&&crossesTentacle(path,m.player,1.5)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9)&&beginGrab(m.player,p,'tentacle',inputFor(m.id))){p.tentacleState='grip';p.tentacleAge=0;}
    else{p.tentacleState='recoil';p.tentacleAge=0;p.grabCooldown=4;p.grabTarget=null;}continue;
   }
-  p.extension=0;const m=candidates.find(m=>inReach(p,m.player)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9));if(m){p.tentacleState='windup';p.tentacleAge=0;p.grabTarget=m.id;}
+  p.extension=0;const m=candidates.find(m=>inReach(p,m.player)&&system.world.los(p.x,p.z,m.player.x,m.player.z,p.y,m.player.y+.9));if(m){p.tentacleState='windup';p.tentacleAge=0;p.grabTarget=m.id;p.strikeTarget={x:m.player.x,y:m.player.y+.95,z:m.player.z};}
  }
  for(const m of members)m.player.tentaclePrevious={x:m.player.x,y:m.player.y+1,z:m.player.z};
 }

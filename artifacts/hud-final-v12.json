@@ -1,0 +1,108 @@
+{
+  "far": 20,
+  "missionLinkHidden": true,
+  "ready": true,
+  "removedEnemyHealth": true,
+  "removedEscapePrompt": true,
+  "running": true,
+  "shot": [
+    {
+      "frame": {
+        "col": 0,
+        "direction": 0,
+        "phase": 0,
+        "row": 0,
+        "sheet": "projectile-rockets"
+      },
+      "gun": "rockets",
+      "position": [
+        161,
+        2.1,
+        273
+      ],
+      "sheet": "projectile-rockets"
+    }
+  ],
+  "ticks": [
+    {
+      "kind": "objective",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "objective",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "objective",
+      "size": "7px"
+    },
+    {
+      "kind": "objective",
+      "size": "7px"
+    },
+    {
+      "kind": "objective",
+      "size": "6px"
+    },
+    {
+      "kind": "enemy",
+      "size": "7px"
+    },
+    {
+      "kind": "enemy",
+      "size": "6px"
+    },
+    {
+      "kind": "objective",
+      "size": "6px"
+    },
+    {
+      "kind": "enemy",
+      "size": "6px"
+    },
+    {
+      "kind": "enemy",
+      "size": "6px"
+    }
+  ]
+}

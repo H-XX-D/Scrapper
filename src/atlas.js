@@ -7,6 +7,8 @@ import{GRAB_LAYOUTS}from'./grab-layouts.js';
 import{CREW_LAYOUTS}from'./crew-layouts.js';
 import{GOO_COLORS}from'./visor.js';
 import{recolorSuit}from'./suit-palette.js';
+import{AssetLoader}from'./asset-loader.js';
+import{PROJECTILE_LAYOUTS}from'./projectile-layouts.js';
 export const THEMES=[
  {id:'transit',name:'Freight Transit',subtitle:'Breach the cargo spine',color:'#8cbbc7',fog:'#111c24'},
  {id:'research',name:'Overgrown Research',subtitle:'Recover the living archive',color:'#98bb73',fog:'#17221f'},
@@ -32,6 +34,7 @@ SPECS.crewGrab={path:'assets/generated/crew-grab-v9.png',cols:8,rows:4,...GRAB_L
 for(const [id,layout]of Object.entries(ESCAPE_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v10.png',cols:8,rows:layout.rects.length,...layout};
 for(const [id,layout]of Object.entries(PEEL_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v11.png',cols:8,rows:layout.rects.length,...layout};
 for(const[id,layout]of Object.entries(DRESSING_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v11.png',cols:layout.rects[0].length,rows:layout.rects.length,...layout,align:id==='player-projectiles'?'center':'bottom'};
+for(const[id,layout]of Object.entries(PROJECTILE_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v12.png',cols:layout.rects[0].length,rows:layout.rects.length,...layout,align:id==='clinger-pods'?'bottom':'center'};
 SPECS.attackVfx={path:'assets/generated/attack-vfx-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,160,313,457,615,784,920,1086,1254],xBounds:[0,157,313,470,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 SPECS.originalGore={path:'assets/generated/original-hit-gore-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,157,313,470,627,784,939,1095,1254],xBounds:[0,153,296,458,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 for(const pilot of Object.keys(PILOTS))for(const w of WEAPONS)SPECS['crew-'+pilot+'-'+w.id]={path:'assets/generated/crew-'+pilot+'-'+w.id+'.png',cols:8,rows:8,key:'magenta',...CREW_LAYOUTS['crew-'+pilot+'-'+w.id]};
@@ -45,14 +48,17 @@ SPECS.areaVfx={path:'assets/generated/flame-area-vfx-v3.png',cols:8,rows:4,key:'
 SPECS.puzzleDevices={path:'assets/generated/puzzle-devices.png',cols:8,rows:8,key:'magenta'};
 for(const t of THEMES)SPECS['env-extra-'+t.id]={path:'assets/generated/env-extra-'+t.id+'.png',cols:4,rows:4};
 export class Atlas{
- constructor(){this.images={};this.cache=new Map();this.textures=new Map();this.wipeKeys=[];}
- async load(progress=()=>{}){
-  const byPath=new Map();let done=0;
-  for(const spec of Object.values(SPECS))if(!byPath.has(spec.path))byPath.set(spec.path,new Promise((resolve,reject)=>{
-   const img=new Image();const timer=setTimeout(()=>{if(img.complete&&img.naturalWidth)resolve(img);else reject(Error('Unable to load '+spec.path));},30000);
-   img.onload=()=>{clearTimeout(timer);resolve(img);};img.onerror=()=>{clearTimeout(timer);reject(Error('Unable to load '+spec.path));};img.src=window.__SCRAPPER_ASSETS?.[spec.path]||spec.path;
-  }));
-  await Promise.all(Object.entries(SPECS).map(async([id,s])=>{this.images[id]=await byPath.get(s.path);progress(++done,Object.keys(SPECS).length);}));return this;
+ constructor(){this.images={};this.cache=new Map();this.textures=new Map();this.wipeKeys=[];this.loader=new AssetLoader();}
+ load(progress=()=>{}){return this.loadSubset(Object.keys(SPECS),progress);}
+ async loadSubset(ids,progress=()=>{}){
+  const paths=[...new Set(ids.map(id=>{if(!SPECS[id])throw Error('Unknown atlas '+id);return SPECS[id].path;}))];let done=0;progress(0,paths.length);
+  await Promise.all(paths.map(async path=>{const img=await this.loader.get(path);for(const[id,s]of Object.entries(SPECS))if(s.path===path)this.images[id]=img;progress(++done,paths.length);}));return this;
+ }
+ releaseExcept(ids){
+  const paths=new Set(ids.map(id=>SPECS[id].path));
+  for(const id of Object.keys(this.images))if(!paths.has(SPECS[id].path)){delete this.images[id];this.loader.forget(SPECS[id].path);}
+  for(const key of this.cache.keys())if(!paths.has(key.split(':')[0]))this.cache.delete(key);
+  this.wipeKeys=this.wipeKeys.filter(key=>this.cache.has(key));
  }
 
  frame(id,col=0,row=0,pilot='rook'){

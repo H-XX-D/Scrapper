@@ -31,16 +31,17 @@ jobs:
         run: |
           [[ "$RELEASE_TAG" =~ ^v[0-9]+$ ]]
           test -f "exports/Scrapper-Playable-$RELEASE_TAG.sha256"
+          cp "exports/Scrapper-Playable-$RELEASE_TAG.sha256" /tmp/scrapper-expected.sha256
           test "$(gh release view "$RELEASE_TAG" --json isDraft --jq .isDraft)" = true
       - run: npm ci
       - run: npm run check
       - run: npm run export
       - name: Check reproducible export
         working-directory: exports
-        run: sha256sum --check "Scrapper-Playable-$RELEASE_TAG.sha256"
+        run: sha256sum --check /tmp/scrapper-expected.sha256
       - run: npm test
       - name: Upload and publish verified HTML
         shell: bash
         run: |
-          gh release upload "$RELEASE_TAG" "exports/Scrapper-Playable-$RELEASE_TAG.html" "exports/Scrapper-Playable-$RELEASE_TAG.sha256" "exports/Scrapper-Playable-$RELEASE_TAG.zip" --clobber
+          gh release upload "$RELEASE_TAG" "exports/Scrapper-Playable-$RELEASE_TAG.html" "exports/Scrapper-Playable-$RELEASE_TAG.sha256" "exports/Scrapper-Playable-$RELEASE_TAG.zip" "exports/Scrapper-Fast-Load-$RELEASE_TAG.zip" --clobber
           gh release edit "$RELEASE_TAG" --draft=false --latest

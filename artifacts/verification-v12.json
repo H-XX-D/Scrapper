@@ -1,0 +1,573 @@
+{
+  "portableSha256": "3e9c2e724a3f5e58fd61b93e13b66670f36673778f6589e8d6f20b72a2463d2b  Scrapper-Playable-v12.html",
+  "fastLauncher": {
+    "file": "Scrapper.html",
+    "bytes": 1164465,
+    "sha256": "15946069fadae8ffa06d22fa9446b296669021eefbf9786ac6f5a18faee28fa8"
+  },
+  "automatedTests": 136,
+  "syntax": "passed",
+  "zipIntegrity": "both passed unzip -tq",
+  "chapters": 12,
+  "chapterErrors": [],
+  "restoredPods": true,
+  "soloCaptures": 12,
+  "soloErrors": [],
+  "tentacleCaptures": 48,
+  "tentacleErrors": [],
+  "newFrames": 176,
+  "artErrors": [],
+  "coop": {
+    "clients": 4,
+    "captures": 12,
+    "releases": 12,
+    "heldGuestBarrier": [
+      {
+        "session": "scrapper-v12-room",
+        "loading": true,
+        "missionReady": true,
+        "running": false
+      },
+      {
+        "session": "v12-guest1",
+        "loading": true,
+        "missionReady": true,
+        "running": false
+      },
+      {
+        "session": "v12-guest2",
+        "loading": true,
+        "missionReady": true,
+        "running": false
+      },
+      {
+        "session": "v12-guest3",
+        "loading": true,
+        "missionReady": false,
+        "running": false
+      }
+    ],
+    "podBrood": [
+      {
+        "client": "scrapper-v12-room",
+        "spawned": 5,
+        "state": "empty"
+      },
+      {
+        "client": "v12-guest1",
+        "spawned": 5,
+        "state": "empty"
+      },
+      {
+        "client": "v12-guest2",
+        "spawned": 5,
+        "state": "empty"
+      },
+      {
+        "client": "v12-guest3",
+        "spawned": 5,
+        "state": "empty"
+      }
+    ]
+  },
+  "hud": {
+    "far": 20,
+    "missionLinkHidden": true,
+    "ready": true,
+    "removedEnemyHealth": true,
+    "removedEscapePrompt": true,
+    "running": true,
+    "shot": [
+      {
+        "frame": {
+          "col": 0,
+          "direction": 0,
+          "phase": 0,
+          "row": 0,
+          "sheet": "projectile-rockets"
+        },
+        "gun": "rockets",
+        "position": [
+          161,
+          2.1,
+          273
+        ],
+        "sheet": "projectile-rockets"
+      }
+    ],
+    "ticks": [
+      {
+        "kind": "objective",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "objective",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "objective",
+        "size": "7px"
+      },
+      {
+        "kind": "objective",
+        "size": "7px"
+      },
+      {
+        "kind": "objective",
+        "size": "6px"
+      },
+      {
+        "kind": "enemy",
+        "size": "7px"
+      },
+      {
+        "kind": "enemy",
+        "size": "6px"
+      },
+      {
+        "kind": "objective",
+        "size": "6px"
+      },
+      {
+        "kind": "enemy",
+        "size": "6px"
+      },
+      {
+        "kind": "enemy",
+        "size": "6px"
+      }
+    ]
+  },
+  "loading": {
+    "method": "One fresh browser session per local-file export, OS disk cache uncontrolled; same machine, sequential. Title enabled and next rendered frame timed from navigation.",
+    "results": [
+      {
+        "name": "v11",
+        "sha256": "726e155b386b1ed30f56e1048900495ca3c9ff9852844ebc508a7598d72c0221",
+        "title": {
+          "longTasks": [
+            {
+              "duration": 84,
+              "start": 36.29999995231629
+            },
+            {
+              "duration": 274,
+              "start": 857.5
+            },
+            {
+              "duration": 734,
+              "start": 1132.899999976158
+            },
+            {
+              "duration": 939,
+              "start": 2484.7999999523163
+            },
+            {
+              "duration": 328,
+              "start": 3496.899999976158
+            }
+          ],
+          "navigationStart": 15.799999952316284,
+          "resolution": [
+            1280,
+            577,
+            1
+          ],
+          "titlePaint": 3846.899999976158,
+          "titleReady": 3423.899999976158
+        },
+        "mission": {
+          "actors": 101,
+          "elapsed": 514.7999999523163,
+          "running": true
+        },
+        "errors": ""
+      },
+      {
+        "name": "v12-fast",
+        "sha256": "15946069fadae8ffa06d22fa9446b296669021eefbf9786ac6f5a18faee28fa8",
+        "title": {
+          "assets": {
+            "active": 0,
+            "completed": 1,
+            "peak": 1,
+            "queued": 0,
+            "resident": 1
+          },
+          "longTasks": [
+            {
+              "duration": 53,
+              "start": 119.39999997615814
+            }
+          ],
+          "navigationStart": 11.899999976158142,
+          "resolution": [
+            1280,
+            577,
+            1
+          ],
+          "titlePaint": 286.2999999523163,
+          "titleReady": 282.1999999284744
+        },
+        "mission": {
+          "actors": 93,
+          "assets": {
+            "active": 0,
+            "completed": 56,
+            "peak": 3,
+            "queued": 0,
+            "resident": 56
+          },
+          "elapsed": 2905.600000023842,
+          "running": true
+        },
+        "errors": ""
+      },
+      {
+        "name": "v12-portable",
+        "sha256": "3e9c2e724a3f5e58fd61b93e13b66670f36673778f6589e8d6f20b72a2463d2b",
+        "title": {
+          "assets": {
+            "active": 0,
+            "completed": 1,
+            "peak": 1,
+            "queued": 0,
+            "resident": 1
+          },
+          "longTasks": [
+            {
+              "duration": 87,
+              "start": 31.5
+            }
+          ],
+          "navigationStart": 9.899999976158142,
+          "resolution": [
+            1280,
+            577,
+            1
+          ],
+          "titlePaint": 955.8000000715256,
+          "titleReady": 951.600000023842
+        },
+        "mission": {
+          "actors": 93,
+          "assets": {
+            "active": 0,
+            "completed": 56,
+            "peak": 3,
+            "queued": 0,
+            "resident": 56
+          },
+          "elapsed": 2856.5,
+          "running": true
+        },
+        "errors": ""
+      }
+    ]
+  },
+  "combat": {
+    "baseline": {
+      "actors": 113,
+      "art": {
+        "frames": 304,
+        "images": 109
+      },
+      "combatLights": [
+        {
+          "color": "b5dd48",
+          "intensity": 6.099047619047599,
+          "kind": "flash"
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 3.0495238095237993,
+          "kind": "flash"
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 6.099047619047599,
+          "kind": "flash"
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 3.0495238095237993,
+          "kind": "flash"
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 3.0495238095237993,
+          "kind": "flash"
+        },
+        {
+          "color": "b987dc",
+          "intensity": 13,
+          "kind": "area"
+        },
+        {
+          "color": "b987dc",
+          "intensity": 13,
+          "kind": "area"
+        },
+        {
+          "color": "b987dc",
+          "intensity": 13,
+          "kind": "area"
+        },
+        {
+          "color": "b987dc",
+          "intensity": 13,
+          "kind": "area"
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 13,
+          "kind": "area"
+        }
+      ],
+      "cpuUpdate": {
+        "meanMs": 1.8758333335320152,
+        "medianMs": 1.1999999284744265,
+        "p95Ms": 3.899999976158142
+      },
+      "frames": 270,
+      "maxMs": 16.80000000000109,
+      "meanCalls": 434,
+      "meanTriangles": 5494,
+      "medianMs": 16.699999999999818,
+      "over33": 0,
+      "p95Ms": 16.700000000000728,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        577
+      ],
+      "version": "v11",
+      "sha256": "726e155b386b1ed30f56e1048900495ca3c9ff9852844ebc508a7598d72c0221",
+      "errors": ""
+    },
+    "current": {
+      "actors": 109,
+      "art": {
+        "frames": 303,
+        "images": 64
+      },
+      "combatLights": [
+        {
+          "color": "b5dd48",
+          "intensity": 2.574285714285673,
+          "kind": "flash",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 3.0514285714285507,
+          "kind": "flash",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 6.1028571428571015,
+          "kind": "flash",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 3.0514285714285507,
+          "kind": "flash",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 6.1028571428571015,
+          "kind": "flash",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 13,
+          "kind": "area",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 13,
+          "kind": "area",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 6,
+          "kind": "projectile",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 6,
+          "kind": "projectile",
+          "reach": 35
+        },
+        {
+          "color": "b5dd48",
+          "intensity": 13,
+          "kind": "area",
+          "reach": 35
+        }
+      ],
+      "cpuUpdate": {
+        "meanMs": 1.580000001192093,
+        "medianMs": 0.8999999761581421,
+        "p95Ms": 3.799999952316284
+      },
+      "frames": 270,
+      "maxMs": 16.80000000000109,
+      "meanCalls": 276.7074074074074,
+      "meanTriangles": 5179.414814814815,
+      "medianMs": 16.699999999999818,
+      "over33": 0,
+      "p95Ms": 16.799999999999272,
+      "stationLights": {
+        "active": [
+          {
+            "color": "8cbbc7",
+            "intensity": 7.3629978622489185,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              241
+            ],
+            "reach": 35
+          },
+          {
+            "color": "c9fa7b",
+            "intensity": 7.361532069614681,
+            "kind": "puzzle",
+            "position": [
+              165,
+              1.55,
+              234.65
+            ],
+            "reach": 35
+          },
+          {
+            "color": "71edda",
+            "intensity": 6.320289024272388,
+            "kind": "terminal",
+            "position": [
+              165,
+              1.73,
+              235.38
+            ],
+            "reach": 35
+          },
+          {
+            "color": "c9fa7b",
+            "intensity": 6.601870678499572,
+            "kind": "puzzle",
+            "position": [
+              161,
+              1.55,
+              234.65
+            ],
+            "reach": 35
+          },
+          {
+            "color": "71edda",
+            "intensity": 5.655585307046668,
+            "kind": "terminal",
+            "position": [
+              161,
+              1.73,
+              235.38
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.596432115771346,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              241
+            ],
+            "reach": 35
+          },
+          {
+            "color": "c9fa7b",
+            "intensity": 6.530946920399462,
+            "kind": "puzzle",
+            "position": [
+              161,
+              1.55,
+              230.65
+            ],
+            "reach": 35
+          },
+          {
+            "color": "c9fa7b",
+            "intensity": 7.307393462792492,
+            "kind": "puzzle",
+            "position": [
+              169,
+              1.55,
+              230.65
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 278
+      },
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        577
+      ],
+      "version": "v12",
+      "sha256": "15946069fadae8ffa06d22fa9446b296669021eefbf9786ac6f5a18faee28fa8",
+      "errors": ""
+    }
+  }
+}

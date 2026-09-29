@@ -30,5 +30,6 @@ export class StationVisuals{
    if(d.sound&&sound&&dist<11&&(d.exhaust===undefined||state.puff>=0)&&state.cycle!==item.lastSound&&world.los(viewer.x,viewer.z,p.x+p.nx*.5,p.z+p.nz*.5,viewer.y+1.2,p.y+1)){item.lastSound=state.cycle;sound.play(d.sound,{position:p,gain:d.sound==='steam'?.3:d.sound==='compactor'?.2:.13,minInterval:d.sound==='steam'?1.2:.9});}
   }
  }
+ lightSources(){return this.items.filter(i=>['panel','radar','generator','coolant','junction','lifeSupport'].includes(i.p.kind)||/console|analyzer|specimen|diagnostics/i.test(i.p.kind)).map(({p,d,mesh})=>({x:p.x+p.nx*.45,y:p.y+(p.mount||0)+Math.min(1.45,p.h*.65),z:p.z+p.nz*.45,floor:p.y,kind:'screen',color:p.kind.includes('foundry')?'#ffa85f':p.kind.includes('research')?'#92e97a':p.kind==='generator'?'#b79aff':'#7dd9ee',strength:d.static?5.5:7,mesh}));}
  snapshot(time){return{...this.stats,staticBatches:this.staticBatches.size,staticProps:this.items.filter(i=>i.static).length,types:Object.fromEntries([...new Set(this.props.map(p=>p.kind))].map(k=>[k,this.props.filter(p=>p.kind===k).length])),animated:this.items.filter(i=>i.d.frames>1).length,frames:this.items.filter(i=>i.mesh.visible).slice(0,40).map(i=>({id:i.p.id,kind:i.p.kind,frame:propPhase(i.p,time).frame}))};}
 }

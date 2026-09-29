@@ -21,7 +21,21 @@ export function effectRing(atlas,x,y,z,color){
 }
 export function effectBeam(atlas,from,to,color,width,camera,sheet='attackVfx',row=5){
  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(12),3));g.setAttribute('uv',new THREE.Float32BufferAttribute([0,0,0,1,1,0,1,1],2));g.setIndex([0,2,1,2,3,1]);
- const mesh=new THREE.Mesh(g,new THREE.MeshBasicMaterial({map:atlas.texture(atlas.frame(sheet,0,row)),color,transparent:true,alphaTest:.08,depthWrite:false,side:THREE.DoubleSide,forceSinglePass:true}));mesh.frustumCulled=false;mesh.userData.beam={from:{...from},to:{...to},width};orientBeam(mesh,camera);return mesh;
+ const mesh=new THREE.Mesh(g,new THREE.MeshBasicMaterial({map:atlas.texture(sheet.startsWith('ray-')?rayFrame(sheet,0):atlas.frame(sheet,0,row)),color,transparent:true,alphaTest:.08,depthWrite:false,side:THREE.DoubleSide,forceSinglePass:true}));mesh.frustumCulled=false;mesh.userData.beam={from:{...from},to:{...to},width};orientBeam(mesh,camera);return mesh;
+}
+const rayFrames=new Map();
+// A connected pixel strip, with no transparent atlas gutters at its ends.
+// Eight cached animation frames keep lightning links and the prism laser whole.
+export function rayFrame(kind,phase){
+ phase=phase%8;const key=kind+phase;if(rayFrames.has(key))return rayFrames.get(key);
+ const c=document.createElement('canvas');c.width=128;c.height=32;const x=c.getContext('2d');let previous=16;
+ for(let col=0;col<c.width;col++){
+  const y=kind==='ray-electric'?16+Math.round(Math.sin(col*.35+phase*1.6)*4+Math.sin(col*.81-phase)*2):16;
+  const lo=Math.min(y,previous),hi=Math.max(y,previous);previous=y;
+  x.fillStyle=kind==='ray-electric'?'#713ace':'#bd531e';x.fillRect(col,lo-6,1,hi-lo+13);
+  x.fillStyle=kind==='ray-electric'?'#b59bff':'#ffb842';x.fillRect(col,lo-3,1,hi-lo+7);
+  x.fillStyle=kind==='ray-electric'?'#edfbff':'#fffbd2';x.fillRect(col,lo-1,1,hi-lo+3);
+ }rayFrames.set(key,c);return c;
 }
 export function orientBeam(mesh,camera){
  const{from:a,to:b,width}=mesh.userData.beam,axis=beamAxis.set(b.x-a.x,b.y-a.y,b.z-a.z),side=beamSide.copy(axis).cross(beamView.set(camera.position.x-(a.x+b.x)*.5,camera.position.y-(a.y+b.y)*.5,camera.position.z-(a.z+b.z)*.5));

@@ -1,0 +1,3 @@
+window.loadingBenchmark={navigationStart:performance.now(),longTasks:[]};
+try{new PerformanceObserver(list=>{for(const e of list.getEntries())window.loadingBenchmark.longTasks.push({start:e.startTime,duration:e.duration});}).observe({type:'longtask',buffered:true});}catch{}
+const readiness=new MutationObserver(()=>{const button=document.getElementById('start');if(button&&!button.disabled&&!window.loadingBenchmark.titleReady){window.loadingBenchmark.titleReady=performance.now();requestAnimationFrame(()=>requestAnimationFrame(()=>{window.loadingBenchmark.titlePaint=performance.now();}));readiness.disconnect();}});readiness.observe(document,{childList:true,subtree:true,attributes:true,attributeFilter:['disabled']});

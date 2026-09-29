@@ -1,0 +1,17 @@
+{
+  "newFacehuggers": 6,
+  "pod": {
+    "age": 0.016666666666666666,
+    "corner": true,
+    "hp": 44,
+    "id": 12,
+    "remaining": 0,
+    "room": "secret-service",
+    "row": 2,
+    "spawned": 5,
+    "state": "opening",
+    "x": 229,
+    "y": 0,
+    "z": 243
+  }
+}

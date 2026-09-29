@@ -1,24 +1,26 @@
 # Scrapper
 
-[Download the playable v11 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v11/Scrapper-Playable-v11.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v11)
+[Download V12 Fast Load](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Fast-Load-v12.zip) · [Standalone HTML](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Playable-v12.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v12)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v11.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 236 MiB; the [178 MiB ZIP download](https://github.com/H-XX-D/Scrapper/releases/download/v11/Scrapper-Playable-v11.zip) contains the identical HTML.
+First-person salvage and infestation shooter. **Extract the entire Fast Load ZIP, then open `Scrapper-Fast-Load-v12/Scrapper.html`. Keep its `assets` folder beside it.** The launcher is about 1.11 MiB; the complete ZIP is about 185 MiB and includes all art, code, fonts and audio synthesis. Solo play works directly from disk without installation or a server. The title loads first, followed by the selected mission's art before deployment.
+
+For a single-file copy, use `exports/Scrapper-Playable-v12.html` (also `exports/Scrapper.html`), approximately 245 MiB. The [standalone ZIP](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Playable-v12.zip) contains that identical HTML. Both export forms use the same game and can join the same V12 room.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
-## V11 changes
+## V12 changes
 
-Escape inputs accept fresh WASD taps in any order, including repeated taps on the same key. Controller stick flicks work in any direction. Holding a key does not auto-escape; longer tentacles still demand more effort. Other enemies cannot damage a captured player or interrupt the recovery animation. Only the captor's small periodic interaction damage applies while attached. Ordinary damage resumes as soon as recovery ends; the separate grab cooldown does not extend damage protection.
+Loading is split into the original title, current chapter and active crew. Three art files decode at a time; unrelated station themes and absent players' weapon sheets remain on disk. Rooms wait for every player to finish loading before starting the simulation. The portable HTML keeps art in inert payloads; the fast folder uses separately loaded art packages that support direct-file canvas pixel operations. The existing lossless image packing remains: no source pixels or frames are removed.
 
-The visor clinger has a new eight-frame, 2.8-second leg-by-leg peel and throw. Both first-person hands and third-person teammate views have dedicated art for all four salvagers. Tentacles stay retracted through the warning pose, shoot out over 0.2 seconds, and retract after a miss. Dense world-space fog reaches full opacity at 20 metres, which is also the camera's far plane.
+Rockets, fireballs and Prism pulses have sixteen camera-relative views, including nose-on, exhaust-on and both side profiles. Rocket bodies keep one rigid silver nose per angle while a separate exhaust animates. Arc electricity connects continuously across its firing cadence; Prism draws a straight pixel ray through its pierced targets to the wall. Observer-relative views also apply to online teammates and hostile fireballs.
 
-The aiming crosshair and central hit marker are removed. All seven weapons use distinct eight-frame player projectile art. The Arc Relay adds a pulsing lightning ribbon, an animated core, and moving violet/cyan lights on nearby surfaces. The fixed ten-light pool remains bounded during multiplayer fights.
+Tentacles remain retracted until a 0.07-second tell and 0.09-second snap. Their wider catch area covers angled crossings, but they commit to the detected position so a sprint can beat the strike. Small clinger pods hide near corners and equipment, separate from normal brood spawners. Singles release one facehugger; clusters release two, three or five together within ten metres and clear line of sight. They open, jump, empty, break and leave husks; shooting unopened eggs prevents their ambush. Pod state is saved and shared with the crew.
 
-Four new static scenery sheets provide 64 map-specific pipes, wire bundles, consoles and science instruments across Freight Transit, Research, Cryo and Foundry. Placement follows validated solid-wall anchors, leaves objectives and lifts clear, and is deterministic across the crew. Static themed objects share at most sixteen instanced batches. Walls, ceilings and floors are grouped into 16-metre rendering chunks. Effect sprites reuse a bounded material pool; beam-facing updates reuse vectors; sprite textures avoid unused mipmaps; chapter changes release GPU textures; mixed-color wipe variants have a bounded cache. HUD text work runs at 15 Hz while gameplay and rendering continue independently.
+Facehugger peel recovery now takes 1.65 seconds and retains all eight frames for every character, with first-person coverage for the victim and third-person animation for teammates. Fresh WASD taps in any order and controller stick flicks still work. Other enemies cannot damage a captured player or interrupt recovery; normal damage resumes immediately afterward. The struggle dropdown and enemy-health display are removed. The idle Mission Link tab and yellow supply ticks are gone. Red enemy ticks and blue route diamonds grow nearer and shrink farther away.
 
-The export preserves all source artwork and frame dimensions. Each compressed image is decoded and compared byte-for-byte in RGBA against the source before the build accepts its lossless WebP representation. The standalone HTML is 12.2% smaller than V10 despite 192 additional art frames. A streaming ZIP provides a further download reduction without changing any bytes of the playable HTML. The JavaScript remains a small part of the cartridge; image payloads dominate its size. `exports/size-report-v11.json` records every asset's source and packed size.
+Fog flows along each deck's actual floor, clears near the player and becomes opaque at twenty metres. Screens, puzzle equipment and ceiling fixtures use a fixed pool of eight real lights with a 35-metre reach; combat lights also reach 35 metres. The twenty-metre camera limit and existing bounded effects, corpse cleanup, instancing and texture release remain.
 
-[V11 implementation, measurements and verification](docs/peel-fog-performance-v11.md)
+[V12 implementation, measurements and verification](docs/staged-loading-v12.md) · [Art prompts and provenance](docs/art-prompts-v12.json) · [Previous V11 rendering and scenery work](docs/peel-fog-performance-v11.md)
 
 ## Playing
 
@@ -49,7 +51,7 @@ Standard Xbox and PlayStation controllers are supported through the browser Game
 | Comms / station plan | R3 / View or Share |
 | Story choices | D-pad left / right |
 | Pause / resume | Menu or Options |
-| Break free from a capture | Flick and release the left stick in the prompted direction |
+| Break free from a capture | Flick and release the left stick in any direction |
 
 In menus, use the D-pad or left stick to move focus, A/Cross to select, B/Circle to go back, and left/right to change values. Right stick scrolls. Selecting the room-code field starts six-character editing: up/down changes a character, left/right moves the cursor, A accepts and B cancels. System file pickers for save import still use the operating system's controls.
 
@@ -57,7 +59,7 @@ In menus, use the D-pad or left stick to move focus, A/Cross to select, B/Circle
 
 Each chapter has its own route topology, room silhouette and primary recovery puzzle. The repeated two-coupler opening is gone from new missions. Twelve new mechanics join the four earlier systems (sixteen in total): neighbor fuse circuits, sliding cargo, signal tuning, an interlocked airlock, a cargo crane, signal memory, walking a sensor grid, power sharing, temperature stabilization, species-matched specimen isolation, RGB filtering and timed dispatch shutdown. Pressure, optical, phase-lock and coolant systems are secondary puzzles in selected chapters. Restore the chapter system, recover access and the archive, decide how to route power, defeat the guardian and extract. Chapters 1, 5 and 9 retain the extra relay sequence; the other chapters restore that circuit through their own puzzles.
 
-Blue objective diamonds, yellow supply/discovered-secret diamonds, and red enemy ticks move along the original compass bezel as you turn. The current objective retains one slot; the remaining slots show the closest contacts by three-dimensional distance, up to twenty total. Blue and yellow diamonds point toward the next reachable passage on their own route; red ticks point toward the enemy. Dead enemies, taken pickups, opened cases, sealed armory cases and undiscovered secret contents are excluded. Markers beyond the forward half-circle sit at the appropriate edge with a small turn cue. A tiny top/bottom edge indicates another deck. Route distance remains inside the bezel. Guidance updates from the player's current cell and deck, aims at a reachable passage or room connection, and handles stairs, waiting for lifts, boarding, riding and exiting. It traces collision-safe movement before skipping a waypoint. The twelve-map overview is in **artifacts/chapter-layouts-v3.svg**.
+Blue objective diamonds and red enemy ticks move along the original compass bezel as you turn. The current objective retains one slot; the remaining slots show the closest contacts by three-dimensional distance, up to twenty total. Blue diamonds point toward the next reachable passage on their own route; red ticks point toward the enemy. Dead enemies and supply markers are excluded. Marker size increases as the objective route or enemy becomes closer. Markers beyond the forward half-circle sit at the appropriate edge with a small turn cue. A tiny top/bottom edge indicates another deck. Route distance remains inside the bezel. Guidance updates from the player's current cell and deck, aims at a reachable passage or room connection, and handles stairs, waiting for lifts, boarding, riding and exiting. It traces collision-safe movement before skipping a waypoint. The twelve-map overview is in **artifacts/chapter-layouts-v3.svg**.
 
 Guns come from supply cases. Each of the seven weapons has its own ammunition, reload animation and sound. Scrap is score; enemies can drop scrap, health and ammo. Nests, feeding growth and fabrication vents spawn reinforcements, rupture into a final brood and leave husks. The opening solo contract includes the new visor clinger alongside the original roster and 38 spawners; later contracts introduce more of the original roster.
 
@@ -83,7 +85,7 @@ Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a m
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V11 uses room protocol 7. Use V11 on every device for free-mash escapes, peel animation, protection during captures and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V12 uses room protocol 8. Use V12 on every device for free-mash escapes, peel animation, protection during captures and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -130,7 +132,7 @@ This build also repairs arm/HUD framing, layered wall boundaries, overlapping st
 
 ## V10 history: wrapping, parasites, atmosphere and cleanup
 
-V10 introduced up-to-30-metre tentacle spans, variable wrap effort and ordered input bursts below the compass. V11 supersedes the ordered bursts with free mashing, keeps arms retracted until the strike, and adds protection through the recovery animation. See the V11 section above for current controls.
+V10 introduced up-to-30-metre tentacle spans, variable wrap effort and ordered input bursts below the compass. V11 supersedes the ordered bursts with free mashing, keeps arms retracted until the strike, and adds protection through the recovery animation. V12 removes the prompt entirely and shortens the peel; see the controls above.
 
 The new visor clinger covers the victim’s first-person view while matching hands peel it away. Other players see that character struggling in third person. Gnat swarms trigger swatting, and suit burrowers trigger pulling and crushing, in third person. All four salvagers have dedicated capture, struggle and release art for these enemies and all four tentacle strains: **400 new frames across eleven sheets**, with original art preserved. The right-hand health readout now uses the original painted ammo gauge housing.
 
