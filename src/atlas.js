@@ -1,6 +1,8 @@
 import * as THREE from '../vendor/three.module.js';
 import{ACTORS,WEAPONS,PILOTS,ANIMATIONS}from'./catalog.js';
 import{ESCAPE_LAYOUTS}from'./escape-layouts.js';
+import{PEEL_LAYOUTS}from'./peel-layouts.js';
+import{DRESSING_LAYOUTS}from'./dressing-layouts.js';
 import{GRAB_LAYOUTS}from'./grab-layouts.js';
 import{CREW_LAYOUTS}from'./crew-layouts.js';
 import{GOO_COLORS}from'./visor.js';
@@ -28,6 +30,8 @@ export const SPECS={...Object.fromEntries(Object.keys(ACTORS).map(id=>[id,{path:
 SPECS.tentacles={path:'assets/generated/tentacles-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.tentacles};
 SPECS.crewGrab={path:'assets/generated/crew-grab-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.crewGrab};
 for(const [id,layout]of Object.entries(ESCAPE_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v10.png',cols:8,rows:layout.rects.length,...layout};
+for(const [id,layout]of Object.entries(PEEL_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v11.png',cols:8,rows:layout.rects.length,...layout};
+for(const[id,layout]of Object.entries(DRESSING_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v11.png',cols:layout.rects[0].length,rows:layout.rects.length,...layout,align:id==='player-projectiles'?'center':'bottom'};
 SPECS.attackVfx={path:'assets/generated/attack-vfx-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,160,313,457,615,784,920,1086,1254],xBounds:[0,157,313,470,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 SPECS.originalGore={path:'assets/generated/original-hit-gore-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,157,313,470,627,784,939,1095,1254],xBounds:[0,153,296,458,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 for(const pilot of Object.keys(PILOTS))for(const w of WEAPONS)SPECS['crew-'+pilot+'-'+w.id]={path:'assets/generated/crew-'+pilot+'-'+w.id+'.png',cols:8,rows:8,key:'magenta',...CREW_LAYOUTS['crew-'+pilot+'-'+w.id]};
@@ -41,7 +45,7 @@ SPECS.areaVfx={path:'assets/generated/flame-area-vfx-v3.png',cols:8,rows:4,key:'
 SPECS.puzzleDevices={path:'assets/generated/puzzle-devices.png',cols:8,rows:8,key:'magenta'};
 for(const t of THEMES)SPECS['env-extra-'+t.id]={path:'assets/generated/env-extra-'+t.id+'.png',cols:4,rows:4};
 export class Atlas{
- constructor(){this.images={};this.cache=new Map();this.textures=new Map();}
+ constructor(){this.images={};this.cache=new Map();this.textures=new Map();this.wipeKeys=[];}
  async load(progress=()=>{}){
   const byPath=new Map();let done=0;
   for(const spec of Object.values(SPECS))if(!byPath.has(spec.path))byPath.set(spec.path,new Promise((resolve,reject)=>{
@@ -54,7 +58,7 @@ export class Atlas{
  frame(id,col=0,row=0,pilot='rook'){
   const spec=SPECS[id],img=this.images[id];if(!img)throw Error('Atlas not loaded: '+id);
   const cacheKey=`${spec.path}:${col}:${row}:${pilot}`;if(this.cache.has(cacheKey))return this.cache.get(cacheKey);
-  if(spec.rects){const [sx,sy,sw,sh]=spec.rects[row][col],c=document.createElement('canvas');c.width=c.height=spec.cellSize;const x=c.getContext('2d',{willReadFrequently:true});x.imageSmoothingEnabled=false;x.drawImage(img,sx,sy,sw,sh,Math.floor((c.width-sw)/2),c.height-sh-6,sw,sh);const data=x.getImageData(0,0,c.width,c.height);if(spec.key)keyBackground(data,spec.key);x.putImageData(data,0,0);this.cache.set(cacheKey,c);return c;}
+  if(spec.rects){const [sx,sy,sw,sh]=spec.rects[row][col],c=document.createElement('canvas');c.width=c.height=spec.cellSize;const x=c.getContext('2d',{willReadFrequently:true});x.imageSmoothingEnabled=false;x.drawImage(img,sx,sy,sw,sh,Math.floor((c.width-sw)/2),spec.align==='center'?Math.floor((c.height-sh)/2):c.height-sh-6,sw,sh);const data=x.getImageData(0,0,c.width,c.height);if(spec.key)keyBackground(data,spec.key);x.putImageData(data,0,0);this.cache.set(cacheKey,c);return c;}
   const inset=spec.inset||0,cw=img.width/spec.cols,y0=spec.bounds?spec.bounds[row]/(spec.boundHeight||1254)*img.height:row*img.height/spec.rows,y1=spec.bounds?spec.bounds[row+1]/(spec.boundHeight||1254)*img.height:(row+1)*img.height/spec.rows;
   const xBounds=spec.columnBounds?.[row]||spec.xBounds,x0=xBounds?xBounds[col]/spec.boundWidth*img.width:col*cw,x1=xBounds?xBounds[col+1]/spec.boundWidth*img.width:(col+1)*cw,pad=spec.padding||0;
   const c=document.createElement('canvas');c.width=Math.round(x1-x0-inset*2)+pad*2;c.height=Math.round(y1-y0-inset*2)+pad*2;const ctx=c.getContext('2d',{willReadFrequently:true});ctx.imageSmoothingEnabled=false;ctx.drawImage(img,x0+inset,y0+inset,x1-x0-inset*2,y1-y0-inset*2,pad,pad,c.width-pad*2,c.height-pad*2);
@@ -76,7 +80,7 @@ export class Atlas{
    const c=document.createElement('canvas');c.width=base.width;c.height=base.height;const x=c.getContext('2d');x.imageSmoothingEnabled=false;x.drawImage(base,0,0);x.globalCompositeOperation='source-atop';
    // Reuse the game's blood sprites, masked to the original glove; no second hand or smear pass.
    for(let i=0;i<palette.length;i++){const color=palette[i],art=color==='green'?this.frame('splatter',(i+1)%4,1):this.frame('coloredSplatter',(i+col)%4,['cyan','amber','violet','oil'].indexOf(color));const size=c.width*.56;x.globalAlpha=.78;x.drawImage(art,c.width*(col===1?.15:.2)+i*c.width*.025,c.height*(col===1?.18:.28)+i*c.height*.018,size,size*.85);}
-   x.globalCompositeOperation='source-over';x.globalAlpha=1;this.cache.set(key,c);return c;
+   x.globalCompositeOperation='source-over';x.globalAlpha=1;this.cache.set(key,c);this.wipeKeys.push(key);while(this.wipeKeys.length>32)this.cache.delete(this.wipeKeys.shift());return c;
   }
   if(palette.length===1&&palette[0]==='green')return base;
   const key=`goo:${id}:${col}:${row}:${pilot}:${palette.join(',')}`;if(this.cache.has(key))return this.cache.get(key);
@@ -85,9 +89,10 @@ export class Atlas{
    const x=(i/4)%c.width,y=Math.floor(i/4/c.width),wave=((x/c.width)*palette.length+(Math.sin(y*.06)*.18)+palette.length)%palette.length,j=Math.floor(wave),blend=(wave-j)*.65;
    const a=GOO_COLORS[palette[j]],other=GOO_COLORS[palette[(j+1)%palette.length]],shade=g/190;
    for(let n=0;n<3;n++)d[i+n]=Math.min(255,(a[n]*(1-blend)+other[n]*blend)*shade);
-  }ctx.putImageData(data,0,0);this.cache.set(key,c);return c;
+  }ctx.putImageData(data,0,0);this.cache.set(key,c);this.wipeKeys.push(key);while(this.wipeKeys.length>32)this.cache.delete(this.wipeKeys.shift());return c;
  }
- texture(canvas){if(this.textures.has(canvas))return this.textures.get(canvas);const t=new THREE.CanvasTexture(canvas);t.magFilter=THREE.NearestFilter;t.minFilter=THREE.NearestFilter;t.colorSpace=THREE.SRGBColorSpace;this.textures.set(canvas,t);return t;}
+ clearTextures(){for(const t of this.textures.values())t.dispose();this.textures.clear();}
+ texture(canvas){if(this.textures.has(canvas))return this.textures.get(canvas);const t=new THREE.CanvasTexture(canvas);t.magFilter=THREE.NearestFilter;t.minFilter=THREE.NearestFilter;t.colorSpace=THREE.SRGBColorSpace;t.generateMipmaps=false;this.textures.set(canvas,t);return t;}
 }
 // Runtime chroma-key import. Source art stays untouched; neutral keys are flood-filled from edges to preserve metal highlights.
 function keyBackground(image,mode){const{data:d,width:w,height:h}=image,isKey=i=>{const r=d[i*4],g=d[i*4+1],b=d[i*4+2];return mode==='black'?Math.max(r,g,b)<25:mode==='magenta'?(r>190&&b>180&&g<90&&Math.abs(r-b)<65):(Math.max(r,g,b)-Math.min(r,g,b)<20&&Math.min(r,g,b)>140);};

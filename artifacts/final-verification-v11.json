@@ -1,0 +1,66 @@
+{
+  "release": "v11",
+  "tests": 118,
+  "oldHtmlBytes": 281965804,
+  "htmlBytes": 247602302,
+  "zipBytes": 186978172,
+  "htmlSha256": "726e155b386b1ed30f56e1048900495ca3c9ff9852844ebc508a7598d72c0221",
+  "zipSha256": "612ab807b32fa96e3f6b13ae9fff3adb1c53f3c9e9f12da15f3ec63de242769e",
+  "pixelExactAssets": true,
+  "newArtFrames": 192,
+  "artErrors": 0,
+  "soloEscapeCases": 12,
+  "coopCaptureChecks": 12,
+  "coopReleases": 12,
+  "coopPeelViews": 4,
+  "captureProtection": true,
+  "performance": {
+    "baseline": {
+      "actors": 149,
+      "art": {
+        "frames": 183,
+        "images": 102
+      },
+      "frames": 271,
+      "maxMs": 16.80000000000109,
+      "meanCalls": 537.5830258302583,
+      "meanTriangles": 40021.16605166052,
+      "medianMs": 16.699999999999818,
+      "over33": 0,
+      "p95Ms": 16.799999999999272,
+      "renderer": {
+        "calls": 549,
+        "triangles": 40044
+      },
+      "viewport": [
+        1280,
+        577
+      ]
+    },
+    "current": {
+      "actors": 149,
+      "art": {
+        "frames": 199,
+        "images": 109
+      },
+      "frames": 270,
+      "maxMs": 33.30000000000018,
+      "meanCalls": 418.8222222222222,
+      "meanTriangles": 5181.644444444444,
+      "medianMs": 16.699999999999818,
+      "over33": 0,
+      "p95Ms": 16.799999999999272,
+      "renderer": {
+        "calls": 450,
+        "triangles": 5244
+      },
+      "viewport": [
+        1280,
+        577
+      ]
+    },
+    "drawCallReduction": 0.2209162081050059,
+    "triangleReduction": 0.8705273994826682,
+    "limitations": "One 1280x577 Chromium machine, same seeded 149-actor combat fixture; both builds near 60 FPS. Not a lower-end GPU or prolonged internet soak."
+  }
+}

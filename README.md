@@ -1,10 +1,24 @@
 # Scrapper
 
-[Download the playable v10 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v10/Scrapper-Playable-v10.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v10)
+[Download the playable v11 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v11/Scrapper-Playable-v11.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v11)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v10.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 269 MiB.
+First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v11.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 236 MiB; the [178 MiB ZIP download](https://github.com/H-XX-D/Scrapper/releases/download/v11/Scrapper-Playable-v11.zip) contains the identical HTML.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
+
+## V11 changes
+
+Escape inputs accept fresh WASD taps in any order, including repeated taps on the same key. Controller stick flicks work in any direction. Holding a key does not auto-escape; longer tentacles still demand more effort. Other enemies cannot damage a captured player or interrupt the recovery animation. Only the captor's small periodic interaction damage applies while attached. Ordinary damage resumes as soon as recovery ends; the separate grab cooldown does not extend damage protection.
+
+The visor clinger has a new eight-frame, 2.8-second leg-by-leg peel and throw. Both first-person hands and third-person teammate views have dedicated art for all four salvagers. Tentacles stay retracted through the warning pose, shoot out over 0.2 seconds, and retract after a miss. Dense world-space fog reaches full opacity at 20 metres, which is also the camera's far plane.
+
+The aiming crosshair and central hit marker are removed. All seven weapons use distinct eight-frame player projectile art. The Arc Relay adds a pulsing lightning ribbon, an animated core, and moving violet/cyan lights on nearby surfaces. The fixed ten-light pool remains bounded during multiplayer fights.
+
+Four new static scenery sheets provide 64 map-specific pipes, wire bundles, consoles and science instruments across Freight Transit, Research, Cryo and Foundry. Placement follows validated solid-wall anchors, leaves objectives and lifts clear, and is deterministic across the crew. Static themed objects share at most sixteen instanced batches. Walls, ceilings and floors are grouped into 16-metre rendering chunks. Effect sprites reuse a bounded material pool; beam-facing updates reuse vectors; sprite textures avoid unused mipmaps; chapter changes release GPU textures; mixed-color wipe variants have a bounded cache. HUD text work runs at 15 Hz while gameplay and rendering continue independently.
+
+The export preserves all source artwork and frame dimensions. Each compressed image is decoded and compared byte-for-byte in RGBA against the source before the build accepts its lossless WebP representation. The standalone HTML is 12.2% smaller than V10 despite 192 additional art frames. A streaming ZIP provides a further download reduction without changing any bytes of the playable HTML. The JavaScript remains a small part of the cartridge; image payloads dominate its size. `exports/size-report-v11.json` records every asset's source and packed size.
+
+[V11 implementation, measurements and verification](docs/peel-fog-performance-v11.md)
 
 ## Playing
 
@@ -16,7 +30,7 @@ The original title artwork and painted steel HUD remain. Gameplay uses low ceili
 | Use terminal, collect specimen, open case | E |
 | Revive a downed co-op teammate | Hold E nearby for three uninterrupted seconds |
 | Wipe mixed-color goo in one pass | Q |
-| Break free from a capture | Tap the repeated WASD burst shown below the compass |
+| Break free from a capture | Mash any WASD keys in any order; repeated taps on one key also count |
 | Select an owned weapon | Mouse wheel / 1–7 |
 | Communications / station plan | Tab / M |
 | Choose an option | Z / X, or the choice buttons |
@@ -69,7 +83,7 @@ Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a m
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V10 uses room protocol 6. Use V10 on every device for synchronized grab sequences, parasites and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V11 uses room protocol 7. Use V11 on every device for free-mash escapes, peel animation, protection during captures and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -114,9 +128,9 @@ Colonies on walls, ceilings and floors can grab a salvager after a visible tell.
 
 This build also repairs arm/HUD framing, layered wall boundaries, overlapping stair landings, lift-floor z-fighting, floating accessory panels and solid puzzle-device placement, and reduces repeated pathfinding during crowded fights. See [implementation and verification](docs/tentacles-and-world-v9.md), [new art provenance](docs/art-prompts-v9.md) and [measured performance](artifacts/performance-v9.json).
 
-## V10 wrapping, parasites, atmosphere and cleanup
+## V10 history: wrapping, parasites, atmosphere and cleanup
 
-Tentacles extend across a passage to the next wall, up to 30 metres, and catch players crossing the span after a visible tell. Larger arms wrap longer, pull the captive toward the root and require more repeated taps. The framed scrolling strip below the compass calls out each burst (for example A A A, then S S, then W W); a fixed diamond marks the current input. Keeping a key held does not mash automatically. Controller stick flicks use the same sequence.
+V10 introduced up-to-30-metre tentacle spans, variable wrap effort and ordered input bursts below the compass. V11 supersedes the ordered bursts with free mashing, keeps arms retracted until the strike, and adds protection through the recovery animation. See the V11 section above for current controls.
 
 The new visor clinger covers the victim’s first-person view while matching hands peel it away. Other players see that character struggling in third person. Gnat swarms trigger swatting, and suit burrowers trigger pulling and crushing, in third person. All four salvagers have dedicated capture, struggle and release art for these enemies and all four tentacle strains: **400 new frames across eleven sheets**, with original art preserved. The right-hand health readout now uses the original painted ammo gauge housing.
 
