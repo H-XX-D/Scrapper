@@ -1,0 +1,102 @@
+{
+  "captures": 12,
+  "releases": [
+    {
+      "session": "scrapper-v10",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 12
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 16
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 17
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 9
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 10
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 13
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 13
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 16
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 18
+    }
+  ],
+  "correct": true
+}

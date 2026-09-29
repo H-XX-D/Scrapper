@@ -1,5 +1,6 @@
 import * as THREE from '../vendor/three.module.js';
 import{ACTORS,WEAPONS,PILOTS,ANIMATIONS}from'./catalog.js';
+import{ESCAPE_LAYOUTS}from'./escape-layouts.js';
 import{GRAB_LAYOUTS}from'./grab-layouts.js';
 import{CREW_LAYOUTS}from'./crew-layouts.js';
 import{GOO_COLORS}from'./visor.js';
@@ -26,6 +27,7 @@ export const SPECS={...Object.fromEntries(Object.keys(ACTORS).map(id=>[id,{path:
  ...Object.fromEntries(THEMES.map(t=>['env-'+t.id,{path:`assets/generated/env-${t.id}.png`,cols:4,rows:4}]))};
 SPECS.tentacles={path:'assets/generated/tentacles-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.tentacles};
 SPECS.crewGrab={path:'assets/generated/crew-grab-v9.png',cols:8,rows:4,...GRAB_LAYOUTS.crewGrab};
+for(const [id,layout]of Object.entries(ESCAPE_LAYOUTS))SPECS[id]={path:'assets/generated/'+id+'-v10.png',cols:8,rows:layout.rects.length,...layout};
 SPECS.attackVfx={path:'assets/generated/attack-vfx-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,160,313,457,615,784,920,1086,1254],xBounds:[0,157,313,470,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 SPECS.originalGore={path:'assets/generated/original-hit-gore-padded.png',cols:8,rows:8,key:'magenta',bounds:[0,157,313,470,627,784,939,1095,1254],xBounds:[0,153,296,458,627,784,940,1097,1254],boundHeight:1254,boundWidth:1254,padding:4};
 for(const pilot of Object.keys(PILOTS))for(const w of WEAPONS)SPECS['crew-'+pilot+'-'+w.id]={path:'assets/generated/crew-'+pilot+'-'+w.id+'.png',cols:8,rows:8,key:'magenta',...CREW_LAYOUTS['crew-'+pilot+'-'+w.id]};

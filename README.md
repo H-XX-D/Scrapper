@@ -1,8 +1,8 @@
 # Scrapper
 
-[Download the playable v9 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v9/Scrapper-Playable-v9.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v9)
+[Download the playable v10 HTML](https://github.com/H-XX-D/Scrapper/releases/download/v10/Scrapper-Playable-v10.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v10)
 
-First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v9.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 237 MiB.
+First-person salvage and infestation shooter. Current playable export: **exports/Scrapper-Playable-v10.html** (also **exports/Scrapper.html**). Open the HTML in a desktop browser, allow the embedded art to load, and select **DEPLOY SOLO**. Code, art, fonts and audio synthesis are included; solo play works from disk without a server. The file is approximately 269 MiB.
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
@@ -16,6 +16,7 @@ The original title artwork and painted steel HUD remain. Gameplay uses low ceili
 | Use terminal, collect specimen, open case | E |
 | Revive a downed co-op teammate | Hold E nearby for three uninterrupted seconds |
 | Wipe mixed-color goo in one pass | Q |
+| Break free from a capture | Tap the repeated WASD burst shown below the compass |
 | Select an owned weapon | Mouse wheel / 1–7 |
 | Communications / station plan | Tab / M |
 | Choose an option | Z / X, or the choice buttons |
@@ -34,6 +35,7 @@ Standard Xbox and PlayStation controllers are supported through the browser Game
 | Comms / station plan | R3 / View or Share |
 | Story choices | D-pad left / right |
 | Pause / resume | Menu or Options |
+| Break free from a capture | Flick and release the left stick in the prompted direction |
 
 In menus, use the D-pad or left stick to move focus, A/Cross to select, B/Circle to go back, and left/right to change values. Right stick scrolls. Selecting the room-code field starts six-character editing: up/down changes a character, left/right moves the cursor, A accepts and B cancels. System file pickers for save import still use the operating system's controls.
 
@@ -43,7 +45,7 @@ Each chapter has its own route topology, room silhouette and primary recovery pu
 
 Blue objective diamonds, yellow supply/discovered-secret diamonds, and red enemy ticks move along the original compass bezel as you turn. The current objective retains one slot; the remaining slots show the closest contacts by three-dimensional distance, up to twenty total. Blue and yellow diamonds point toward the next reachable passage on their own route; red ticks point toward the enemy. Dead enemies, taken pickups, opened cases, sealed armory cases and undiscovered secret contents are excluded. Markers beyond the forward half-circle sit at the appropriate edge with a small turn cue. A tiny top/bottom edge indicates another deck. Route distance remains inside the bezel. Guidance updates from the player's current cell and deck, aims at a reachable passage or room connection, and handles stairs, waiting for lifts, boarding, riding and exiting. It traces collision-safe movement before skipping a waypoint. The twelve-map overview is in **artifacts/chapter-layouts-v3.svg**.
 
-Guns come from supply cases. Each of the seven weapons has its own ammunition, reload animation and sound. Scrap is score; enemies can drop scrap, health and ammo. Nests, feeding growth and fabrication vents spawn reinforcements, rupture into a final brood and leave husks. The opening solo contract contains 93 placed enemies and 38 spawners; later contracts introduce more of the original roster.
+Guns come from supply cases. Each of the seven weapons has its own ammunition, reload animation and sound. Scrap is score; enemies can drop scrap, health and ammo. Nests, feeding growth and fabrication vents spawn reinforcements, rupture into a final brood and leave husks. The opening solo contract includes the new visor clinger alongside the original roster and 38 spawners; later contracts introduce more of the original roster.
 
 Four new wall parasite families use 32 growth, pulse and husk frames. Colonies mature over about 28 seconds and spread to nearby panels when left alive, capped at 96 patches per chapter. Fire destroys them faster; cleared patches remain dead. The opening contract starts with 58 wall colonies. Growth never adds a collision barrier to mission routes. Flame streams now use three animated fire puffs per shot with warm moving lights. Alien shockwaves have upright pixel crests, and acid impacts leave short-lived damaging pools. Both cast sustained colored light on the architecture. The new flame/area sheet contains another 32 frames.
 
@@ -67,7 +69,7 @@ Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a m
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V9 uses room protocol 5. Use V9 on every device for synchronized tentacle grabs and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V10 uses room protocol 6. Use V10 on every device for synchronized grab sequences, parasites and matching world geometry; each player computes compass markers from their own position. Earlier protocol versions are rejected. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -111,3 +113,13 @@ V8 adds six regression tests (83 total) for unique host-assigned characters, sep
 Colonies on walls, ceilings and floors can grab a salvager after a visible tell. Wiggle WASD or the controller left stick to escape the brief third-person struggle; teammates can destroy the root or gripping hook. Four strains and all four characters have matching animation sheets. Bosses and mini-bosses continue hunting once they detect you.
 
 This build also repairs arm/HUD framing, layered wall boundaries, overlapping stair landings, lift-floor z-fighting, floating accessory panels and solid puzzle-device placement, and reduces repeated pathfinding during crowded fights. See [implementation and verification](docs/tentacles-and-world-v9.md), [new art provenance](docs/art-prompts-v9.md) and [measured performance](artifacts/performance-v9.json).
+
+## V10 wrapping, parasites, atmosphere and cleanup
+
+Tentacles extend across a passage to the next wall, up to 30 metres, and catch players crossing the span after a visible tell. Larger arms wrap longer, pull the captive toward the root and require more repeated taps. The framed scrolling strip below the compass calls out each burst (for example A A A, then S S, then W W); a fixed diamond marks the current input. Keeping a key held does not mash automatically. Controller stick flicks use the same sequence.
+
+The new visor clinger covers the victim’s first-person view while matching hands peel it away. Other players see that character struggling in third person. Gnat swarms trigger swatting, and suit burrowers trigger pulling and crushing, in third person. All four salvagers have dedicated capture, struggle and release art for these enemies and all four tentacle strains: **400 new frames across eleven sheets**, with original art preserved. The right-hand health readout now uses the original painted ammo gauge housing.
+
+Drifting world-space fog builds with view distance, using four density samples in existing material shaders without additional particle objects or draw passes. Dead enemies settle onto the actual deck, with airborne offsets cleared and transparent artwork padding removed from their ground anchor. The host retains at most **30 enemy corpses globally and five per room**; after every living player has left a room for 12 seconds, that room keeps at most two. Clients receive the same removals. Shared sprite textures remain cached; removed corpse materials are disposed.
+
+See [V10 implementation and verification](docs/wrapping-and-parasites-v10.md) for timings, art provenance, browser evidence and testing limits.

@@ -1,0 +1,51 @@
+[
+  {
+    "clear": true,
+    "frames": [
+      1
+    ],
+    "kind": "facehugger",
+    "recovery": 1.0667000000000113,
+    "release": "escaped",
+    "required": 11,
+    "seconds": 1.6788999999761582,
+    "sheet": "fp-facehugger",
+    "taps": 11
+  },
+  {
+    "clear": true,
+    "frames": [
+      0,
+      1,
+      4,
+      5,
+      3,
+      6
+    ],
+    "kind": "gnats",
+    "recovery": 1.0834000000000232,
+    "release": "escaped",
+    "required": 11,
+    "seconds": 1.6838000000119209,
+    "sheet": "escape-gnats",
+    "taps": 11
+  },
+  {
+    "clear": true,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "kind": "burrower",
+    "recovery": 1.0165999999999762,
+    "release": "escaped",
+    "required": 12,
+    "seconds": 1.8285,
+    "sheet": "escape-burrower",
+    "taps": 12
+  }
+]

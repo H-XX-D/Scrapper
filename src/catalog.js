@@ -1,6 +1,9 @@
 export const ANIMATIONS={idle:{row:0,fps:6,loop:true},move:{row:1,fps:10,loop:true},tell:{row:2,fps:8},attack:{row:3,fps:12},altTell:{row:2,fps:8},altAttack:{row:3,fps:12},hurt:{row:4,fps:12},death:{row:5,fps:8}};
 const enemy=(name,art,hp,speed,size,primary,alternate,extra={})=>({name,art,family:'ALIEN',tier:'ENEMY',hp,speed,size,range:5,windup:.8,recovery:1.1,damage:12,primary,alternate,color:'#b987dc',blood:'cyan',tell:'Its attack pose warns before it commits.',reaction:'Heavy hits interrupt attack preparation.',detail:name+' restored from the original Scrapper roster.',...extra});
 export const ACTORS={
+ facehugger:enemy('Visor Clinger','facehugger',32,4.2,1.1,'latch','latch',{range:6,windup:.7,recovery:1.5,damage:3,interruptible:true,blood:'green',parasite:true}),
+ gnats:enemy('Static Gnats','gnats',40,3.8,1.6,'latch','latch',{range:5,windup:.6,recovery:1.4,damage:3,hover:.65,blood:'cyan',parasite:true}),
+ burrower:enemy('Suit Burrower','burrower',28,3.8,.9,'latch','latch',{range:3.5,windup:.85,recovery:1.5,damage:4,interruptible:true,blood:'amber',parasite:true}),
  beetle:enemy('Void Beetle','beetle',55,2.8,1.7,'bite','leap',{interruptible:true}),
  crawler:enemy('Spore Crawler','crawler',35,4.2,1.35,'leap','bite',{blood:'amber',interruptible:true}),
  drone:enemy('Rogue Sentinel','drone',90,2,1.65,'bolts','rail',{family:'MACHINE',blood:'oil',range:18,hover:.45,color:'#78d9e5'}),
@@ -25,6 +28,7 @@ export const ACTORS={
  overseer:enemy('Eclipse Overseer','overseer',1050,1.1,3.5,'crossfire','radial',{tier:'BOSS',range:25,windup:1.3,recovery:2,damage:19,blood:'violet',hover:.5,color:'#ad91e2'})
 };
 for(const[id,def]of Object.entries(ACTORS)){def.id=id;def.asset=def.art.startsWith('boss')?'assets/legacy/boss-motion-keyed.png':`assets/generated/original-${def.art}.png`;def.cols=def.art.startsWith('boss')?4:6;def.rows=6;}
+for(const id of ['facehugger','gnats','burrower']){ACTORS[id].asset='assets/generated/'+id+'-v10.png';ACTORS[id].cols=8;}
 export const PILOTS={rook:{name:'Rook',row:0,color:'#ee913c',hue:30},echo:{name:'Echo',row:1,color:'#b995e3',hue:276},flint:{name:'Flint',row:2,color:'#69bbaa',hue:166},eos:{name:'EOS',row:3,color:'#85deef',hue:188}};
 export const SPEAKERS={ROOK:{name:'Rook',row:0,color:'#e9a05c',role:'SCRAPPER'},ECHO:{name:'Echo',row:1,color:'#c0a0e5',role:'SIGNAL / RECON'},FLINT:{name:'Flint',row:2,color:'#78c7b8',role:'ENGINEERING'},EOS:{name:'EOS',row:3,color:'#7ecfdf',role:'MISSION CONTROL'}};
 export const WEAPONS=[

@@ -12,8 +12,12 @@ export class InfestationVisuals{
   const map=this.atlas.texture(this.atlas.frame('wallGrowth',this.system.frame(p),p.type));mesh.material.map=map;mesh.material.emissiveMap=map;
   mesh.material.emissive.set(p.dead?'#000000':p.burn>0?'#ffd58a':'#ffffff');mesh.material.emissiveIntensity=p.dead?0:p.burn>0?.85:.24;
   root.material.map=this.atlas.texture(this.atlas.frame('tentacles',tentacleFrame(p),p.type));root.material.rotation=p.surface==='ceiling'?Math.PI:0;root.position.set(p.x+(p.nx||0)*.12,p.y+(p.surface?0:-.65),p.z+(p.nz||0)*.12);root.scale.setScalar(1.1+(p.reach||3.5)*.2);
-  const target=members.find(m=>m.id===p.grabTarget)?.player,active=!p.dead&&target&&['windup','grip'].includes(p.tentacleState),progress=p.tentacleState==='grip'?1:Math.min(1,(p.tentacleAge||0)/.85)*.8;
-  const [ribbon,hook]=links;ribbon.visible=hook.visible=!!(active&&camera);if(active&&camera){poseTentacle(ribbon,p,target,progress,p.age,camera);hook.position.set(p.x+(target.x-p.x)*progress,p.y+(target.y+.9-p.y)*progress,p.z+(target.z-p.z)*progress);hook.scale.setScalar(1.05);hook.material.rotation=Math.sin(p.age*4)*.08;}
+  const target=members.find(m=>m.id===p.grabTarget)?.player,grip=p.tentacleState==='grip',winding=p.tentacleState==='windup';
+  const [ribbon,hook]=links;const resting=p.span&&p.extension>0&&p.maturity>=.55;
+  const active=!p.dead&&camera&&(resting||target&&(grip||winding));ribbon.visible=!!active;hook.visible=!!(active&&!grip);
+  if(active){let end;if(target&&(grip||winding))end={x:target.x,y:target.y+.95,z:target.z};else{const t=Math.min(1,p.extension/p.span.length);end={x:p.x+(p.span.x-p.x)*t,y:p.y+(p.span.y-p.y)*t,z:p.z+(p.span.z-p.z)*t};}
+   poseTentacle(ribbon,p,end,1,p.age,camera);hook.position.set(end.x,end.y,end.z);hook.scale.setScalar(.52);hook.material.map=this.atlas.texture(this.atlas.frame('tentacles',2+Math.floor(p.age*5)%2,p.type));hook.material.rotation=Math.sin(p.age*5)*.3;
+  }
  }
  for(const[id,mesh]of this.meshes)if(!alive.has(id)){for(const o of[mesh,mesh.userData.root,...mesh.userData.links]){this.scene.remove(o);if(o.isMesh)o.geometry?.dispose();o.material.dispose();}this.meshes.delete(id);}}
 }

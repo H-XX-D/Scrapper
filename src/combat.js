@@ -1,3 +1,4 @@
+import{parasiteAttackStep}from'./parasites.js';
 import{ACTORS,WEAPONS,WEAPON_BY_ID}from'./catalog.js';
 export class Arsenal{
  constructor(){this.slots=Object.fromEntries(WEAPONS.map((w,i)=>[w.id,{owned:i===0,mag:i===0?w.mag:0,reserve:i===0?w.reserve:0}]));this.selected='bolt';this.reload=null;this.cooldown=0;}
@@ -16,20 +17,21 @@ export function makeNest(x,z,machine=false){return{id:++serial,x,z,machine,hp:ma
 export function damageNest(n,damage,emit){if(n.state==='husk'||n.state==='rupture')return false;n.hp-=damage;if(n.hp>0){n.state='hurt';n.age=0;return false;}n.hp=0;n.state='rupture';n.age=0;if(!n.burstDone){n.burstDone=true;emit({type:'nestBurst',nest:n,count:n.machine?2:4});}return true;}
 export function updateNest(n,dt,active,emit){n.age+=dt;if(n.state==='rupture'){if(n.age>.9){n.state='husk';n.age=0;}return;}if(n.state==='husk')return;if(n.state==='hurt'&&n.age>.3){n.state='idle';n.age=0;}if(n.state==='spawn'&&n.age>1){n.state='idle';n.age=0;}if(active){n.timer-=dt;if(n.timer<=0){n.timer=8;n.state='spawn';n.age=0;n.spawned++;emit({type:'spawn',nest:n,count:n.machine?1:2});}}}
 const setState=(a,state,duration=0)=>{a.state=state;a.age=0;a.duration=duration;};
-export function hurtActor(a,amount,mode='bullet',emit=()=>{}){if(a.hp<=0)return false;const d=ACTORS[a.type];if(d.tier!=='ENEMY')a.hunting=true;if(d.armor&&!['recover','hurt'].includes(a.state)&&mode==='bullet')amount*=.42;a.hp=Math.max(0,a.hp-amount);a.hitFlash=.1;if(mode==='freeze')a.slow=2.5;if(a.hp===0){setState(a,'death',1);emit({type:'killed',actor:a});return true;}
+export function hurtActor(a,amount,mode='bullet',emit=()=>{}){if(a.hp<=0)return false;const d=ACTORS[a.type];if(d.tier!=='ENEMY')a.hunting=true;if(d.armor&&!['recover','hurt'].includes(a.state)&&mode==='bullet')amount*=.42;a.hp=Math.max(0,a.hp-amount);a.hitFlash=.1;if(mode==='freeze')a.slow=2.5;if(a.hp===0){a.y=0;setState(a,'death',1);emit({type:'killed',actor:a});return true;}
  const interrupt=d.interruptible||((mode==='chain'||mode==='pierce')&&['tell','altTell'].includes(a.state));if(interrupt&&a.state!=='attack'&&a.state!=='altAttack'){setState(a,'hurt',.45);a.cooldown=.8;}return false;}
 export function updateActor(a,dt,player,world,emit){
  const d=ACTORS[a.type];a.groundY=world.floor(a.x,a.z,a.groundY??Infinity)??a.groundY??0;a.age+=dt;a.cooldown-=dt;a.slow=Math.max(0,a.slow-dt);a.hitFlash=Math.max(0,a.hitFlash-dt);
- if(a.hp<=0)return;
+ if(a.hp<=0||a.attachedTo)return;
  const dx=player.x-a.x,dz=player.z-a.z,dist=Math.hypot(dx,dz,(a.groundY||0)-(player.y||0)),sight=dist<38&&world.los(a.x,a.z,player.x,player.z,(a.groundY||0)+1,(player.y||0)+1);
  if(d.tier!=='ENEMY'&&sight)a.hunting=true;
  a.phase=d.tier==='BOSS'?(a.hp<a.maxHp*.33?3:a.hp<a.maxHp*.66?2:1):1;
  if(a.state==='hurt'||a.state==='recover'){if(a.age>a.duration)setState(a,'move');return;}
  if(a.state==='tell'||a.state==='altTell'){
-  if(a.age>=a.duration){const alternate=a.state==='altTell',kind=alternate?d.alternate:d.primary;setState(a,alternate?'altAttack':'attack',kind==='charge'?.8:kind==='leap'?.5:.65);a.attackKind=kind;emit({type:'attack',actor:a,kind,target:a.target});}
+  if(a.age>=a.duration){const alternate=a.state==='altTell',kind=alternate?d.alternate:d.primary;setState(a,alternate?'altAttack':'attack',kind==='charge'?.8:kind==='leap'?.5:kind==='latch'?.7:.65);a.attackKind=kind;emit({type:'attack',actor:a,kind,target:a.target});}
   return;
  }
  if(a.state==='attack'||a.state==='altAttack'){
+  if(parasiteAttackStep(a,dt,player,world,emit))return;
   if(['charge','leap'].includes(a.attackKind)&&a.target){const v=a.attackKind==='charge'?14:12,dir=aimDirection({x:a.x,y:0,z:a.z},{...a.target,y:0}),nx=a.x+dir.x*v*dt,nz=a.z+dir.z*v*dt;if(world.canMove(nx,nz,.4,(a.groundY||0)+a.y)){a.x=nx;a.z=nz;a.y=a.attackKind==='leap'?Math.sin(a.age/a.duration*Math.PI)*1.1:0;}else{setState(a,'hurt',2);a.y=0;emit({type:'impact',actor:a});}if(dist<1.5&&!a.contact){emit({type:'damage',amount:d.damage});a.contact=true;}}
   if(a.age>=a.duration){setState(a,'recover',d.recovery/(a.phase===3?1.2:1));a.y=0;a.cooldown=d.recovery+.25;}return;
  }

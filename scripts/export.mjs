@@ -17,6 +17,6 @@ const peerScript=(await readFile(resolve(root,'vendor/peerjs.min.js'),'utf8')).r
 const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
 html=html.replace('<script type="module" src="src/app.js"></script>',()=>`<script>window.__SCRAPPER_ASSETS=${JSON.stringify(assets)};</script><script>${script}</script>`);
 html=html.replace('<script src="vendor/peerjs.min.js"></script>',()=>'<script>'+peerScript+'</script>');
-html=html.replace('</head>','<meta name="scrapper-build" content="2026-09-28-tentacle-hunt-world-fixes-v9"></head>');
+html=html.replace('</head>','<meta name="scrapper-build" content="2026-09-29-wrap-parasites-health-v10"></head>');
 await mkdir(resolve(root,'exports'),{recursive:true});
-const path=resolve(root,'exports/Scrapper.html');await writeFile(path,html);await writeFile(resolve(root,'exports/Scrapper-Playable-v9.html'),html);console.log(`Exported ${path}\n${(Buffer.byteLength(html)/1048576).toFixed(1)} MiB · all code, art and fonts embedded · no server required`);
+const path=resolve(root,'exports/Scrapper.html');await writeFile(path,html);await writeFile(resolve(root,'exports/Scrapper-Playable-v10.html'),html);console.log(`Exported ${path}\n${(Buffer.byteLength(html)/1048576).toFixed(1)} MiB · all code, art and fonts embedded · no server required`);
