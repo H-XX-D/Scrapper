@@ -1,5 +1,5 @@
 // Data-only, host-authoritative captures. Input edges survive coalesced network frames.
-export const RECOVERY_DURATION=1.15,PEEL_DURATION=2.8,GRAB_DURATION=14,ESCAPE_STEPS=10;
+export const RECOVERY_DURATION=1.15,PEEL_DURATION=1.65,GRAB_DURATION=14,ESCAPE_STEPS=10;
 export const DIRECTIONS=['left','back','forward','right'];
 export const GRAB_KEYS={KeyA:'left',KeyS:'back',KeyW:'forward',KeyD:'right'};
 export const PARASITES=['facehugger','gnats','burrower'];

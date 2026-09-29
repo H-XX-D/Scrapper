@@ -1,0 +1,184 @@
+{
+  "actors": 109,
+  "art": {
+    "frames": 303,
+    "images": 64
+  },
+  "combatLights": [
+    {
+      "color": "b5dd48",
+      "intensity": 2.574285714285673,
+      "kind": "flash",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 3.0514285714285507,
+      "kind": "flash",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 6.1028571428571015,
+      "kind": "flash",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 3.0514285714285507,
+      "kind": "flash",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 6.1028571428571015,
+      "kind": "flash",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 13,
+      "kind": "area",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 13,
+      "kind": "area",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 6,
+      "kind": "projectile",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 6,
+      "kind": "projectile",
+      "reach": 35
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 13,
+      "kind": "area",
+      "reach": 35
+    }
+  ],
+  "cpuUpdate": {
+    "meanMs": 1.580000001192093,
+    "medianMs": 0.8999999761581421,
+    "p95Ms": 3.799999952316284
+  },
+  "frames": 270,
+  "maxMs": 16.80000000000109,
+  "meanCalls": 276.7074074074074,
+  "meanTriangles": 5179.414814814815,
+  "medianMs": 16.699999999999818,
+  "over33": 0,
+  "p95Ms": 16.799999999999272,
+  "stationLights": {
+    "active": [
+      {
+        "color": "8cbbc7",
+        "intensity": 7.3629978622489185,
+        "kind": "ceiling",
+        "position": [
+          169,
+          3.55,
+          241
+        ],
+        "reach": 35
+      },
+      {
+        "color": "c9fa7b",
+        "intensity": 7.361532069614681,
+        "kind": "puzzle",
+        "position": [
+          165,
+          1.55,
+          234.65
+        ],
+        "reach": 35
+      },
+      {
+        "color": "71edda",
+        "intensity": 6.320289024272388,
+        "kind": "terminal",
+        "position": [
+          165,
+          1.73,
+          235.38
+        ],
+        "reach": 35
+      },
+      {
+        "color": "c9fa7b",
+        "intensity": 6.601870678499572,
+        "kind": "puzzle",
+        "position": [
+          161,
+          1.55,
+          234.65
+        ],
+        "reach": 35
+      },
+      {
+        "color": "71edda",
+        "intensity": 5.655585307046668,
+        "kind": "terminal",
+        "position": [
+          161,
+          1.73,
+          235.38
+        ],
+        "reach": 35
+      },
+      {
+        "color": "8cbbc7",
+        "intensity": 7.596432115771346,
+        "kind": "ceiling",
+        "position": [
+          157,
+          3.55,
+          241
+        ],
+        "reach": 35
+      },
+      {
+        "color": "c9fa7b",
+        "intensity": 6.530946920399462,
+        "kind": "puzzle",
+        "position": [
+          161,
+          1.55,
+          230.65
+        ],
+        "reach": 35
+      },
+      {
+        "color": "c9fa7b",
+        "intensity": 7.307393462792492,
+        "kind": "puzzle",
+        "position": [
+          169,
+          1.55,
+          230.65
+        ],
+        "reach": 35
+      }
+    ],
+    "budget": 8,
+    "reach": 35,
+    "sources": 278
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    577
+  ],
+  "version": "v12",
+  "sha256": "15946069fadae8ffa06d22fa9446b296669021eefbf9786ac6f5a18faee28fa8",
+  "errors": ""
+}

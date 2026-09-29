@@ -1,5 +1,5 @@
 import test from'node:test';import assert from'node:assert/strict';
-import{CompassContacts,compassProjection,compassTargets,COMPASS_LIMIT}from'../src/compass.js';
+import{CompassContacts,compassProjection,compassTargets,COMPASS_LIMIT,compassSize}from'../src/compass.js';
 import{makeWorld}from'../src/world.js';import{RouteGuide}from'../src/navigation.js';
 import{CHAPTERS}from'../src/campaign.js';
 const wrap=a=>Math.atan2(Math.sin(a),Math.cos(a));
@@ -11,9 +11,9 @@ test('compass filters dead enemies, taken loot, sealed cases, allies and undisco
  const secret={id:'cache',x:20,z:0,y:0,room:'secret-cache',found:false};
  const world={at:x=>({room:x>=20?'secret-cache':'hall'}),secrets:[secret],accessCard:{taken:false,x:2,z:3},control:{x:8,z:0},purge:{x:9,z:0},puzzle:{solved:true},switches:[]};
  const args={world,tasks:{solved:true,nodes:[]},mission:{record:false,power:null,choices:[]},primary:{x:8,z:0},cases:[{x:3,z:0,open:false},{x:4,z:0,open:true},{x:5,z:0,locked:true},{x:20,z:0}],pickups:[{x:6,z:0,kind:'ammo',age:1},{x:7,z:0,kind:'gun',age:1,taken:true},{x:10,z:0,kind:'health',age:0,delay:1}],actors:[{id:1,type:'beetle',x:2,z:0,hp:20},{id:2,type:'spitter',x:2,z:0,hp:0},{id:3,type:'beetle',x:2,z:0,hp:20}],crew:[{id:'friend',player:{x:3,z:3,hp:100}}],mode:'coop'};
- let contacts=compassTargets(args);assert.equal(contacts.filter(c=>c.kind==='enemy').length,2);assert.deepEqual(contacts.filter(c=>c.kind==='supply').map(c=>c.id),['case:0','pickup:0']);assert.equal(contacts.filter(c=>c.x===8).length,1);
+ let contacts=compassTargets(args);assert.equal(contacts.filter(c=>c.kind==='enemy').length,2);assert.deepEqual(contacts.filter(c=>c.kind==='supply').map(c=>c.id),[]);assert.equal(contacts.filter(c=>c.x===8).length,1);
  secret.found=true;args.mission.record=true;args.mission.power='armory';args.mission.choices=[{id:'purge'}];args.primary=null;world.accessCard.taken=true;args.mode='pvpve';contacts=compassTargets(args);
- assert.ok(contacts.some(c=>c.id==='secret:cache'));assert.ok(contacts.some(c=>c.id==='case:2'));assert.ok(contacts.some(c=>c.id==='rival:friend'));assert.ok(!contacts.some(c=>c.kind==='objective'));
+ assert.ok(!contacts.some(c=>c.kind==='supply'));assert.ok(contacts.some(c=>c.id==='rival:friend'));assert.ok(!contacts.some(c=>c.kind==='objective'));
 });
 test('compass keeps current objective and the nearest nineteen other contacts, then replaces removed enemies',()=>{
  const w=makeWorld(2709,0,0),p={...w.start,yaw:0},tracker=new CompassContacts(w),g=new RouteGuide(w);g.update(p,w.control,0);
@@ -38,3 +38,5 @@ test('diamonds use the walkable waypoint, rotate immediately, and replan on move
  w.gates[0].open=!w.gates[0].open;tracker.update(p,targets,0);assert.equal(tracker.revision,revision+1);
  const next=contacts[0].next;p.x=next.x;p.z=next.z;p.y=next.y;tracker.update(p,targets,0);assert.ok(tracker.revision>revision+1);
 });
+
+test('red and blue contacts shrink with distance within legible bounded sizes',()=>{assert.equal(compassSize(0),13);assert.ok(compassSize(5)>compassSize(20));assert.ok(compassSize(20)>compassSize(80));assert.equal(compassSize(1e8),5);});

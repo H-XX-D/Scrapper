@@ -1,0 +1,1237 @@
+{
+  "errors": [],
+  "frames": [
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 25171,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 28528,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 31968,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29907,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 33858,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29338,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29221,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 26721,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 25989,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29761,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29324,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 30832,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 35071,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 29929,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 31287,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-rockets",
+      "opaque": 26521,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 10294,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11544,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12913,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 14113,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 14697,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12272,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12606,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 9504,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 8680,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11449,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12329,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13239,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13702,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12989,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12215,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 9953,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 10236,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11409,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12764,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13834,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 14383,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11670,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12445,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 8966,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 8578,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11498,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12327,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13446,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13819,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12924,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12201,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 10064,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 10456,
+      "r": 4
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11414,
+      "r": 4
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12753,
+      "r": 4
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13906,
+      "r": 4
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 14622,
+      "r": 4
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11699,
+      "r": 4
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12407,
+      "r": 4
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 9011,
+      "r": 4
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 8517,
+      "r": 5
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11505,
+      "r": 5
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12134,
+      "r": 5
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13297,
+      "r": 5
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13598,
+      "r": 5
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12701,
+      "r": 5
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11998,
+      "r": 5
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 9677,
+      "r": 5
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 893,
+      "r": 6
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 472,
+      "r": 6
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 719,
+      "r": 6
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 260,
+      "r": 6
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 323,
+      "r": 6
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 557,
+      "r": 6
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 579,
+      "r": 6
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 642,
+      "r": 6
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 9767,
+      "r": 7
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11300,
+      "r": 7
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12667,
+      "r": 7
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 13827,
+      "r": 7
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 14539,
+      "r": 7
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 11623,
+      "r": 7
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 12095,
+      "r": 7
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-fireballs",
+      "opaque": 8696,
+      "r": 7
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8802,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9512,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10299,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10330,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10775,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9185,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10020,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9270,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 7649,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9103,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9576,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9974,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9664,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9824,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8842,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8664,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9369,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10115,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10861,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10717,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 11161,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10034,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10753,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9516,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 7636,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9767,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9858,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10149,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9728,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10220,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9445,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8793,
+      "r": 3
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9469,
+      "r": 4
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10343,
+      "r": 4
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10558,
+      "r": 4
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10796,
+      "r": 4
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10959,
+      "r": 4
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9765,
+      "r": 4
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 10498,
+      "r": 4
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9403,
+      "r": 4
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 7343,
+      "r": 5
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9176,
+      "r": 5
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9387,
+      "r": 5
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9868,
+      "r": 5
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9499,
+      "r": 5
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9702,
+      "r": 5
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8931,
+      "r": 5
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8492,
+      "r": 5
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8414,
+      "r": 6
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9348,
+      "r": 6
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9438,
+      "r": 6
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9715,
+      "r": 6
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9952,
+      "r": 6
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9181,
+      "r": 6
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 9567,
+      "r": 6
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8618,
+      "r": 6
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 6374,
+      "r": 7
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8052,
+      "r": 7
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8399,
+      "r": 7
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8686,
+      "r": 7
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8114,
+      "r": 7
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 8491,
+      "r": 7
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 7375,
+      "r": 7
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "projectile-prism",
+      "opaque": 7116,
+      "r": 7
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 11064,
+      "r": 0
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 11536,
+      "r": 0
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 12801,
+      "r": 0
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 14477,
+      "r": 0
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 20260,
+      "r": 0
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 13625,
+      "r": 0
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 14702,
+      "r": 0
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 8636,
+      "r": 0
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 16166,
+      "r": 1
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 15367,
+      "r": 1
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 16744,
+      "r": 1
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 16524,
+      "r": 1
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 22478,
+      "r": 1
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 15914,
+      "r": 1
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 17787,
+      "r": 1
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 10909,
+      "r": 1
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 18270,
+      "r": 2
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 18719,
+      "r": 2
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 18738,
+      "r": 2
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 19778,
+      "r": 2
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 22637,
+      "r": 2
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 19684,
+      "r": 2
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 22084,
+      "r": 2
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 13387,
+      "r": 2
+    },
+    {
+      "c": 0,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 13162,
+      "r": 3
+    },
+    {
+      "c": 1,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 13360,
+      "r": 3
+    },
+    {
+      "c": 2,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 14924,
+      "r": 3
+    },
+    {
+      "c": 3,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 16342,
+      "r": 3
+    },
+    {
+      "c": 4,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 21327,
+      "r": 3
+    },
+    {
+      "c": 5,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 14651,
+      "r": 3
+    },
+    {
+      "c": 6,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 16771,
+      "r": 3
+    },
+    {
+      "c": 7,
+      "edge": 0,
+      "id": "clinger-pods",
+      "opaque": 10153,
+      "r": 3
+    }
+  ]
+}

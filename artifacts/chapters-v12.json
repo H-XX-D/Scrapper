@@ -1,0 +1,1448 @@
+{
+  "chapters": [
+    {
+      "assets": {
+        "active": 0,
+        "completed": 103,
+        "peak": 3,
+        "queued": 0,
+        "resident": 56
+      },
+      "cells": 3048,
+      "chapter": 0,
+      "clusterRows": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "8cbbc7",
+            "intensity": 7.532558449631543,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.00084612700676,
+            "kind": "screen",
+            "position": [
+              161,
+              2.17,
+              281.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.223470982018273,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.406478210376521,
+            "kind": "screen",
+            "position": [
+              165,
+              1.9425,
+              281.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.399380543707605,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.037410955376967,
+            "kind": "screen",
+            "position": [
+              169,
+              1.4300000000000002,
+              281.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.792935086958784,
+            "kind": "ceiling",
+            "position": [
+              159,
+              3.35,
+              263
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.090293076094334,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              265
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 278
+      },
+      "pods": 52,
+      "seconds": 1.195899999976158,
+      "theme": "transit",
+      "themes": [
+        "dressing-transit"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 108,
+        "peak": 3,
+        "queued": 0,
+        "resident": 58
+      },
+      "cells": 3395,
+      "chapter": 1,
+      "clusterRows": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98bb73",
+            "intensity": 7.6158566765285425,
+            "kind": "ceiling",
+            "position": [
+              253,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 4.512791932898806,
+            "kind": "screen",
+            "position": [
+              255,
+              1.45,
+              265.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.262618852758985,
+            "kind": "screen",
+            "position": [
+              251,
+              2.175,
+              265.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.494961732738638,
+            "kind": "ceiling",
+            "position": [
+              253,
+              3.55,
+              253
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 5.210079490379116,
+            "kind": "screen",
+            "position": [
+              259,
+              1.45,
+              265.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.719808563174853,
+            "kind": "ceiling",
+            "position": [
+              265,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.598913619384948,
+            "kind": "ceiling",
+            "position": [
+              265,
+              3.55,
+              253
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.573539719098004,
+            "kind": "screen",
+            "position": [
+              265.51,
+              2.17,
+              253
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 366
+      },
+      "pods": 52,
+      "seconds": 2.3421000000238417,
+      "theme": "research",
+      "themes": [
+        "dressing-research"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 114,
+        "peak": 3,
+        "queued": 0,
+        "resident": 61
+      },
+      "cells": 3357,
+      "chapter": 2,
+      "clusterRows": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98d5ee",
+            "intensity": 6.6094413194308625,
+            "kind": "ceiling",
+            "position": [
+              85,
+              3.55,
+              241
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 6.435171435423161,
+            "kind": "ceiling",
+            "position": [
+              73,
+              3.55,
+              241
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.538040428083058,
+            "kind": "screen",
+            "position": [
+              85,
+              1.4300000000000002,
+              247.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.831947333509114,
+            "kind": "screen",
+            "position": [
+              75,
+              1.45,
+              247.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 6.880227163688115,
+            "kind": "ceiling",
+            "position": [
+              81,
+              3.35,
+              229
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.3405467441290915,
+            "kind": "screen",
+            "position": [
+              70.49000000000001,
+              1.1700000000000002,
+              243
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.772641977186368,
+            "kind": "ceiling",
+            "position": [
+              83,
+              3.35,
+              227
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.710003701422788,
+            "kind": "screen",
+            "position": [
+              91.51,
+              1.4300000000000002,
+              233
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 358
+      },
+      "pods": 52,
+      "seconds": 2.3291000000238418,
+      "theme": "cryo",
+      "themes": [
+        "dressing-cryo"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 118,
+        "peak": 3,
+        "queued": 0,
+        "resident": 62
+      },
+      "cells": 3136,
+      "chapter": 3,
+      "clusterRows": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "e6a065",
+            "intensity": 6.912084752139919,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.7518587153549525,
+            "kind": "ceiling",
+            "position": [
+              205,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 5.4705201317978345,
+            "kind": "screen",
+            "position": [
+              221,
+              1.9425,
+              281.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.778906846215981,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 7.963061135603831,
+            "kind": "ceiling",
+            "position": [
+              215,
+              3.35,
+              263
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.618680809431014,
+            "kind": "ceiling",
+            "position": [
+              205,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.664770453367383,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.35,
+              261
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 4.750134989745842,
+            "kind": "screen",
+            "position": [
+              225.51,
+              1.1700000000000002,
+              267
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 316
+      },
+      "pods": 52,
+      "seconds": 1.4462999999523165,
+      "theme": "foundry",
+      "themes": [
+        "dressing-foundry"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 121,
+        "peak": 3,
+        "queued": 0,
+        "resident": 62
+      },
+      "cells": 3415,
+      "chapter": 4,
+      "clusterRows": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "8cbbc7",
+            "intensity": 7.5302132852845425,
+            "kind": "ceiling",
+            "position": [
+              109,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.862112192295953,
+            "kind": "screen",
+            "position": [
+              99,
+              2.17,
+              277.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.397035379360604,
+            "kind": "ceiling",
+            "position": [
+              109,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.22090258539487,
+            "kind": "ceiling",
+            "position": [
+              97,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.087724679470932,
+            "kind": "ceiling",
+            "position": [
+              97,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.604324189969898,
+            "kind": "screen",
+            "position": [
+              115.51,
+              2.17,
+              263
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.079100940132854,
+            "kind": "screen",
+            "position": [
+              94.49,
+              1.45,
+              267
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 6.757804768560886,
+            "kind": "ceiling",
+            "position": [
+              123,
+              3.35,
+              271
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 345
+      },
+      "pods": 52,
+      "seconds": 1.8306000000238416,
+      "theme": "transit",
+      "themes": [
+        "dressing-transit"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 126,
+        "peak": 3,
+        "queued": 0,
+        "resident": 64
+      },
+      "cells": 3628,
+      "chapter": 5,
+      "clusterRows": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98d5ee",
+            "intensity": 7.50293098612295,
+            "kind": "ceiling",
+            "position": [
+              241,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.679923503097435,
+            "kind": "screen",
+            "position": [
+              249,
+              1.9425,
+              287.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.749034582452481,
+            "kind": "ceiling",
+            "position": [
+              253,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.191531884727302,
+            "kind": "ceiling",
+            "position": [
+              229,
+              3.35,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.629537794942429,
+            "kind": "screen",
+            "position": [
+              255.51,
+              1.45,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.284832916987707,
+            "kind": "screen",
+            "position": [
+              247,
+              1.45,
+              270.49
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.50330382104482,
+            "kind": "ceiling",
+            "position": [
+              227,
+              3.35,
+              279
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.190762662444503,
+            "kind": "screen",
+            "position": [
+              241,
+              1.9425,
+              270.49
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 393
+      },
+      "pods": 52,
+      "seconds": 2.817200000047684,
+      "theme": "cryo",
+      "themes": [
+        "dressing-cryo"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 130,
+        "peak": 3,
+        "queued": 0,
+        "resident": 65
+      },
+      "cells": 3185,
+      "chapter": 6,
+      "clusterRows": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98bb73",
+            "intensity": 7.532558449631543,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 4.419461877477794,
+            "kind": "screen",
+            "position": [
+              161,
+              1.9425,
+              285.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 4.9544199384764305,
+            "kind": "screen",
+            "position": [
+              157,
+              1.1700000000000002,
+              285.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.223470982018273,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.035173842081118,
+            "kind": "screen",
+            "position": [
+              169,
+              1.75,
+              285.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.76956687523431,
+            "kind": "screen",
+            "position": [
+              171.51000000000002,
+              1.75,
+              283
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 5.104351655094009,
+            "kind": "screen",
+            "position": [
+              150.48999999999998,
+              1.9425,
+              281
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.986674638005838,
+            "kind": "screen",
+            "position": [
+              167,
+              2.17,
+              268.49
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 325
+      },
+      "pods": 52,
+      "seconds": 3.3475,
+      "theme": "research",
+      "themes": [
+        "dressing-research"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 134,
+        "peak": 3,
+        "queued": 0,
+        "resident": 66
+      },
+      "cells": 3372,
+      "chapter": 7,
+      "clusterRows": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "e6a065",
+            "intensity": 7.087724679470932,
+            "kind": "ceiling",
+            "position": [
+              97,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 4.788654665277095,
+            "kind": "screen",
+            "position": [
+              99,
+              1.45,
+              269.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 7.397035379360604,
+            "kind": "ceiling",
+            "position": [
+              109,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.8277038611086285,
+            "kind": "screen",
+            "position": [
+              107,
+              1.75,
+              269.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 5.482848554534235,
+            "kind": "screen",
+            "position": [
+              95,
+              1.45,
+              269.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.312643773096008,
+            "kind": "screen",
+            "position": [
+              90.49,
+              2.175,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.966829735681027,
+            "kind": "ceiling",
+            "position": [
+              97,
+              3.55,
+              253
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 7.897031180054476,
+            "kind": "ceiling",
+            "position": [
+              101,
+              3.35,
+              251
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 372
+      },
+      "pods": 52,
+      "seconds": 1.1262999999523162,
+      "theme": "foundry",
+      "themes": [
+        "dressing-foundry"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 137,
+        "peak": 3,
+        "queued": 0,
+        "resident": 66
+      },
+      "cells": 3329,
+      "chapter": 8,
+      "clusterRows": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "8cbbc7",
+            "intensity": 7.5302132852845425,
+            "kind": "ceiling",
+            "position": [
+              109,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.22090258539487,
+            "kind": "ceiling",
+            "position": [
+              97,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.614315532730014,
+            "kind": "screen",
+            "position": [
+              96.49,
+              2.17,
+              283
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.765708434086582,
+            "kind": "ceiling",
+            "position": [
+              121,
+              3.35,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.397035379360604,
+            "kind": "ceiling",
+            "position": [
+              109,
+              3.35,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.204940794186686,
+            "kind": "screen",
+            "position": [
+              113,
+              1.4300000000000002,
+              270.49
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 7.843161054390299,
+            "kind": "ceiling",
+            "position": [
+              127,
+              3.35,
+              281
+            ],
+            "reach": 35
+          },
+          {
+            "color": "8cbbc7",
+            "intensity": 6.507824896009964,
+            "kind": "ceiling",
+            "position": [
+              105,
+              3.35,
+              261
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 324
+      },
+      "pods": 52,
+      "seconds": 1.5067999999523165,
+      "theme": "transit",
+      "themes": [
+        "dressing-transit"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 140,
+        "peak": 3,
+        "queued": 0,
+        "resident": 66
+      },
+      "cells": 3494,
+      "chapter": 9,
+      "clusterRows": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98bb73",
+            "intensity": 7.50293098612295,
+            "kind": "ceiling",
+            "position": [
+              241,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 4.952008589418048,
+            "kind": "screen",
+            "position": [
+              241,
+              1.9425,
+              279.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.369753080199011,
+            "kind": "ceiling",
+            "position": [
+              241,
+              3.55,
+              265
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.749034582452481,
+            "kind": "ceiling",
+            "position": [
+              253,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "92e97a",
+            "intensity": 4.4440059392421745,
+            "kind": "screen",
+            "position": [
+              237,
+              1.4300000000000002,
+              279.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.63073251941533,
+            "kind": "screen",
+            "position": [
+              232.49,
+              2.17,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.533108588750858,
+            "kind": "screen",
+            "position": [
+              253.51,
+              2.17,
+              271
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98bb73",
+            "intensity": 7.303026380418801,
+            "kind": "ceiling",
+            "position": [
+              245,
+              3.35,
+              261
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 369
+      },
+      "pods": 52,
+      "seconds": 1.2953000000715256,
+      "theme": "research",
+      "themes": [
+        "dressing-research"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 143,
+        "peak": 3,
+        "queued": 0,
+        "resident": 66
+      },
+      "cells": 3418,
+      "chapter": 10,
+      "clusterRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "98d5ee",
+            "intensity": 7.636428912100875,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              289
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.327341444487605,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              289
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 5.17841281354556,
+            "kind": "screen",
+            "position": [
+              157,
+              1.45,
+              293.51
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.809718817646424,
+            "kind": "screen",
+            "position": [
+              171.51000000000002,
+              2.175,
+              289
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.532558449631543,
+            "kind": "ceiling",
+            "position": [
+              157,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 6.82239326417908,
+            "kind": "ceiling",
+            "position": [
+              161,
+              3.35,
+              275
+            ],
+            "reach": 35
+          },
+          {
+            "color": "98d5ee",
+            "intensity": 7.223470982018273,
+            "kind": "ceiling",
+            "position": [
+              169,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 4.889980213057296,
+            "kind": "screen",
+            "position": [
+              150.48999999999998,
+              1.9425,
+              291
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 359
+      },
+      "pods": 52,
+      "seconds": 1.709,
+      "theme": "cryo",
+      "themes": [
+        "dressing-cryo"
+      ]
+    },
+    {
+      "assets": {
+        "active": 0,
+        "completed": 146,
+        "peak": 3,
+        "queued": 0,
+        "resident": 66
+      },
+      "cells": 3402,
+      "chapter": 11,
+      "clusterRows": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "far": 20,
+      "lights": {
+        "active": [
+          {
+            "color": "e6a065",
+            "intensity": 7.015955214609251,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.55,
+              289
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.912084752139919,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.55,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.757812232551014,
+            "kind": "ceiling",
+            "position": [
+              219,
+              3.35,
+              273
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 5.161973591112977,
+            "kind": "screen",
+            "position": [
+              227.51,
+              1.45,
+              285
+            ],
+            "reach": 35
+          },
+          {
+            "color": "7dd9ee",
+            "intensity": 6.751123769324487,
+            "kind": "screen",
+            "position": [
+              209,
+              1.75,
+              274.49
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 4.658444200924539,
+            "kind": "screen",
+            "position": [
+              206.49,
+              1.9425,
+              279
+            ],
+            "reach": 35
+          },
+          {
+            "color": "ffa85f",
+            "intensity": 5.386127003686286,
+            "kind": "screen",
+            "position": [
+              227.51,
+              1.9425,
+              277
+            ],
+            "reach": 35
+          },
+          {
+            "color": "e6a065",
+            "intensity": 6.778906846215981,
+            "kind": "ceiling",
+            "position": [
+              217,
+              3.35,
+              265
+            ],
+            "reach": 35
+          }
+        ],
+        "budget": 8,
+        "reach": 35,
+        "sources": 338
+      },
+      "pods": 52,
+      "seconds": 1.3226000000238418,
+      "theme": "foundry",
+      "themes": [
+        "dressing-foundry"
+      ]
+    }
+  ],
+  "errors": [],
+  "loaded": true,
+  "removedHud": {
+    "enemyHealth": true,
+    "escapePrompt": true
+  },
+  "restore": {
+    "chapter": 11,
+    "podsEqual": true,
+    "position": [
+      217,
+      0,
+      287
+    ]
+  },
+  "saved": true
+}

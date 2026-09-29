@@ -1,0 +1,70 @@
+[
+  {
+    "session": "scrapper-v12-room",
+    "pod": {
+      "age": 8.470000000000024,
+      "corner": true,
+      "hp": 44,
+      "id": 12,
+      "remaining": 0,
+      "room": "secret-service",
+      "row": 2,
+      "spawned": 5,
+      "state": "empty",
+      "x": 229,
+      "y": 0,
+      "z": 243
+    }
+  },
+  {
+    "session": "v12-guest1",
+    "pod": {
+      "age": 8.571700000000034,
+      "corner": true,
+      "hp": 44,
+      "id": 12,
+      "remaining": 0,
+      "room": "secret-service",
+      "row": 2,
+      "spawned": 5,
+      "state": "empty",
+      "x": 229,
+      "y": 0,
+      "z": 243
+    }
+  },
+  {
+    "session": "v12-guest2",
+    "pod": {
+      "age": 8.571700000000005,
+      "corner": true,
+      "hp": 44,
+      "id": 12,
+      "remaining": 0,
+      "room": "secret-service",
+      "row": 2,
+      "spawned": 5,
+      "state": "empty",
+      "x": 229,
+      "y": 0,
+      "z": 243
+    }
+  },
+  {
+    "session": "v12-guest3",
+    "pod": {
+      "age": 8.538300000000012,
+      "corner": true,
+      "hp": 44,
+      "id": 12,
+      "remaining": 0,
+      "room": "secret-service",
+      "row": 2,
+      "spawned": 5,
+      "state": "empty",
+      "x": 229,
+      "y": 0,
+      "z": 243
+    }
+  }
+]

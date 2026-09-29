@@ -1,0 +1,79 @@
+{
+  "actors": 113,
+  "art": {
+    "frames": 304,
+    "images": 109
+  },
+  "combatLights": [
+    {
+      "color": "b5dd48",
+      "intensity": 6.099047619047599,
+      "kind": "flash"
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 3.0495238095237993,
+      "kind": "flash"
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 6.099047619047599,
+      "kind": "flash"
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 3.0495238095237993,
+      "kind": "flash"
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 3.0495238095237993,
+      "kind": "flash"
+    },
+    {
+      "color": "b987dc",
+      "intensity": 13,
+      "kind": "area"
+    },
+    {
+      "color": "b987dc",
+      "intensity": 13,
+      "kind": "area"
+    },
+    {
+      "color": "b987dc",
+      "intensity": 13,
+      "kind": "area"
+    },
+    {
+      "color": "b987dc",
+      "intensity": 13,
+      "kind": "area"
+    },
+    {
+      "color": "b5dd48",
+      "intensity": 13,
+      "kind": "area"
+    }
+  ],
+  "cpuUpdate": {
+    "meanMs": 1.8758333335320152,
+    "medianMs": 1.1999999284744265,
+    "p95Ms": 3.899999976158142
+  },
+  "frames": 270,
+  "maxMs": 16.80000000000109,
+  "meanCalls": 434,
+  "meanTriangles": 5494,
+  "medianMs": 16.699999999999818,
+  "over33": 0,
+  "p95Ms": 16.700000000000728,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    577
+  ],
+  "version": "v11",
+  "sha256": "726e155b386b1ed30f56e1048900495ca3c9ff9852844ebc508a7598d72c0221",
+  "errors": ""
+}

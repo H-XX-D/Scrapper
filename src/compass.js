@@ -3,11 +3,11 @@ export const COMPASS_LIMIT=20;
 export const COMPASS_COLORS={objective:'#55d8ff',supply:'#ffd45a',enemy:'#ff4d53'};
 const wrap=a=>Math.atan2(Math.sin(a),Math.cos(a));
 const separation=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z,(a.y||0)-(b.y||0));
+export const compassSize=distance=>Math.round(5+8/(1+Math.max(0,distance)/12));
 export function compassProjection(relative){const side=relative>Math.PI/2?'left':relative< -Math.PI/2?'right':'';return{x:Math.max(2,Math.min(98,50-relative/(Math.PI/2)*48)),edge:side};}
 export function compassTargets({world,tasks,mission,primary,cases=[],pickups=[],actors=[],crew=[],self,mode='solo'}){
  const result=[],seen=new Set();
  const add=(id,kind,p,label,main=false)=>{if(!p)return;const y=p.groundY??p.y??0,key=kind==='objective'?kind+':'+p.x+':'+p.z+':'+y:id;if(seen.has(key))return;seen.add(key);result.push({id,kind,label,x:p.x,z:p.z,y,primary:main});};
- const discovered=p=>{const room=world.at(p.x,p.z,p.y||0)?.room;return!room?.startsWith('secret-')||world.secrets.some(s=>s.room===room&&s.found);};
  if(mode!=='ffa'){
   add('main','objective',primary,primary?.label||'CURRENT OBJECTIVE',true);
   if(!tasks.solved)for(const n of tasks.nodes)if(tasks.interactable?.(n)??tasks.visible(n))add('task:'+n.id,'objective',n,n.label);
@@ -16,9 +16,6 @@ export function compassTargets({world,tasks,mission,primary,cases=[],pickups=[],
   if(!mission.choices.some(c=>c.id==='purge'))add('research','objective',world.purge,'RESEARCH BANK');
   if(tasks.solved&&!world.puzzle.solved)for(const n of world.switches)if(!n.timedGate&&!n.on)add('relay:'+n.id,'objective',n,'RELAY '+(n.index+1));
  }
- for(const [i,c]of cases.entries())if(!c.open&&(!c.locked||mission.power==='armory')&&discovered(c))add('case:'+i,'supply',c,'WEAPON CASE');
- for(const [i,p]of pickups.entries())if(!p.taken&&p.age>=(p.delay||0)&&discovered(p))add('pickup:'+i,'supply',p,p.kind.toUpperCase());
- for(const s of world.secrets)if(s.found)add('secret:'+s.id,'supply',s,'DISCOVERED SECRET');
  for(const a of actors)if(a.hp>0)add('enemy:'+a.id,'enemy',a,a.type.toUpperCase());
  if(mode==='ffa'||mode==='pvpve')for(const m of crew)if(m.id!==self&&m.player.hp>0)add('rival:'+m.id,'enemy',m.player,'RIVAL SALVAGER');
  return result;
@@ -58,7 +55,7 @@ export class CompassView{
   this.labels.forEach((n,i)=>{const relative=wrap(-i*Math.PI/8-yaw),p=compassProjection(relative);n.hidden=!!p.edge||Math.abs(p.x-50)<9;n.style.left=p.x+'%';});
   const live=new Set(contacts.map(c=>c.id));for(const[id,n]of this.nodes)if(!live.has(id)){n.remove();this.nodes.delete(id);}
   for(const c of contacts){let n=this.nodes.get(c.id);if(!n){n=document.createElement('span');n.innerHTML='<svg viewBox="0 0 11 11" aria-hidden="true"><path d="M4 0h3v2h2v2h2v3H9v2H7v2H4V9H2V7H0V4h2V2h2Z"/><path class="tick-core" d="M4 4h3v3H4Z"/></svg><i></i>';this.layer.append(n);this.nodes.set(c.id,n);}
-   n.className='compass-contact '+c.kind+(c.primary?' primary':'');n.dataset.id=c.id;n.dataset.kind=c.kind;n.dataset.edge=c.edge;n.dataset.elevation=Math.abs(c.elevation)<1?'same':c.elevation>0?'up':'down';n.style.left=c.x+'%';n.style.setProperty('--lane',c.lane);n.setAttribute('aria-label',c.label+(c.primary?' · current objective':'')+' · '+Math.ceil(c.routeDistance??c.distance)+'m'+(Math.abs(c.elevation)>=1?c.elevation>0?' · upper deck':' · lower deck':''));
+   n.className='compass-contact '+c.kind+(c.primary?' primary':'');n.dataset.id=c.id;n.dataset.kind=c.kind;n.dataset.edge=c.edge;n.dataset.elevation=Math.abs(c.elevation)<1?'same':c.elevation>0?'up':'down';n.style.left=c.x+'%';n.style.setProperty('--lane',c.lane);n.style.setProperty('--contact-size',compassSize(c.routeDistance??c.distance)+'px');n.setAttribute('aria-label',c.label+(c.primary?' · current objective':'')+' · '+Math.ceil(c.routeDistance??c.distance)+'m'+(Math.abs(c.elevation)>=1?c.elevation>0?' · upper deck':' · lower deck':''));
   }
  }
 }

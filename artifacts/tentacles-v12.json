@@ -1,0 +1,486 @@
+{
+  "complete": true,
+  "error": null,
+  "results": [
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-0",
+      "span": 29.75,
+      "strain": 0,
+      "surface": "wall",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-1",
+      "span": 19.5,
+      "strain": 1,
+      "surface": "wall",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-2",
+      "span": 29.75,
+      "strain": 2,
+      "surface": "wall",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-3",
+      "span": 17.75,
+      "strain": 3,
+      "surface": "wall",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "floor",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "floor",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "floor",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "floor",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "ceiling",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "ceiling",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "ceiling",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "rook",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "ceiling",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-0",
+      "span": 29.75,
+      "strain": 0,
+      "surface": "wall",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-1",
+      "span": 19.5,
+      "strain": 1,
+      "surface": "wall",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-2",
+      "span": 29.75,
+      "strain": 2,
+      "surface": "wall",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-3",
+      "span": 17.75,
+      "strain": 3,
+      "surface": "wall",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "floor",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "floor",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "floor",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "floor",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "ceiling",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "ceiling",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "ceiling",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "echo",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "ceiling",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-0",
+      "span": 29.75,
+      "strain": 0,
+      "surface": "wall",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-1",
+      "span": 19.5,
+      "strain": 1,
+      "surface": "wall",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-2",
+      "span": 29.75,
+      "strain": 2,
+      "surface": "wall",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-3",
+      "span": 17.75,
+      "strain": 3,
+      "surface": "wall",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "floor",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "floor",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "floor",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "floor",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "ceiling",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "ceiling",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "ceiling",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "flint",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "ceiling",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-0",
+      "span": 29.75,
+      "strain": 0,
+      "surface": "wall",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-1",
+      "span": 19.5,
+      "strain": 1,
+      "surface": "wall",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-2",
+      "span": 29.75,
+      "strain": 2,
+      "surface": "wall",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-3",
+      "span": 17.75,
+      "strain": 3,
+      "surface": "wall",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "floor",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "floor",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "floor",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "floor",
+      "type": 3
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-0",
+      "span": 3.75,
+      "strain": 0,
+      "surface": "ceiling",
+      "type": 0
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-1",
+      "span": 3.75,
+      "strain": 1,
+      "surface": "ceiling",
+      "type": 1
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-2",
+      "span": 3.75,
+      "strain": 2,
+      "surface": "ceiling",
+      "type": 2
+    },
+    {
+      "framed": 1,
+      "kind": "tentacle",
+      "pilot": "eos",
+      "sheet": "escape-tentacle-3",
+      "span": 3.75,
+      "strain": 3,
+      "surface": "ceiling",
+      "type": 3
+    }
+  ]
+}

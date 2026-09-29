@@ -2,13 +2,13 @@ import * as THREE from '../vendor/three.module.js';
 import {THEMES} from './atlas.js';
 import{surfaceIndex,wallSpans,uniqueCells}from'./world-surfaces.js';
 export class LevelVisuals {
- constructor(world,atlas,index){this.world=world;this.atlas=atlas;this.theme=THEMES[index];this.index=index;this.group=new THREE.Group();this.lifts=[];this.gates=[];this.switches=[];this.animated=[];this.motion=[];this.age=0;this.build();}
+ constructor(world,atlas,index){this.world=world;this.atlas=atlas;this.theme=THEMES[index];this.index=index;this.group=new THREE.Group();this.lifts=[];this.gates=[];this.switches=[];this.animated=[];this.motion=[];this.lightSources=[];this.age=0;this.build();}
  material(col,row,color='#ffffff'){const map=this.atlas.texture(this.atlas.frame((col>=4?'env-extra-':'env-')+this.theme.id,col%4,row));map.minFilter=THREE.NearestMipmapLinearFilter;map.generateMipmaps=true;map.needsUpdate=true;return new THREE.MeshLambertMaterial({map,color,side:THREE.DoubleSide});}
  box(x,y,z,w,h,d,col=0,row=1,color='#c4c9ca'){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),this.material(col,row,color));m.position.set(x,y,z);this.group.add(m);return m;}
  // Readouts are physical terminal faces. There is no world-space wayfinding text.
  terminal(text,x,y,z,width=1.2,rotation=0){
   const c=document.createElement('canvas');c.width=320;c.height=190;const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;
-  const mesh=new THREE.Mesh(new THREE.PlaneGeometry(width,width*190/320),new THREE.MeshBasicMaterial({map:this.atlas.texture(c),side:THREE.DoubleSide,fog:false}));mesh.position.set(x,y,z);mesh.rotation.y=rotation;this.group.add(mesh);
+  const mesh=new THREE.Mesh(new THREE.PlaneGeometry(width,width*190/320),new THREE.MeshBasicMaterial({map:this.atlas.texture(c),side:THREE.DoubleSide,fog:false}));mesh.position.set(x,y,z);mesh.rotation.y=rotation;this.group.add(mesh);this.lightSources.push({x:x+Math.sin(rotation)*.18,y:y+.08,z:z+Math.cos(rotation)*.18,kind:'terminal',color:'#71edda',strength:7,mesh});
   const draw=value=>{if(mesh.userData.text===value)return;mesh.userData.text=value;ctx.clearRect(0,0,320,190);ctx.drawImage(this.atlas.images.hudSkin,1034,744,319,190,0,0,320,190);ctx.fillStyle='#071619';ctx.fillRect(23,27,274,132);const lines=String(value).split('\n'),colors=['#72ffe0','#ff8edd','#e6ff6e'];ctx.font='16px Pixel,monospace';ctx.textAlign='center';ctx.textBaseline='middle';lines.forEach((line,i)=>{ctx.fillStyle=colors[i%3];ctx.fillText(line,160,66+(i-(lines.length-2)/2)*28,250);});ctx.fillStyle='#9dffe040';for(let y=30;y<156;y+=4)ctx.fillRect(25,y,270,1);mesh.material.map.needsUpdate=true;};
   mesh.userData.setText=draw;draw(text);return mesh;
  }
@@ -26,7 +26,7 @@ export class LevelVisuals {
    for(const[dx,dz,rotation]of[[0,1,Math.PI],[0,-1,0],[1,0,-Math.PI/2],[-1,0,Math.PI/2]]){
     for(const s of wallSpans(c,dx,dz,index))wall('wall'+variant,s.x,s.z,s.low,s.high,rotation,s.width);
    }
-   if((c.x%6===0&&c.z%6===0)||(c.room==='passage'&&(c.x+c.z)%7===0))tile('light',x,c.ceiling-.03,z,Math.PI/2,0,.18,1.5);
+   if((c.x%6===0&&c.z%6===0)||(c.room==='passage'&&(c.x+c.z)%7===0)){tile('light',x,c.ceiling-.03,z,Math.PI/2,0,.18,1.5);this.lightSources.push({x,y:c.ceiling-.25,z,floor:c.y,kind:'ceiling',color:this.theme.color,strength:8});}
   }
   for(const[k,items]of groups){let mat;if(k==='light'||k==='pit')mat=new THREE.MeshBasicMaterial({color:k==='light'?this.theme.color:'#03050a',side:THREE.DoubleSide});else{const row=k.startsWith('wall')?1:k.startsWith('ceiling')?2:0,col=Number(k.at(-1));mat=this.material(col,row,k.startsWith('ceiling')?'#6e7f8d':'#d7d5cc');}
    const chunks=new Map();for(const v of items){const key=Math.floor(v.x/16)+':'+Math.floor(v.z/16)+':'+Math.floor(v.y/8);if(!chunks.has(key))chunks.set(key,[]);chunks.get(key).push(v);}

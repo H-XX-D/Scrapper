@@ -1,0 +1,1484 @@
+{
+  "barrier": [
+    {
+      "session": "scrapper-v12-room",
+      "loading": true,
+      "missionReady": true,
+      "running": false
+    },
+    {
+      "session": "v12-guest1",
+      "loading": true,
+      "missionReady": true,
+      "running": false
+    },
+    {
+      "session": "v12-guest2",
+      "loading": true,
+      "missionReady": true,
+      "running": false
+    },
+    {
+      "session": "v12-guest3",
+      "loading": true,
+      "missionReady": false,
+      "running": false
+    }
+  ],
+  "rosters": {
+    "scrapper-v12-room": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "77fa8d7e-a9b5-499b-895d-9ecb0214412f",
+        "pilot": "echo"
+      },
+      {
+        "id": "c9532e73-b3a6-4c7d-89dd-0d394064f4dd",
+        "pilot": "flint"
+      },
+      {
+        "id": "d1be0458-0ede-471a-b9c2-4a14c27f82e5",
+        "pilot": "eos"
+      }
+    ],
+    "v12-guest1": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "77fa8d7e-a9b5-499b-895d-9ecb0214412f",
+        "pilot": "echo"
+      },
+      {
+        "id": "c9532e73-b3a6-4c7d-89dd-0d394064f4dd",
+        "pilot": "flint"
+      },
+      {
+        "id": "d1be0458-0ede-471a-b9c2-4a14c27f82e5",
+        "pilot": "eos"
+      }
+    ],
+    "v12-guest2": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "77fa8d7e-a9b5-499b-895d-9ecb0214412f",
+        "pilot": "echo"
+      },
+      {
+        "id": "c9532e73-b3a6-4c7d-89dd-0d394064f4dd",
+        "pilot": "flint"
+      },
+      {
+        "id": "d1be0458-0ede-471a-b9c2-4a14c27f82e5",
+        "pilot": "eos"
+      }
+    ],
+    "v12-guest3": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "77fa8d7e-a9b5-499b-895d-9ecb0214412f",
+        "pilot": "echo"
+      },
+      {
+        "id": "c9532e73-b3a6-4c7d-89dd-0d394064f4dd",
+        "pilot": "flint"
+      },
+      {
+        "id": "d1be0458-0ede-471a-b9c2-4a14c27f82e5",
+        "pilot": "eos"
+      }
+    ]
+  },
+  "captures": [
+    {
+      "session": "scrapper-v12-room",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "rook"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "echo"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "flint"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "eos"
+        }
+      ]
+    },
+    {
+      "session": "scrapper-v12-room",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "scrapper-v12-room",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "session": "scrapper-v12-room",
+      "kind": "facehugger",
+      "clear": true,
+      "crew": [
+        {
+          "local": true,
+          "pilot": "rook",
+          "recovery": 1.615
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.615,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.615,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.615,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 21,
+      "view": {
+        "camera": [
+          81,
+          1.65,
+          243
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "facehugger",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6333000000000029,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "echo",
+          "recovery": 1.6333000000000029
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.6333000000000029,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.6333000000000029,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 38,
+      "view": {
+        "camera": [
+          79,
+          1.65,
+          239
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "facehugger",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6334000000000013,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.6334000000000013,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "flint",
+          "recovery": 1.6334000000000013
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.6334000000000013,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 38,
+      "view": {
+        "camera": [
+          83,
+          1.65,
+          239
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "facehugger",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6333000000000029,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.6333000000000029,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.6333000000000029,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "eos",
+          "recovery": 1.6333000000000029
+        }
+      ],
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 39,
+      "view": {
+        "camera": [
+          81,
+          1.65,
+          236
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "scrapper-v12-room",
+      "kind": "gnats",
+      "clear": true,
+      "crew": [
+        {
+          "local": true,
+          "pilot": "rook",
+          "recovery": 1.15,
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.15,
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.15,
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.15,
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ],
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 15,
+      "view": {
+        "camera": [
+          83.82849855043175,
+          1.6,
+          241.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-gnats"
+      }
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "gnats",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.1333999999999942,
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "echo",
+          "recovery": 1.1333999999999942,
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.1333999999999942,
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.1333999999999942,
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ],
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 29,
+      "view": {
+        "camera": [
+          81.82849855043175,
+          1.6,
+          237.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-gnats"
+      }
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "gnats",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.115,
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.115,
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "flint",
+          "recovery": 1.115,
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.115,
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ],
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 30,
+      "view": {
+        "camera": [
+          85.82849855043175,
+          1.6,
+          237.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-gnats"
+      }
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "gnats",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.0817999999999883,
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.0817999999999883,
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.0817999999999883,
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "eos",
+          "recovery": 1.0817999999999883,
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ],
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 30,
+      "view": {
+        "camera": [
+          83.82849855043175,
+          1.6,
+          234.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-gnats"
+      }
+    },
+    {
+      "session": "scrapper-v12-room",
+      "kind": "burrower",
+      "clear": true,
+      "crew": [
+        {
+          "local": true,
+          "pilot": "rook",
+          "recovery": 1.15,
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 0.9750000000000002,
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 0.9750000000000002,
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 0.9750000000000002,
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ],
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 14,
+      "view": {
+        "camera": [
+          83.82849855043175,
+          1.6,
+          241.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-burrower"
+      }
+    },
+    {
+      "session": "v12-guest1",
+      "kind": "burrower",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 0,
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "echo",
+          "recovery": 1.0498999999999945,
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.0498999999999945,
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.0498999999999945,
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ],
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 21,
+      "view": {
+        "camera": [
+          81.82849855043175,
+          1.6,
+          237.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-burrower"
+      }
+    },
+    {
+      "session": "v12-guest2",
+      "kind": "burrower",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 0,
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.0833000000000028,
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "flint",
+          "recovery": 1.0833000000000028,
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.0833000000000028,
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ],
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 21,
+      "view": {
+        "camera": [
+          85.82849855043175,
+          1.6,
+          237.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-burrower"
+      }
+    },
+    {
+      "session": "v12-guest3",
+      "kind": "burrower",
+      "clear": true,
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 0,
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.0817000000000117,
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.0817000000000117,
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "eos",
+          "recovery": 1.0817000000000117,
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ],
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 21,
+      "view": {
+        "camera": [
+          83.82849855043175,
+          1.6,
+          234.20498023682035
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": false,
+        "grabFrame": 6,
+        "grabSheet": "escape-burrower"
+      }
+    }
+  ],
+  "peels": [
+    {
+      "session": "scrapper-v12-room",
+      "crew": [
+        {
+          "local": true,
+          "pilot": "rook",
+          "recovery": 1.615
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.615,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.615,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.615,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "view": {
+        "camera": [
+          81,
+          1.65,
+          243
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest1",
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6333000000000029,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "echo",
+          "recovery": 1.6333000000000029
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.6333000000000029,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.6333000000000029,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "view": {
+        "camera": [
+          79,
+          1.65,
+          239
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest2",
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6334000000000013,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.6334000000000013,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "flint",
+          "recovery": 1.6334000000000013
+        },
+        {
+          "local": false,
+          "pilot": "eos",
+          "recovery": 1.6334000000000013,
+          "row": 3,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        }
+      ],
+      "view": {
+        "camera": [
+          83,
+          1.65,
+          239
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    },
+    {
+      "session": "v12-guest3",
+      "crew": [
+        {
+          "local": false,
+          "pilot": "rook",
+          "recovery": 1.6333000000000029,
+          "row": 0,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "echo",
+          "recovery": 1.6333000000000029,
+          "row": 1,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": false,
+          "pilot": "flint",
+          "recovery": 1.6333000000000029,
+          "row": 2,
+          "sheet": "escape-facehugger-peel",
+          "visible": true
+        },
+        {
+          "local": true,
+          "pilot": "eos",
+          "recovery": 1.6333000000000029
+        }
+      ],
+      "view": {
+        "camera": [
+          81,
+          1.65,
+          236
+        ],
+        "captureProtected": true,
+        "far": 20,
+        "firstPersonGrab": true,
+        "grabFrame": 0,
+        "grabSheet": "fp-facehugger-peel"
+      }
+    }
+  ],
+  "protection": [
+    [
+      {
+        "blocked": true,
+        "kind": "facehugger",
+        "pilot": "rook"
+      },
+      {
+        "blocked": true,
+        "kind": "facehugger",
+        "pilot": "echo"
+      },
+      {
+        "blocked": true,
+        "kind": "facehugger",
+        "pilot": "flint"
+      },
+      {
+        "blocked": true,
+        "kind": "facehugger",
+        "pilot": "eos"
+      }
+    ],
+    [
+      {
+        "blocked": true,
+        "kind": "gnats",
+        "pilot": "rook"
+      },
+      {
+        "blocked": true,
+        "kind": "gnats",
+        "pilot": "echo"
+      },
+      {
+        "blocked": true,
+        "kind": "gnats",
+        "pilot": "flint"
+      },
+      {
+        "blocked": true,
+        "kind": "gnats",
+        "pilot": "eos"
+      }
+    ],
+    [
+      {
+        "blocked": true,
+        "kind": "burrower",
+        "pilot": "rook"
+      },
+      {
+        "blocked": true,
+        "kind": "burrower",
+        "pilot": "echo"
+      },
+      {
+        "blocked": true,
+        "kind": "burrower",
+        "pilot": "flint"
+      },
+      {
+        "blocked": true,
+        "kind": "burrower",
+        "pilot": "eos"
+      }
+    ]
+  ]
+}

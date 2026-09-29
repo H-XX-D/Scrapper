@@ -49,3 +49,5 @@ artifacts/*
 !artifacts/crew-v8-eos.png
 !artifacts/crew-v8-lobby.png
 !artifacts/crew-v8-pause.png
+
+exports/Scrapper-Fast-Load-*/
