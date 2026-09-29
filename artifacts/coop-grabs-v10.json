@@ -1,0 +1,664 @@
+{
+  "rosters": {
+    "scrapper-v10": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "76c02a94-9f0f-429a-a556-d44a27e5fa6a",
+        "pilot": "echo"
+      },
+      {
+        "id": "52c0d229-124c-4e2c-9f49-847e9b4e696b",
+        "pilot": "flint"
+      },
+      {
+        "id": "cf360552-8f73-4c5d-ae07-fa6434bea046",
+        "pilot": "eos"
+      }
+    ],
+    "v10-guest1": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "76c02a94-9f0f-429a-a556-d44a27e5fa6a",
+        "pilot": "echo"
+      },
+      {
+        "id": "52c0d229-124c-4e2c-9f49-847e9b4e696b",
+        "pilot": "flint"
+      },
+      {
+        "id": "cf360552-8f73-4c5d-ae07-fa6434bea046",
+        "pilot": "eos"
+      }
+    ],
+    "v10-guest2": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "76c02a94-9f0f-429a-a556-d44a27e5fa6a",
+        "pilot": "echo"
+      },
+      {
+        "id": "52c0d229-124c-4e2c-9f49-847e9b4e696b",
+        "pilot": "flint"
+      },
+      {
+        "id": "cf360552-8f73-4c5d-ae07-fa6434bea046",
+        "pilot": "eos"
+      }
+    ],
+    "v10-guest3": [
+      {
+        "id": "host",
+        "pilot": "rook"
+      },
+      {
+        "id": "76c02a94-9f0f-429a-a556-d44a27e5fa6a",
+        "pilot": "echo"
+      },
+      {
+        "id": "52c0d229-124c-4e2c-9f49-847e9b4e696b",
+        "pilot": "flint"
+      },
+      {
+        "id": "cf360552-8f73-4c5d-ae07-fa6434bea046",
+        "pilot": "eos"
+      }
+    ]
+  },
+  "captures": [
+    {
+      "session": "scrapper-v10",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "rook"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "flint"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "echo"
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-facehugger",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "facehugger",
+      "crew": [
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-facehugger",
+          "visible": true
+        },
+        {
+          "kind": "facehugger",
+          "local": true,
+          "pilot": "eos"
+        }
+      ]
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 0.3489999999999997,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "gnats",
+      "crew": [
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-gnats",
+          "visible": true
+        },
+        {
+          "kind": "gnats",
+          "local": true,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-gnats",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "burrower",
+      "crew": [
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "rook",
+          "row": 0,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "echo",
+          "row": 1,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": false,
+          "opacity": 1,
+          "pilot": "flint",
+          "row": 2,
+          "sheet": "escape-burrower",
+          "visible": true
+        },
+        {
+          "kind": "burrower",
+          "local": true,
+          "opacity": 1,
+          "pilot": "eos",
+          "row": 3,
+          "sheet": "escape-burrower",
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "session": "scrapper-v10",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 12
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 16
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "facehugger",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 17
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 9
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 10
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 13
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "gnats",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 13
+    },
+    {
+      "session": "scrapper-v10",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "rook",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest1",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "flint",
+      "release": "escaped",
+      "taps": 14
+    },
+    {
+      "session": "v10-guest2",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "echo",
+      "release": "escaped",
+      "taps": 16
+    },
+    {
+      "session": "v10-guest3",
+      "kind": "burrower",
+      "clear": true,
+      "pilot": "eos",
+      "release": "escaped",
+      "taps": 18
+    }
+  ]
+}

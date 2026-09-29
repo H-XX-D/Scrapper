@@ -1,0 +1,3303 @@
+{
+  "cases": [
+    {
+      "attached": "facehugger",
+      "firstPerson": true,
+      "kind": "facehugger",
+      "pilot": "rook",
+      "required": 11,
+      "sheet": "fp-facehugger"
+    },
+    {
+      "attached": "gnats",
+      "firstPerson": false,
+      "kind": "gnats",
+      "pilot": "rook",
+      "required": 11,
+      "sheet": "escape-gnats"
+    },
+    {
+      "attached": "burrower",
+      "firstPerson": false,
+      "kind": "burrower",
+      "pilot": "rook",
+      "required": 13,
+      "sheet": "escape-burrower"
+    },
+    {
+      "attached": "facehugger",
+      "firstPerson": true,
+      "kind": "facehugger",
+      "pilot": "echo",
+      "required": 11,
+      "sheet": "fp-facehugger"
+    },
+    {
+      "attached": "gnats",
+      "firstPerson": false,
+      "kind": "gnats",
+      "pilot": "echo",
+      "required": 11,
+      "sheet": "escape-gnats"
+    },
+    {
+      "attached": "burrower",
+      "firstPerson": false,
+      "kind": "burrower",
+      "pilot": "echo",
+      "required": 13,
+      "sheet": "escape-burrower"
+    },
+    {
+      "attached": "facehugger",
+      "firstPerson": true,
+      "kind": "facehugger",
+      "pilot": "flint",
+      "required": 11,
+      "sheet": "fp-facehugger"
+    },
+    {
+      "attached": "gnats",
+      "firstPerson": false,
+      "kind": "gnats",
+      "pilot": "flint",
+      "required": 11,
+      "sheet": "escape-gnats"
+    },
+    {
+      "attached": "burrower",
+      "firstPerson": false,
+      "kind": "burrower",
+      "pilot": "flint",
+      "required": 13,
+      "sheet": "escape-burrower"
+    },
+    {
+      "attached": "facehugger",
+      "firstPerson": true,
+      "kind": "facehugger",
+      "pilot": "eos",
+      "required": 11,
+      "sheet": "fp-facehugger"
+    },
+    {
+      "attached": "gnats",
+      "firstPerson": false,
+      "kind": "gnats",
+      "pilot": "eos",
+      "required": 11,
+      "sheet": "escape-gnats"
+    },
+    {
+      "attached": "burrower",
+      "firstPerson": false,
+      "kind": "burrower",
+      "pilot": "eos",
+      "required": 13,
+      "sheet": "escape-burrower"
+    }
+  ],
+  "errors": [],
+  "frames": [
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 20557,
+      "row": 0,
+      "signature": 1008973472
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 26759,
+      "row": 0,
+      "signature": 2918716870
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24931,
+      "row": 0,
+      "signature": 3976673604
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24763,
+      "row": 0,
+      "signature": 4051973171
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24463,
+      "row": 0,
+      "signature": 2909851108
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 22710,
+      "row": 0,
+      "signature": 715076138
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 21034,
+      "row": 0,
+      "signature": 2272761675
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 14311,
+      "row": 0,
+      "signature": 2081112266
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 20759,
+      "row": 1,
+      "signature": 2053286582
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 27214,
+      "row": 1,
+      "signature": 4250499965
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25283,
+      "row": 1,
+      "signature": 167441776
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25205,
+      "row": 1,
+      "signature": 4284796376
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24525,
+      "row": 1,
+      "signature": 3016376568
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 22962,
+      "row": 1,
+      "signature": 2067441820
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 21046,
+      "row": 1,
+      "signature": 2365596544
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 14267,
+      "row": 1,
+      "signature": 3515074931
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 20775,
+      "row": 2,
+      "signature": 3856193103
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 27228,
+      "row": 2,
+      "signature": 702264657
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25285,
+      "row": 2,
+      "signature": 2532815640
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25190,
+      "row": 2,
+      "signature": 249745771
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24480,
+      "row": 2,
+      "signature": 2618237258
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 23039,
+      "row": 2,
+      "signature": 2944544473
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 21243,
+      "row": 2,
+      "signature": 2699279284
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 14419,
+      "row": 2,
+      "signature": 3736588005
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 20942,
+      "row": 3,
+      "signature": 1866304483
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 27081,
+      "row": 3,
+      "signature": 307180036
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25169,
+      "row": 3,
+      "signature": 2413368723
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 25025,
+      "row": 3,
+      "signature": 2687234992
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 24467,
+      "row": 3,
+      "signature": 2443007810
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 22938,
+      "row": 3,
+      "signature": 3270175157
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 20953,
+      "row": 3,
+      "signature": 4056071394
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "fp-facehugger",
+      "pixels": 14206,
+      "row": 3,
+      "signature": 1904585078
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 23548,
+      "row": 0,
+      "signature": 927977149
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 19783,
+      "row": 0,
+      "signature": 189522493
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21784,
+      "row": 0,
+      "signature": 497721159
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21330,
+      "row": 0,
+      "signature": 2082742320
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 19777,
+      "row": 0,
+      "signature": 4159152766
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 23787,
+      "row": 0,
+      "signature": 3989986479
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 28312,
+      "row": 0,
+      "signature": 912735968
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 18479,
+      "row": 0,
+      "signature": 1239151755
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 23503,
+      "row": 1,
+      "signature": 452561837
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 20859,
+      "row": 1,
+      "signature": 1904804690
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22588,
+      "row": 1,
+      "signature": 4224746570
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21877,
+      "row": 1,
+      "signature": 1401747010
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 20185,
+      "row": 1,
+      "signature": 3310237153
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22765,
+      "row": 1,
+      "signature": 282645922
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 24658,
+      "row": 1,
+      "signature": 3388169063
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21665,
+      "row": 1,
+      "signature": 1248115922
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22950,
+      "row": 2,
+      "signature": 3526631894
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 20794,
+      "row": 2,
+      "signature": 584599555
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22470,
+      "row": 2,
+      "signature": 3378490580
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21047,
+      "row": 2,
+      "signature": 784375882
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 20555,
+      "row": 2,
+      "signature": 2013829242
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 24900,
+      "row": 2,
+      "signature": 1504394841
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 26064,
+      "row": 2,
+      "signature": 1944437521
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22884,
+      "row": 2,
+      "signature": 1243235584
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22250,
+      "row": 3,
+      "signature": 906921997
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 20269,
+      "row": 3,
+      "signature": 1088095047
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21668,
+      "row": 3,
+      "signature": 3175829135
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21970,
+      "row": 3,
+      "signature": 1941892476
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 19477,
+      "row": 3,
+      "signature": 3580664282
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 22800,
+      "row": 3,
+      "signature": 772710629
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 25144,
+      "row": 3,
+      "signature": 225715735
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-0",
+      "pixels": 21376,
+      "row": 3,
+      "signature": 3963289122
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 24698,
+      "row": 0,
+      "signature": 1826101083
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 21080,
+      "row": 0,
+      "signature": 3424846255
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20232,
+      "row": 0,
+      "signature": 43431145
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 21371,
+      "row": 0,
+      "signature": 610317005
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 17662,
+      "row": 0,
+      "signature": 1755033183
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20403,
+      "row": 0,
+      "signature": 3992039722
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 31550,
+      "row": 0,
+      "signature": 3340364131
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 16673,
+      "row": 0,
+      "signature": 4111342024
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 24205,
+      "row": 1,
+      "signature": 903650557
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20147,
+      "row": 1,
+      "signature": 3553754185
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20135,
+      "row": 1,
+      "signature": 909570911
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20327,
+      "row": 1,
+      "signature": 2143964953
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 18579,
+      "row": 1,
+      "signature": 2343890540
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20401,
+      "row": 1,
+      "signature": 3082457273
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 30991,
+      "row": 1,
+      "signature": 2852617323
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 16546,
+      "row": 1,
+      "signature": 3798538288
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 23723,
+      "row": 2,
+      "signature": 3753299560
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20019,
+      "row": 2,
+      "signature": 3684280281
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20704,
+      "row": 2,
+      "signature": 3339755714
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 21029,
+      "row": 2,
+      "signature": 948109475
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 17552,
+      "row": 2,
+      "signature": 4054739496
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 20683,
+      "row": 2,
+      "signature": 4280448679
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 32102,
+      "row": 2,
+      "signature": 2765961351
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 16203,
+      "row": 2,
+      "signature": 1567772050
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 22259,
+      "row": 3,
+      "signature": 640211215
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 18578,
+      "row": 3,
+      "signature": 1084402268
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 18421,
+      "row": 3,
+      "signature": 3877457576
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 19912,
+      "row": 3,
+      "signature": 2502262102
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 17402,
+      "row": 3,
+      "signature": 3050143804
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 19249,
+      "row": 3,
+      "signature": 1935793941
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 29431,
+      "row": 3,
+      "signature": 426662630
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-1",
+      "pixels": 15766,
+      "row": 3,
+      "signature": 584876478
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 22464,
+      "row": 0,
+      "signature": 918629770
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 19620,
+      "row": 0,
+      "signature": 1974850143
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20192,
+      "row": 0,
+      "signature": 2420028588
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20928,
+      "row": 0,
+      "signature": 2808182421
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 17775,
+      "row": 0,
+      "signature": 3759107324
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20480,
+      "row": 0,
+      "signature": 3413122588
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 30688,
+      "row": 0,
+      "signature": 4098375493
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 12479,
+      "row": 0,
+      "signature": 354427535
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20470,
+      "row": 1,
+      "signature": 1670026981
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 19506,
+      "row": 1,
+      "signature": 3092841818
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20680,
+      "row": 1,
+      "signature": 4218193337
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21258,
+      "row": 1,
+      "signature": 3183015693
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 18982,
+      "row": 1,
+      "signature": 4101352916
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21334,
+      "row": 1,
+      "signature": 3432259730
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 26525,
+      "row": 1,
+      "signature": 2896529194
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 18339,
+      "row": 1,
+      "signature": 3151449027
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21454,
+      "row": 2,
+      "signature": 1826698196
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20085,
+      "row": 2,
+      "signature": 412119388
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21884,
+      "row": 2,
+      "signature": 902940906
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21016,
+      "row": 2,
+      "signature": 615263704
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 19301,
+      "row": 2,
+      "signature": 4248826742
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21384,
+      "row": 2,
+      "signature": 829136705
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 27681,
+      "row": 2,
+      "signature": 2119035902
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 19515,
+      "row": 2,
+      "signature": 3969126232
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20595,
+      "row": 3,
+      "signature": 656859957
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20709,
+      "row": 3,
+      "signature": 2855413054
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21849,
+      "row": 3,
+      "signature": 1485919749
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 21422,
+      "row": 3,
+      "signature": 1572665683
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 20386,
+      "row": 3,
+      "signature": 1788005702
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 22078,
+      "row": 3,
+      "signature": 1504869522
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 27900,
+      "row": 3,
+      "signature": 389807992
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-2",
+      "pixels": 17593,
+      "row": 3,
+      "signature": 1496761813
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 20922,
+      "row": 0,
+      "signature": 2239416091
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 18909,
+      "row": 0,
+      "signature": 72525292
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19841,
+      "row": 0,
+      "signature": 1031593340
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19740,
+      "row": 0,
+      "signature": 2269536149
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 17865,
+      "row": 0,
+      "signature": 1470026187
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19543,
+      "row": 0,
+      "signature": 2041960926
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 28287,
+      "row": 0,
+      "signature": 4134680683
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 15423,
+      "row": 0,
+      "signature": 129999441
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22474,
+      "row": 1,
+      "signature": 3090009834
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19156,
+      "row": 1,
+      "signature": 1879593997
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22980,
+      "row": 1,
+      "signature": 556002066
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 20627,
+      "row": 1,
+      "signature": 1267800301
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19793,
+      "row": 1,
+      "signature": 4033696750
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22540,
+      "row": 1,
+      "signature": 1650709284
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 31769,
+      "row": 1,
+      "signature": 956220802
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 16203,
+      "row": 1,
+      "signature": 1421475794
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22729,
+      "row": 2,
+      "signature": 3503476786
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 19911,
+      "row": 2,
+      "signature": 1343918751
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 21854,
+      "row": 2,
+      "signature": 1229871396
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22332,
+      "row": 2,
+      "signature": 3070786038
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 18188,
+      "row": 2,
+      "signature": 1981778109
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 22322,
+      "row": 2,
+      "signature": 2070591490
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 31332,
+      "row": 2,
+      "signature": 2738580334
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 16262,
+      "row": 2,
+      "signature": 3084323414
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 21750,
+      "row": 3,
+      "signature": 3211609307
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 20239,
+      "row": 3,
+      "signature": 1685236806
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 21908,
+      "row": 3,
+      "signature": 1606209546
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 21379,
+      "row": 3,
+      "signature": 3410506144
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 18565,
+      "row": 3,
+      "signature": 3861352641
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 21596,
+      "row": 3,
+      "signature": 3848656474
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 31521,
+      "row": 3,
+      "signature": 3402252310
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-tentacle-3",
+      "pixels": 16121,
+      "row": 3,
+      "signature": 4142286668
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 19643,
+      "row": 0,
+      "signature": 1755767447
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16001,
+      "row": 0,
+      "signature": 3984045117
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 15657,
+      "row": 0,
+      "signature": 566484880
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 17092,
+      "row": 0,
+      "signature": 48172835
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 17327,
+      "row": 0,
+      "signature": 2477728231
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 13624,
+      "row": 0,
+      "signature": 734885306
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 19884,
+      "row": 0,
+      "signature": 3529100009
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 19655,
+      "row": 0,
+      "signature": 3465203530
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 17411,
+      "row": 1,
+      "signature": 3445375206
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16602,
+      "row": 1,
+      "signature": 4029055459
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16170,
+      "row": 1,
+      "signature": 1946232058
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16835,
+      "row": 1,
+      "signature": 3450289171
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16841,
+      "row": 1,
+      "signature": 2178480505
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 14450,
+      "row": 1,
+      "signature": 1949633119
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 18700,
+      "row": 1,
+      "signature": 1019238052
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 18908,
+      "row": 1,
+      "signature": 3809713622
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16107,
+      "row": 2,
+      "signature": 1065651268
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 15838,
+      "row": 2,
+      "signature": 357634166
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 14833,
+      "row": 2,
+      "signature": 3327086984
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 15997,
+      "row": 2,
+      "signature": 483568655
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 15954,
+      "row": 2,
+      "signature": 3949712469
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 14013,
+      "row": 2,
+      "signature": 52044392
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 16833,
+      "row": 2,
+      "signature": 725238030
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 18435,
+      "row": 2,
+      "signature": 2040007558
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 13101,
+      "row": 3,
+      "signature": 4189986222
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 13120,
+      "row": 3,
+      "signature": 927514965
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 13826,
+      "row": 3,
+      "signature": 3450028783
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 14241,
+      "row": 3,
+      "signature": 2409425728
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 14214,
+      "row": 3,
+      "signature": 2130022471
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 12728,
+      "row": 3,
+      "signature": 3512527964
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 15183,
+      "row": 3,
+      "signature": 1836684420
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-facehugger",
+      "pixels": 17623,
+      "row": 3,
+      "signature": 3830728979
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 23639,
+      "row": 0,
+      "signature": 883130572
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21597,
+      "row": 0,
+      "signature": 3750677550
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21435,
+      "row": 0,
+      "signature": 3359484065
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21703,
+      "row": 0,
+      "signature": 432959157
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 19974,
+      "row": 0,
+      "signature": 4138825782
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20527,
+      "row": 0,
+      "signature": 1799861842
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 24910,
+      "row": 0,
+      "signature": 3297298637
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 18095,
+      "row": 0,
+      "signature": 3894376862
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21966,
+      "row": 1,
+      "signature": 1989140491
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20825,
+      "row": 1,
+      "signature": 1084170476
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 22708,
+      "row": 1,
+      "signature": 2631176526
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21658,
+      "row": 1,
+      "signature": 4083703502
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20863,
+      "row": 1,
+      "signature": 2409420530
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21758,
+      "row": 1,
+      "signature": 821529878
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 23728,
+      "row": 1,
+      "signature": 205318834
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 18537,
+      "row": 1,
+      "signature": 708354910
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20092,
+      "row": 2,
+      "signature": 2602851575
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 19353,
+      "row": 2,
+      "signature": 3269876206
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 21311,
+      "row": 2,
+      "signature": 2282367303
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20810,
+      "row": 2,
+      "signature": 3518751627
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 17421,
+      "row": 2,
+      "signature": 229903512
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20730,
+      "row": 2,
+      "signature": 3466761923
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 22805,
+      "row": 2,
+      "signature": 2393551534
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 17677,
+      "row": 2,
+      "signature": 3120536994
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 18169,
+      "row": 3,
+      "signature": 54955078
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 17740,
+      "row": 3,
+      "signature": 439195073
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 18177,
+      "row": 3,
+      "signature": 2468081972
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 19851,
+      "row": 3,
+      "signature": 1438901930
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 16761,
+      "row": 3,
+      "signature": 285206347
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 18521,
+      "row": 3,
+      "signature": 1641996261
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 20397,
+      "row": 3,
+      "signature": 863158190
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-gnats",
+      "pixels": 17091,
+      "row": 3,
+      "signature": 3954971863
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18883,
+      "row": 0,
+      "signature": 2903491166
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18544,
+      "row": 0,
+      "signature": 454434998
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18481,
+      "row": 0,
+      "signature": 603505014
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18355,
+      "row": 0,
+      "signature": 1945225916
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 20007,
+      "row": 0,
+      "signature": 1044615480
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 21296,
+      "row": 0,
+      "signature": 3486680535
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 16200,
+      "row": 0,
+      "signature": 1249133210
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19207,
+      "row": 0,
+      "signature": 3468051796
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18912,
+      "row": 1,
+      "signature": 262700628
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18280,
+      "row": 1,
+      "signature": 3661927365
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18657,
+      "row": 1,
+      "signature": 4102895927
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 17934,
+      "row": 1,
+      "signature": 3879980631
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19471,
+      "row": 1,
+      "signature": 1880951421
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 20921,
+      "row": 1,
+      "signature": 1978718960
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 15906,
+      "row": 1,
+      "signature": 525153062
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18907,
+      "row": 1,
+      "signature": 1727974157
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19281,
+      "row": 2,
+      "signature": 2628108861
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18324,
+      "row": 2,
+      "signature": 2868508950
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18988,
+      "row": 2,
+      "signature": 2373289965
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18466,
+      "row": 2,
+      "signature": 2125315325
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19527,
+      "row": 2,
+      "signature": 3510057548
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 20982,
+      "row": 2,
+      "signature": 2954831726
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 16005,
+      "row": 2,
+      "signature": 3147841818
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19386,
+      "row": 2,
+      "signature": 3289892166
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19644,
+      "row": 3,
+      "signature": 23461750
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 18959,
+      "row": 3,
+      "signature": 2914040702
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19593,
+      "row": 3,
+      "signature": 3810139717
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19461,
+      "row": 3,
+      "signature": 3156710174
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 20592,
+      "row": 3,
+      "signature": 356517267
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 21721,
+      "row": 3,
+      "signature": 1890767176
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 15832,
+      "row": 3,
+      "signature": 2474378569
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "escape-burrower",
+      "pixels": 19641,
+      "row": 3,
+      "signature": 3342577993
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7508,
+      "row": 0,
+      "signature": 2759106236
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8065,
+      "row": 0,
+      "signature": 646951880
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8302,
+      "row": 0,
+      "signature": 3876229774
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8285,
+      "row": 0,
+      "signature": 3716057344
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8277,
+      "row": 0,
+      "signature": 2166953438
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8340,
+      "row": 0,
+      "signature": 3807462127
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8134,
+      "row": 0,
+      "signature": 1160290767
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8107,
+      "row": 0,
+      "signature": 2860920403
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7801,
+      "row": 1,
+      "signature": 1507628999
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8486,
+      "row": 1,
+      "signature": 1094669511
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8009,
+      "row": 1,
+      "signature": 3469234698
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8219,
+      "row": 1,
+      "signature": 81955730
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8480,
+      "row": 1,
+      "signature": 747588214
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8168,
+      "row": 1,
+      "signature": 4261786001
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7997,
+      "row": 1,
+      "signature": 896171331
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8234,
+      "row": 1,
+      "signature": 3573138166
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 6762,
+      "row": 2,
+      "signature": 947213006
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7127,
+      "row": 2,
+      "signature": 457975636
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7965,
+      "row": 2,
+      "signature": 162403562
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8850,
+      "row": 2,
+      "signature": 1324155923
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8472,
+      "row": 2,
+      "signature": 3818946346
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8812,
+      "row": 2,
+      "signature": 3339660602
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8747,
+      "row": 2,
+      "signature": 2613975133
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8577,
+      "row": 2,
+      "signature": 4008861925
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8359,
+      "row": 3,
+      "signature": 4004825533
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 10100,
+      "row": 3,
+      "signature": 1525523210
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 10542,
+      "row": 3,
+      "signature": 3938690877
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 11391,
+      "row": 3,
+      "signature": 829216464
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 10559,
+      "row": 3,
+      "signature": 3665335704
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 9144,
+      "row": 3,
+      "signature": 4270460066
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7305,
+      "row": 3,
+      "signature": 30454314
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7365,
+      "row": 3,
+      "signature": 1794584843
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8241,
+      "row": 4,
+      "signature": 2907226462
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8848,
+      "row": 4,
+      "signature": 3565878921
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8194,
+      "row": 4,
+      "signature": 2396988586
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 9114,
+      "row": 4,
+      "signature": 1804369492
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 9045,
+      "row": 4,
+      "signature": 1593116278
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7997,
+      "row": 4,
+      "signature": 3811691080
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 8226,
+      "row": 4,
+      "signature": 3990857942
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 6948,
+      "row": 4,
+      "signature": 2653362778
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 9755,
+      "row": 5,
+      "signature": 3696131902
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 11346,
+      "row": 5,
+      "signature": 2545784198
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 11675,
+      "row": 5,
+      "signature": 1714061992
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 13358,
+      "row": 5,
+      "signature": 3469993217
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 10525,
+      "row": 5,
+      "signature": 3984013799
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7665,
+      "row": 5,
+      "signature": 2753144709
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 7422,
+      "row": 5,
+      "signature": 2914532583
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "facehugger",
+      "pixels": 5568,
+      "row": 5,
+      "signature": 51146609
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7288,
+      "row": 0,
+      "signature": 2089763252
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7235,
+      "row": 0,
+      "signature": 1136497556
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 6945,
+      "row": 0,
+      "signature": 3362462222
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7416,
+      "row": 0,
+      "signature": 170385828
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7231,
+      "row": 0,
+      "signature": 1155523301
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7260,
+      "row": 0,
+      "signature": 1044326372
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7377,
+      "row": 0,
+      "signature": 757830747
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7697,
+      "row": 0,
+      "signature": 191500709
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7288,
+      "row": 1,
+      "signature": 4063531337
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7297,
+      "row": 1,
+      "signature": 3235535605
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7376,
+      "row": 1,
+      "signature": 3939800491
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7180,
+      "row": 1,
+      "signature": 4233788897
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7745,
+      "row": 1,
+      "signature": 2728399380
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7421,
+      "row": 1,
+      "signature": 4096516529
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7247,
+      "row": 1,
+      "signature": 978955443
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7366,
+      "row": 1,
+      "signature": 2015882146
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7295,
+      "row": 2,
+      "signature": 4062324701
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 8635,
+      "row": 2,
+      "signature": 4027370365
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 9146,
+      "row": 2,
+      "signature": 420762285
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 9659,
+      "row": 2,
+      "signature": 3531375783
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 9369,
+      "row": 2,
+      "signature": 2088873232
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 9359,
+      "row": 2,
+      "signature": 305383636
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 8148,
+      "row": 2,
+      "signature": 1105926360
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 8011,
+      "row": 2,
+      "signature": 634818120
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 8291,
+      "row": 3,
+      "signature": 2639946008
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 10411,
+      "row": 3,
+      "signature": 3267635173
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 13112,
+      "row": 3,
+      "signature": 3040512637
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 14385,
+      "row": 3,
+      "signature": 1723498757
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 15068,
+      "row": 3,
+      "signature": 1052097539
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 8030,
+      "row": 3,
+      "signature": 3660488697
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7857,
+      "row": 3,
+      "signature": 457535798
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7269,
+      "row": 3,
+      "signature": 1376729434
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 6697,
+      "row": 4,
+      "signature": 4166674832
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7242,
+      "row": 4,
+      "signature": 4207098296
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7945,
+      "row": 4,
+      "signature": 3762817535
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7873,
+      "row": 4,
+      "signature": 2229123100
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7512,
+      "row": 4,
+      "signature": 2886981839
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7577,
+      "row": 4,
+      "signature": 729694334
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7828,
+      "row": 4,
+      "signature": 2057579670
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 6199,
+      "row": 4,
+      "signature": 3206614445
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 13737,
+      "row": 5,
+      "signature": 65167219
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 9992,
+      "row": 5,
+      "signature": 423054861
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 7511,
+      "row": 5,
+      "signature": 3119536635
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 5691,
+      "row": 5,
+      "signature": 3329500838
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 5394,
+      "row": 5,
+      "signature": 73341427
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 4150,
+      "row": 5,
+      "signature": 844334836
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 3367,
+      "row": 5,
+      "signature": 2313105953
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "gnats",
+      "pixels": 3063,
+      "row": 5,
+      "signature": 3371839373
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11586,
+      "row": 0,
+      "signature": 1963120393
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11973,
+      "row": 0,
+      "signature": 4118917359
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11607,
+      "row": 0,
+      "signature": 2212476638
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11802,
+      "row": 0,
+      "signature": 1642293248
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11418,
+      "row": 0,
+      "signature": 2792305399
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11889,
+      "row": 0,
+      "signature": 1714935797
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11875,
+      "row": 0,
+      "signature": 3957961002
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11686,
+      "row": 0,
+      "signature": 1720508166
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11600,
+      "row": 1,
+      "signature": 2709839090
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 10838,
+      "row": 1,
+      "signature": 2380565692
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11372,
+      "row": 1,
+      "signature": 3518096056
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11288,
+      "row": 1,
+      "signature": 1179612024
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11489,
+      "row": 1,
+      "signature": 4170324828
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11610,
+      "row": 1,
+      "signature": 2937453448
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11458,
+      "row": 1,
+      "signature": 2657826981
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12117,
+      "row": 1,
+      "signature": 1328396778
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12582,
+      "row": 2,
+      "signature": 617013769
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12427,
+      "row": 2,
+      "signature": 1405948604
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13774,
+      "row": 2,
+      "signature": 3917798675
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12626,
+      "row": 2,
+      "signature": 2174789334
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13087,
+      "row": 2,
+      "signature": 3629987742
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13200,
+      "row": 2,
+      "signature": 1527003628
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13407,
+      "row": 2,
+      "signature": 3694334466
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12799,
+      "row": 2,
+      "signature": 2934593492
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13062,
+      "row": 3,
+      "signature": 120024726
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12692,
+      "row": 3,
+      "signature": 3276045435
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12149,
+      "row": 3,
+      "signature": 1186160842
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13249,
+      "row": 3,
+      "signature": 2288366638
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13831,
+      "row": 3,
+      "signature": 1708961309
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13314,
+      "row": 3,
+      "signature": 3729711155
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11515,
+      "row": 3,
+      "signature": 911220228
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11636,
+      "row": 3,
+      "signature": 1845388894
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13156,
+      "row": 4,
+      "signature": 797540727
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11865,
+      "row": 4,
+      "signature": 1244030672
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11036,
+      "row": 4,
+      "signature": 1174783147
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11070,
+      "row": 4,
+      "signature": 3606127889
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 10810,
+      "row": 4,
+      "signature": 1283491557
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11565,
+      "row": 4,
+      "signature": 433867740
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 12260,
+      "row": 4,
+      "signature": 1722449404
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11789,
+      "row": 4,
+      "signature": 50483253
+    },
+    {
+      "col": 0,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 13343,
+      "row": 5,
+      "signature": 1406947120
+    },
+    {
+      "col": 1,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 11376,
+      "row": 5,
+      "signature": 3318707584
+    },
+    {
+      "col": 2,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 10686,
+      "row": 5,
+      "signature": 110727847
+    },
+    {
+      "col": 3,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 10872,
+      "row": 5,
+      "signature": 2333594711
+    },
+    {
+      "col": 4,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 9562,
+      "row": 5,
+      "signature": 4202683889
+    },
+    {
+      "col": 5,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 8996,
+      "row": 5,
+      "signature": 1685735191
+    },
+    {
+      "col": 6,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 7584,
+      "row": 5,
+      "signature": 3281112106
+    },
+    {
+      "col": 7,
+      "edge": 0,
+      "id": "burrower",
+      "pixels": 5884,
+      "row": 5,
+      "signature": 729783262
+    }
+  ]
+}

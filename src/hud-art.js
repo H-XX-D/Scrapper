@@ -15,13 +15,15 @@ export function drawDashboard(ctx,atlas,width,height,arsenal,player,state={}){
  ctx.save();ctx.translate(left,top);ctx.scale(scale,scale);ctx.textAlign='center';ctx.textBaseline='middle';
  const text=(value,x,y,size=16,color='#f3dfaf')=>{ctx.font=`${size}px Pixel`;ctx.fillStyle='#03080c';ctx.fillText(String(value),x+2,y+2);ctx.fillStyle=color;ctx.fillText(String(value),x,y);};
  const total=Object.values(arsenal.slots).reduce((sum,s)=>sum+(s.owned?s.reserve+s.mag:0),0),slot=arsenal.slots[arsenal.selected];
- function gauge(cx,value,fraction,label){for(let i=0;i<16;i++){const a=Math.PI+(i+.5)/16*Math.PI;ctx.strokeStyle=i/16<fraction?(i<3?'#cf6236':'#f3a544'):'#26343a';ctx.lineWidth=8;ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*73,139+Math.sin(a)*73);ctx.lineTo(cx+Math.cos(a)*83,139+Math.sin(a)*83);ctx.stroke();}
+ function gauge(cx,value,fraction,label){fraction=Math.max(0,Math.min(1,fraction||0));for(let i=0;i<16;i++){const a=Math.PI+(i+.5)/16*Math.PI;ctx.strokeStyle=i/16<fraction?(i<3?'#cf6236':'#f3a544'):'#26343a';ctx.lineWidth=8;ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*73,139+Math.sin(a)*73);ctx.lineTo(cx+Math.cos(a)*83,139+Math.sin(a)*83);ctx.stroke();}
   const a=Math.PI+Math.min(1,fraction)*Math.PI;ctx.strokeStyle='#ffbd67';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(cx,139);ctx.lineTo(cx+Math.cos(a)*59,139+Math.sin(a)*59);ctx.stroke();text(label,cx,111,14);text(String(Math.max(0,value)).padStart(3,'0'),cx,162,27,'#fff0c2');}
  gauge(144,total,Math.min(1,total/350),'TOTAL AMMO');gauge(376,slot.mag,slot.mag/state.capacity,'GUN AMMO');
  // The helmet now belongs to the speaking dropdown. Its old monitor becomes the access-card slot.
  ctx.drawImage(skin,1080,795,240,90,519,41,126,125);text('ACCESS',582,64,11);ctx.fillStyle=state.key?'#66bde7':'#263d4b';ctx.fillRect(557,84,50,30);ctx.fillStyle=state.key?'#d6ecdf':'#46616e';ctx.fillRect(564,91,12,12);ctx.fillRect(584,91,16,3);ctx.fillRect(584,98,16,3);text(state.key?'BLUE':'—',582,135,12,state.key?'#92d9f1':'#7a9296');
  text('SCRAP / SCORE',891,65,15);text(String(state.score||0).padStart(6,'0'),897,111,26,'#ffe6b0');
  text(state.weaponName||arsenal.selected,1204,63,12);const selected=Object.keys(arsenal.slots).indexOf(arsenal.selected);ctx.drawImage(atlas.frame('pickups',selected,0),1090,77,230,79);
- text('SUIT '+Math.ceil(player.hp)+'%',1513,65,19,player.hp<25?'#ef9378':'#ffdfa5');ctx.fillStyle='#15222b';ctx.fillRect(1420,94,194,13);ctx.fillStyle=player.hp<25?'#c9593f':'#e6973e';ctx.fillRect(1420,94,194*player.hp/100,13);text('SECRETS '+(state.secrets||0)+' / 2',1516,135,12);ctx.restore();
+ // Reuse the ammo dial's actual painted housing at the same native size.
+ ctx.drawImage(skin,20,766,240,148,1393,32,240,148);
+ gauge(1513,Math.ceil(Math.max(0,Math.min(100,player.hp))),Math.max(0,Math.min(1,player.hp/100)),'HEALTH');text('SECRETS '+(state.secrets||0)+' / 2',891,156,11);ctx.restore();
  const cw=Math.min(660,width*.52);ctx.drawImage(skin,486,0,703,58,width/2-cw/2,10,cw,cw*58/703);
 }

@@ -1,0 +1,198 @@
+{
+  "corpses": [
+    {
+      "anchor": 0.45933014354066987,
+      "ground": 0,
+      "id": 279,
+      "offset": 0,
+      "renderY": 0,
+      "room": "arrival"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 280,
+      "offset": 0,
+      "renderY": 0,
+      "room": "arrival"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 281,
+      "offset": 0,
+      "renderY": 0,
+      "room": "arrival"
+    },
+    {
+      "anchor": 0.45933014354066987,
+      "ground": 0,
+      "id": 282,
+      "offset": 0,
+      "renderY": 0,
+      "room": "arrival"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 283,
+      "offset": 0,
+      "renderY": 0,
+      "room": "arrival"
+    },
+    {
+      "anchor": 0.45933014354066987,
+      "ground": 0,
+      "id": 288,
+      "offset": 0,
+      "renderY": 0,
+      "room": "hall"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 289,
+      "offset": 0,
+      "renderY": 0,
+      "room": "hall"
+    },
+    {
+      "anchor": 0.45933014354066987,
+      "ground": 0,
+      "id": 297,
+      "offset": 0,
+      "renderY": 0,
+      "room": "west"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 298,
+      "offset": 0,
+      "renderY": 0,
+      "room": "west"
+    },
+    {
+      "anchor": 0.45933014354066987,
+      "ground": 0,
+      "id": 306,
+      "offset": 0,
+      "renderY": 0,
+      "room": "east"
+    },
+    {
+      "anchor": 0.0234375,
+      "ground": 0,
+      "id": 307,
+      "offset": 0,
+      "renderY": 0,
+      "room": "east"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 315,
+      "offset": 0,
+      "renderY": 3,
+      "room": "upper"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 316,
+      "offset": 0,
+      "renderY": 3,
+      "room": "upper"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 324,
+      "offset": 0,
+      "renderY": 3,
+      "room": "cross"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 325,
+      "offset": 0,
+      "renderY": 3,
+      "room": "cross"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 333,
+      "offset": 0,
+      "renderY": 3,
+      "room": "armory"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 334,
+      "offset": 0,
+      "renderY": 3,
+      "room": "armory"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 342,
+      "offset": 0,
+      "renderY": 3,
+      "room": "lock"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 343,
+      "offset": 0,
+      "renderY": 3,
+      "room": "lock"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 351,
+      "offset": 0,
+      "renderY": 3,
+      "room": "boss"
+    },
+    {
+      "anchor": 0,
+      "ground": 3,
+      "id": 352,
+      "offset": 0,
+      "renderY": 3,
+      "room": "boss"
+    }
+  ],
+  "samples": [
+    {
+      "draws": 245,
+      "enabled": true,
+      "medianMs": 16.599999964237213,
+      "p95Ms": 19
+    },
+    {
+      "draws": 245,
+      "enabled": false,
+      "medianMs": 16.5,
+      "p95Ms": 18.900000035762787
+    },
+    {
+      "draws": 245,
+      "enabled": false,
+      "medianMs": 16.69999998807907,
+      "p95Ms": 18.5
+    },
+    {
+      "draws": 245,
+      "enabled": true,
+      "medianMs": 16.69999998807907,
+      "p95Ms": 18.19999998807907
+    }
+  ]
+}

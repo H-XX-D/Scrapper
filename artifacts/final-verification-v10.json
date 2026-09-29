@@ -1,0 +1,128 @@
+{
+  "version": "v10",
+  "date": "2026-09-29",
+  "file": "/Users/hendrixx./Documents/ChatGPT/Scrapper/exports/Scrapper-Playable-v10.html",
+  "bytes": 281965804,
+  "sha256": "7b7d90b11335cc2f3a2d3dcd16a9e86514c092da88609cb5d339e17870576828",
+  "checks": {
+    "syntax": "passed",
+    "tests": 108,
+    "failures": 0,
+    "newFrames": 400,
+    "alphaErrors": [],
+    "characterParasiteCases": 12,
+    "tentacleCharacterStrainSurfaceCases": 48,
+    "liveCoopClients": 4,
+    "liveCoopCaptures": 12,
+    "liveCoopEscapes": 12,
+    "liveCoopCorrectSheetsAndLocalView": true,
+    "keyboardEscapes": [
+      {
+        "clear": true,
+        "frames": [
+          1
+        ],
+        "kind": "facehugger",
+        "recovery": 1.0667000000000113,
+        "release": "escaped",
+        "required": 11,
+        "seconds": 1.6788999999761582,
+        "sheet": "fp-facehugger",
+        "taps": 11
+      },
+      {
+        "clear": true,
+        "frames": [
+          0,
+          1,
+          4,
+          5,
+          3,
+          6
+        ],
+        "kind": "gnats",
+        "recovery": 1.0834000000000232,
+        "release": "escaped",
+        "required": 11,
+        "seconds": 1.6838000000119209,
+        "sheet": "escape-gnats",
+        "taps": 11
+      },
+      {
+        "clear": true,
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "kind": "burrower",
+        "recovery": 1.0165999999999762,
+        "release": "escaped",
+        "required": 12,
+        "seconds": 1.8285,
+        "sheet": "escape-burrower",
+        "taps": 12
+      }
+    ],
+    "multiplayerCorpses": {
+      "shared": true,
+      "capped": true,
+      "grounded": true,
+      "thinned": true
+    },
+    "corpseCounts": {
+      "scrapper-v10": [
+        30,
+        21
+      ],
+      "v10-guest1": [
+        30,
+        21
+      ],
+      "v10-guest2": [
+        30,
+        21
+      ],
+      "v10-guest3": [
+        30,
+        21
+      ]
+    },
+    "browserErrors": "",
+    "fogTimingSamples": [
+      {
+        "draws": 245,
+        "enabled": true,
+        "medianMs": 16.599999964237213,
+        "p95Ms": 19
+      },
+      {
+        "draws": 245,
+        "enabled": false,
+        "medianMs": 16.5,
+        "p95Ms": 18.900000035762787
+      },
+      {
+        "draws": 245,
+        "enabled": false,
+        "medianMs": 16.69999998807907,
+        "p95Ms": 18.5
+      },
+      {
+        "draws": 245,
+        "enabled": true,
+        "medianMs": 16.69999998807907,
+        "p95Ms": 18.19999998807907
+      }
+    ]
+  },
+  "limits": [
+    "Scripted fixtures use teleports and protective health, not a full human campaign playthrough.",
+    "Four local browser clients used live signaling; separate household NATs and long soaks not tested.",
+    "No physical controller connected; input behavior covered by simulated and unit checks.",
+    "Fog timing uses a paused scene and vsync-limited headless browser; not a raw GPU cost or performance guarantee."
+  ]
+}

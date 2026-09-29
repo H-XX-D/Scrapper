@@ -1,3 +1,4 @@
+import{tentacleSpan}from'./tentacle-path.js';
 import{rng}from'./world.js';
 export const GROWTH_COLORS=['#b4ec42','#6bebff','#cd8bff','#ffaf42'];
 export const GROWTH_GOO=['green','cyan','violet','oil'];
@@ -29,7 +30,7 @@ export class Infestation{
   for(const room of world.rooms.filter(r=>r.id!=='arrival'))for(const surface of['ceiling','floor']){const a=this.anchors.filter(a=>a.room===room.id&&a.surface===surface).sort((a,b)=>a.roll-b.roll).find(a=>this.patches.every(p=>Math.hypot(p.x-a.x,p.z-a.z)>3.5));if(a)this.add(a.id,Math.floor(a.roll*997)%4,.65);}
 
  }
- add(anchor,type,maturity=0){if(this.patches.length>=this.limit||this.patches.some(p=>p.anchor===anchor))return null;const a=this.anchors[anchor];if(!a)return null;const p={...a,id:anchor,anchor,type,maturity,hp:48+type*8,age:0,spreadIn:14+a.roll*12,dead:false,burn:0,reach:Math.max(2.6+a.roll*2.5,a.surface==='ceiling'?a.y-a.floor-.65:0),tentacleState:'idle',tentacleAge:0,grabCooldown:2+a.roll*3};delete p.roll;this.patches.push(p);return p;}
+ add(anchor,type,maturity=0){if(this.patches.length>=this.limit||this.patches.some(p=>p.anchor===anchor))return null;const a=this.anchors[anchor];if(!a)return null;const p={...a,id:anchor,anchor,type,maturity,hp:48+type*8,age:0,spreadIn:14+a.roll*12,dead:false,burn:0,reach:Math.max(2.6+a.roll*2.5,a.surface==='ceiling'?a.y-a.floor-.65:0),tentacleState:'idle',tentacleAge:0,grabCooldown:2+a.roll*3};delete p.roll;p.span=tentacleSpan(this.world,p);p.extension=0;this.patches.push(p);return p;}
  hit(id,damage,flame=false){const p=this.patches.find(p=>p.id===id);if(!p||p.dead)return null;p.hp=Math.max(0,p.hp-damage*(flame?1.8:1));p.burn=flame?.32:p.burn;if(p.hp===0){p.dead=true;p.burn=0;p.deathAge=0;}return p;}
  tick(dt){this.clock+=dt;const growing=this.patches.slice();for(const p of growing){p.age+=dt;p.burn=Math.max(0,p.burn-dt);if(p.dead){p.deathAge=(p.deathAge||0)+dt;continue;}p.maturity=Math.min(1,p.maturity+dt/28);if(p.maturity<1)continue;p.spreadIn-=dt;if(p.spreadIn>0)continue;p.spreadIn=24+(p.id%9);const candidates=this.anchors.filter(a=>a.room===p.room&&Math.abs(a.y-p.y)<.2&&Math.hypot(a.x-p.x,a.z-p.z)>=2&&Math.hypot(a.x-p.x,a.z-p.z)<=7&&!this.patches.some(other=>other.anchor===a.id||Math.hypot(other.x-a.x,other.z-a.z,other.y-a.y)<2.9)).sort((a,b)=>Math.hypot(a.x-p.x,a.z-p.z)-Math.hypot(b.x-p.x,b.z-p.z));if(candidates.length)this.add(candidates[0].id,p.type);}}
  frame(p){return p.dead?7:p.maturity<.3?0:p.maturity<.6?1:p.maturity<.9?2:3+Math.floor(p.age*5)%4;}

@@ -1,0 +1,30 @@
+{
+  "callout": {
+    "bottom": 81,
+    "height": 36,
+    "left": 192,
+    "right": 608,
+    "top": 45,
+    "width": 416,
+    "x": 192,
+    "y": 45
+  },
+  "compass": {
+    "bottom": 45,
+    "height": 35,
+    "left": 192,
+    "right": 608,
+    "top": 10,
+    "width": 416,
+    "x": 192,
+    "y": 10
+  },
+  "view": {
+    "camera": [
+      163.82849855043176,
+      1.6,
+      275.20498023682035
+    ],
+    "firstPersonGrab": false
+  }
+}
