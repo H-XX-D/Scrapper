@@ -7,10 +7,10 @@ test('compass bearings put left, ahead, right and rear contacts on the correct s
  assert.equal(compassProjection(0).x,50);assert.equal(compassProjection(Math.PI/2).x,2);assert.equal(compassProjection(-Math.PI/2).x,98);
  assert.equal(compassProjection(Math.PI*.8).edge,'left');assert.equal(compassProjection(-Math.PI*.8).edge,'right');
 });
-test('compass filters dead enemies, taken loot, sealed cases, allies and undiscovered secrets',()=>{
+test('compass filters dead and reserve enemies, taken loot, sealed cases, allies and undiscovered secrets',()=>{
  const secret={id:'cache',x:20,z:0,y:0,room:'secret-cache',found:false};
  const world={at:x=>({room:x>=20?'secret-cache':'hall'}),secrets:[secret],accessCard:{taken:false,x:2,z:3},control:{x:8,z:0},purge:{x:9,z:0},puzzle:{solved:true},switches:[]};
- const args={world,tasks:{solved:true,nodes:[]},mission:{record:false,power:null,choices:[]},primary:{x:8,z:0},cases:[{x:3,z:0,open:false},{x:4,z:0,open:true},{x:5,z:0,locked:true},{x:20,z:0}],pickups:[{x:6,z:0,kind:'ammo',age:1},{x:7,z:0,kind:'gun',age:1,taken:true},{x:10,z:0,kind:'health',age:0,delay:1}],actors:[{id:1,type:'beetle',x:2,z:0,hp:20},{id:2,type:'spitter',x:2,z:0,hp:0},{id:3,type:'beetle',x:2,z:0,hp:20}],crew:[{id:'friend',player:{x:3,z:3,hp:100}}],mode:'coop'};
+ const args={world,tasks:{solved:true,nodes:[]},mission:{record:false,power:null,choices:[]},primary:{x:8,z:0},cases:[{x:3,z:0,open:false},{x:4,z:0,open:true},{x:5,z:0,locked:true},{x:20,z:0}],pickups:[{x:6,z:0,kind:'ammo',age:1},{x:7,z:0,kind:'gun',age:1,taken:true},{x:10,z:0,kind:'health',age:0,delay:1}],actors:[{id:4,type:'beetle',x:1,z:0,hp:30,dormant:true},{id:1,type:'beetle',x:2,z:0,hp:20},{id:2,type:'spitter',x:2,z:0,hp:0},{id:3,type:'beetle',x:2,z:0,hp:20}],crew:[{id:'friend',player:{x:3,z:3,hp:100}}],mode:'coop'};
  let contacts=compassTargets(args);assert.equal(contacts.filter(c=>c.kind==='enemy').length,2);assert.deepEqual(contacts.filter(c=>c.kind==='supply').map(c=>c.id),[]);assert.equal(contacts.filter(c=>c.x===8).length,1);
  secret.found=true;args.mission.record=true;args.mission.power='armory';args.mission.choices=[{id:'purge'}];args.primary=null;world.accessCard.taken=true;args.mode='pvpve';contacts=compassTargets(args);
  assert.ok(!contacts.some(c=>c.kind==='supply'));assert.ok(contacts.some(c=>c.id==='rival:friend'));assert.ok(!contacts.some(c=>c.kind==='objective'));

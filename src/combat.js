@@ -15,11 +15,12 @@ let serial=0;
 export function makeActor(id,x,z){const d=ACTORS[id];return{id:++serial,type:id,x,z,y:0,hp:d.hp,maxHp:d.hp,state:'idle',age:0,duration:0,cooldown:1+(serial%5)*.22,cycle:0,slow:0,target:null,pathAge:0,hitFlash:0,phase:1};}
 export function makeNest(x,z,machine=false){return{id:++serial,x,z,machine,hp:machine?180:145,state:'idle',age:0,timer:5,burstDone:false,spawned:0};}
 export function damageNest(n,damage,emit){if(n.state==='husk'||n.state==='rupture')return false;n.hp-=damage;if(n.hp>0){n.state='hurt';n.age=0;return false;}n.hp=0;n.state='rupture';n.age=0;if(!n.burstDone){n.burstDone=true;emit({type:'nestBurst',nest:n,count:n.machine?2:4});}return true;}
-export function updateNest(n,dt,active,emit){n.age+=dt;if(n.state==='rupture'){if(n.age>.9){n.state='husk';n.age=0;}return;}if(n.state==='husk')return;if(n.state==='hurt'&&n.age>.3){n.state='idle';n.age=0;}if(n.state==='spawn'&&n.age>1){n.state='idle';n.age=0;}if(active){n.timer-=dt;if(n.timer<=0){n.timer=8;n.state='spawn';n.age=0;n.spawned++;emit({type:'spawn',nest:n,count:n.machine?1:2});}}}
+export function updateNest(n,dt,active,emit){n.age+=dt;if(n.state==='rupture'){if(n.age>.9){n.state='husk';n.age=0;}return;}if(n.state==='husk')return;if(n.state==='hurt'&&n.age>.3){n.state='idle';n.age=0;}if(n.state==='spawn'&&n.age>1){n.state='idle';n.age=0;}if(active){n.timer-=dt;if(n.timer<=0){n.timer=14;n.state='spawn';n.age=0;n.spawned++;emit({type:'spawn',nest:n,count:n.machine?1:2});}}}
 const setState=(a,state,duration=0)=>{a.state=state;a.age=0;a.duration=duration;};
 export function hurtActor(a,amount,mode='bullet',emit=()=>{}){if(a.hp<=0)return false;const d=ACTORS[a.type];if(d.tier!=='ENEMY')a.hunting=true;if(d.armor&&!['recover','hurt'].includes(a.state)&&mode==='bullet')amount*=.42;a.hp=Math.max(0,a.hp-amount);a.hitFlash=.1;if(mode==='freeze')a.slow=2.5;if(a.hp===0){a.y=0;setState(a,'death',1);emit({type:'killed',actor:a});return true;}
  const interrupt=d.interruptible||((mode==='chain'||mode==='pierce')&&['tell','altTell'].includes(a.state));if(interrupt&&a.state!=='attack'&&a.state!=='altAttack'){setState(a,'hurt',.45);a.cooldown=.8;}return false;}
 export function updateActor(a,dt,player,world,emit){
+ if(a.hp>0&&a.dormant)return;
  const d=ACTORS[a.type];a.groundY=world.floor(a.x,a.z,a.groundY??Infinity)??a.groundY??0;a.age+=dt;a.cooldown-=dt;a.slow=Math.max(0,a.slow-dt);a.hitFlash=Math.max(0,a.hitFlash-dt);
  if(a.hp<=0||a.attachedTo)return;
  const dx=player.x-a.x,dz=player.z-a.z,dist=Math.hypot(dx,dz,(a.groundY||0)-(player.y||0)),sight=dist<38&&world.los(a.x,a.z,player.x,player.z,(a.groundY||0)+1,(player.y||0)+1);

@@ -16,7 +16,7 @@ export function compassTargets({world,tasks,mission,primary,cases=[],pickups=[],
   if(!mission.choices.some(c=>c.id==='purge'))add('research','objective',world.purge,'RESEARCH BANK');
   if(tasks.solved&&!world.puzzle.solved)for(const n of world.switches)if(!n.timedGate&&!n.on)add('relay:'+n.id,'objective',n,'RELAY '+(n.index+1));
  }
- for(const a of actors)if(a.hp>0)add('enemy:'+a.id,'enemy',a,a.type.toUpperCase());
+ for(const a of actors)if(a.hp>0&&!a.dormant)add('enemy:'+a.id,'enemy',a,a.type.toUpperCase());
  if(mode==='ffa'||mode==='pvpve')for(const m of crew)if(m.id!==self&&m.player.hp>0)add('rival:'+m.id,'enemy',m.player,'RIVAL SALVAGER');
  return result;
 }

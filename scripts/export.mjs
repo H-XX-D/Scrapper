@@ -6,7 +6,7 @@ import{zipCartridge,zipFiles}from'./zip-cartridge.mjs';
 import * as esbuild from'esbuild';
 import{SPECS}from'../src/atlas.js';
 import{TITLE_ASSETS,missionAssets}from'../src/asset-plan.js';
-const root=resolve(import.meta.dirname,'..'),version='v12',fastName='Scrapper-Fast-Load-'+version,fastRoot=resolve(root,'exports',fastName);
+const root=resolve(import.meta.dirname,'..'),version='v13',fastName='Scrapper-Fast-Load-'+version,fastRoot=resolve(root,'exports',fastName);
 const mime={'.png':'image/png','.ttf':'font/ttf'};
 const packedPaths=new Map(),assetReport=[],fastEntries=[];let previousAssets=[];try{previousAssets=JSON.parse(await readFile(resolve(fastRoot,'manifest.json'),'utf8')).assets;}catch{}
 const cache=resolve(root,'node_modules/.cache/scrapper-lossless-v11');await mkdir(cache,{recursive:true});await mkdir(resolve(fastRoot,'assets'),{recursive:true});
@@ -37,11 +37,11 @@ for(const path of ['style.css','classic.css']){
 const result=await esbuild.build({absWorkingDir:root,entryPoints:['src/app.js'],bundle:true,write:false,format:'iife',target:'es2022',minify:true,legalComments:'inline'});
 const peerScript=(await readFile(resolve(root,'vendor/peerjs.min.js'),'utf8')).replace(/<\/script/gi,'<\\/script');
 const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
-const finish=(html,assets,extra='')=>html.replace('<script type="module" src="src/app.js"></script>',()=>`${extra}<script>window.__SCRAPPER_ASSETS=${JSON.stringify(assets)};</script><script>${script}</script>`).replace('<script src="vendor/peerjs.min.js"></script>',()=>'<script>'+peerScript+'</script>').replace('</head>','<meta name="scrapper-build" content="2026-09-29-staged-loading-directional-shots-ambush-v12"></head>');
+const finish=(html,assets,extra='')=>html.replace('<script type="module" src="src/app.js"></script>',()=>`${extra}<script>window.__SCRAPPER_ASSETS=${JSON.stringify(assets)};</script><script>${script}</script>`).replace('<script src="vendor/peerjs.min.js"></script>',()=>'<script>'+peerScript+'</script>').replace('</head>','<meta name="scrapper-build" content="2026-09-30-aura-network-combat-budget-v13"></head>');
 portable=finish(portable,embedded,payload.join(''));fast=finish(fast,external);
 const fileName='Scrapper-Playable-'+version+'.html',versioned=resolve(root,'exports',fileName);
 await writeFile(resolve(root,'exports/Scrapper.html'),portable);await writeFile(versioned,portable);await writeFile(resolve(fastRoot,'Scrapper.html'),fast);
-await writeFile(resolve(fastRoot,'README.txt'),'SCRAPPER V12 - FAST LOAD\n\nExtract the entire folder, then open Scrapper.html. Keep the assets folder beside it. No installation or server is needed for solo play. Online rooms require internet and all players must use V12.\n\nThe title loads first. Selected chapter art loads before deployment. Other station themes and absent crew art stay on disk.\n');
+await writeFile(resolve(fastRoot,'README.txt'),'SCRAPPER V13 - FAST LOAD\n\nExtract the entire folder, then open Scrapper.html. Keep the assets folder beside it. No installation or server is needed for solo play. Online rooms require internet and all players must use V13.\n\nThe title loads first. Selected chapter art loads before deployment. Other station themes and absent crew art stay on disk.\n');
 await writeFile(resolve(fastRoot,'manifest.json'),JSON.stringify({version,launcher:{file:'Scrapper.html',bytes:Buffer.byteLength(fast),sha256:digest(fast)},assets:assetReport},null,2)+'\n');
 for(const old of previousAssets)if(/^assets\/[0-9a-f]{24}\.(?:webp|png|ttf|asset\.js)$/.test(old.file)&&!assetReport.some(a=>a.file===old.file))await unlink(resolve(fastRoot,old.file)).catch(()=>{});
 for(const name of['Scrapper.html','README.txt','manifest.json'])fastEntries.push({path:resolve(fastRoot,name),name:fastName+'/'+name});

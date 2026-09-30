@@ -16,7 +16,7 @@ export function crewSpawnPoints(world,count=4){
 }
 export function crewFrame(yaw,viewer,position,walkAge,moving,spec){const {direction}=directionalFrame(yaw,viewer,position),step=moving?Math.floor(walkAge*9)%spec.walkFrames:0;return{direction,step,col:direction%spec.cols,row:Math.floor(direction/spec.cols)+step*(16/spec.cols)};}
 export function advanceCrewWalk(member,movement,dt){member.moving=movement.moving;if(movement.moving)member.walkAge=(member.walkAge||0)+dt;}
-export const enemyMultiplier=(mode,count)=>mode==='ffa'?0:mode==='coop'?Math.max(1,Math.min(4,count)):1;
+export const enemyMultiplier=(mode,count)=>mode==='ffa'?0:1;
 export function directionalFrame(yaw,viewer,position,walkAge=0,moving=false){const angle=Math.atan2(-(viewer.x-position.x),-(viewer.z-position.z))-yaw,direction=((Math.round(angle/(Math.PI*2)*16)%16)+16)%16,step=moving?Math.floor(walkAge*9)%4:0;return{direction,step,col:direction%8,row:Math.floor(direction/8)+step*2};}
 export function canHurtPlayer(mode,attackerId,targetId){return attackerId!==targetId&&(mode==='ffa'||mode==='pvpve');}
 export function hitPlayer(target,amount,{mode='solo',attacker=null,capture=null}={}){
