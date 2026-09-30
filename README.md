@@ -1,16 +1,20 @@
 # Scrapper
 
-[Download V12 Fast Load](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Fast-Load-v12.zip) · [Standalone HTML](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Playable-v12.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v12)
+[Download V13 Fast Load](https://github.com/H-XX-D/Scrapper/releases/download/v13/Scrapper-Fast-Load-v13.zip) · [Standalone HTML](https://github.com/H-XX-D/Scrapper/releases/download/v13/Scrapper-Playable-v13.html) · [Release notes](https://github.com/H-XX-D/Scrapper/releases/tag/v13)
 
-**The current source build is V13; the links above are the published V12 release.** Run `npm run export` to create `exports/Scrapper-Fast-Load-v13.zip`, its extracted folder, and `exports/Scrapper-Playable-v13.html`. V13 uses a browser adaptation of AURA's negotiated state deltas, sends nearby combat separately to each teammate, and caps active monsters at 30 around each player. Overlapping groups share that cap. Co-op no longer multiplies every enemy and brood by crew size, and ordinary pod reinforcements are slower. [Implementation, measurements and verification](docs/aura-multiplayer-v13.md).
+First-person salvage and infestation shooter. **Download and extract the entire V13 Fast Load ZIP, then open `Scrapper-Fast-Load-v13/Scrapper.html`. Keep its `assets` folder beside it.** The launcher is about 1.12 MiB; the complete ZIP is about 185 MiB and includes all art, code, fonts and audio synthesis. Solo play works directly from disk without installation or a server. The title loads first, followed by the selected mission's art before deployment.
 
-First-person salvage and infestation shooter. **Extract the entire Fast Load ZIP, then open `Scrapper-Fast-Load-v12/Scrapper.html`. Keep its `assets` folder beside it.** The launcher is about 1.11 MiB; the complete ZIP is about 185 MiB and includes all art, code, fonts and audio synthesis. Solo play works directly from disk without installation or a server. The title loads first, followed by the selected mission's art before deployment.
-
-For a single-file copy, use `exports/Scrapper-Playable-v12.html` (also `exports/Scrapper.html`), approximately 245 MiB. The [standalone ZIP](https://github.com/H-XX-D/Scrapper/releases/download/v12/Scrapper-Playable-v12.zip) contains that identical HTML. Both export forms use the same game and can join the same V12 room.
+For a single-file copy, download `Scrapper-Playable-v13.html`, approximately 245 MiB. The [standalone ZIP](https://github.com/H-XX-D/Scrapper/releases/download/v13/Scrapper-Playable-v13.zip) contains that identical HTML. Both export forms use the same game and can join the same V13 room. **Everyone in the room must use V13.**
 
 The original title artwork and painted steel HUD remain. Gameplay uses low ceilings, compact branching passages, stairs, automatic lifts, stacked service routes, optional caches and a jumpable maintenance gap. World signs have been removed. Necessary puzzle readouts sit on their equipment, with cyan, pink and lime text inside the original industrial frame.
 
-## V12 changes
+## V13 changes
+
+V13 uses a browser adaptation of AURA's negotiated state deltas and sends nearby combat separately to each teammate. Active monsters are capped at **30 around each player**: overlapping groups share the cap, while separated teammates keep their own local encounters. Co-op no longer multiplies every enemy and brood by crew size, and ordinary pod reinforcements are slower. Guest movement stays responsive between updates, with recovery and fallback for delayed or congested connections.
+
+All 153 automated tests pass. Four-player browser checks cover grouped and separated crews, delayed connections, recovery, mixed Fast Load/standalone clients and parasite escapes. [V13 implementation, measurements and verification](docs/aura-multiplayer-v13.md).
+
+## V12 loading, projectiles and ambushes
 
 Loading is split into the original title, current chapter and active crew. Three art files decode at a time; unrelated station themes and absent players' weapon sheets remain on disk. Rooms wait for every player to finish loading before starting the simulation. The portable HTML keeps art in inert payloads; the fast folder uses separately loaded art packages that support direct-file canvas pixel operations. The existing lossless image packing remains: no source pixels or frames are removed.
 
@@ -83,11 +87,11 @@ Three solo save slots preserve position, equipment, ammunition, score, enemies, 
 
 Choose the salvager in **FIELD MANUAL**, then open **ASSEMBLE CREW**. Select a mode, **HOST ROOM**, share the six-character code, and **DEPLOY CREW** after friends join. The host assigns up to four different salvagers: Rook, Echo, Flint and EOS. Your preferred salvager is kept when available; otherwise the next unused character is assigned. The large share code and COPY CODE button appear in the crew lobby and pause menu. Each has weapon-specific pixel sprites with sixteen facing slots and two to four walking poses. Your own view remains first person with matching sleeves, gloves and fingertips, including all reload poses and the original single-pass wipe. Weapon crystals, missiles and fuel panels retain their own colors. Co-op deployment places teammates on separate walkable spots ahead of the host; host and guest movement both animate.
 
-- **CO-OP RECOVERY:** shared mission, no friendly fire; hold E to revive. In V13, the default opening chapter places 38 enemies for one/two players or 46 for three/four. Nearby combat is capped at 30 active monsters per player, and a grouped crew shares that cap. Separated teammates have their own local encounters. The published V12 build predates this change and began four-player missions with 372 enemies.
+- **CO-OP RECOVERY:** shared mission, no friendly fire; hold E to revive. In V13, the default opening chapter places 38 enemies for one/two players or 46 for three/four. Nearby combat is capped at 30 active monsters per player, and a grouped crew shares that cap. Separated teammates have their own local encounters. V12 began four-player missions with 372 enemies.
 - **FREE-FOR-ALL:** no monsters or campaign objectives. Find weapons, score 20 frags or lead after ten minutes. Death triggers a short respawn.
 - **RIVAL RECOVERY:** hostile salvagers and infestation share a mission. The first salvager to complete the recovery and extract wins; scrap and frag scores appear in the result.
 
-V13 uses room protocol 9; all players in a room need V13. The published V12 release uses protocol 8 and cannot join a V13 room. Free-mash escapes, peel animations, capture protection and per-player compass paths remain. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
+V13 uses room protocol 9; all players in a room need V13. V12 uses protocol 8 and cannot join a V13 room. Free-mash escapes, peel animations, capture protection and per-player compass paths remain. Online rooms require internet access and a network that permits WebRTC peer connections. The host runs the simulation and must keep the game open. There is no host migration or joining a mission already underway; guests can join the next deployment. The room service handles discovery; no account or hosted game installation is required.
 
 ## Development and verification
 
@@ -98,7 +102,7 @@ npm ci
 npm start
 ```
 
-Open http://localhost:4186. To build the standalone HTML and run all checks, including the exported file:
+Open http://localhost:4186. To build the Fast Load folder/ZIP and standalone HTML/ZIP, then run all checks including the exported files:
 
 ```sh
 npm run check

@@ -1,6 +1,6 @@
 # V13: AURA browser transport and encounter budgets
 
-V13 adds per-player combat replication, acknowledged state deltas and smaller encounters. The public release remains V12 until V13 is published. Build with `npm run export`; extract `exports/Scrapper-Fast-Load-v13.zip` and open the contained `Scrapper.html`, or open `exports/Scrapper-Playable-v13.html`. All players need V13 (room protocol 9).
+V13 adds per-player combat replication, acknowledged state deltas and smaller encounters. [Download V13 Fast Load](https://github.com/H-XX-D/Scrapper/releases/download/v13/Scrapper-Fast-Load-v13.zip), extract the whole ZIP and open `Scrapper-Fast-Load-v13/Scrapper.html` with its assets beside it. The [V13 release](https://github.com/H-XX-D/Scrapper/releases/tag/v13) also includes the standalone HTML. Build either form from source with `npm run export`. All players need V13 (room protocol 9).
 
 ## Repository inspection and integration decision
 
